@@ -1,0 +1,11 @@
+:root{
+    --primary-500: #143993; 
+    --primary-400: #668FFC;
+    --primary-50: #EEF1F9;
+    --gold: #DAA520;
+
+}
+
+body{
+    background-color:var(--gold);
+}
