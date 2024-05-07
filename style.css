@@ -1,11 +1,95 @@
-:root{
-    --primary-500: #143993; 
-    --primary-400: #668FFC;
-    --primary-50: #EEF1F9;
-    --gold: #DAA520;
-
+:root {
+  --primary-500: #143993;
+  --primary-400: #668FFC;
+  --primary-50: #EEF1F9;
+  --gold: #DAA520;
 }
-
-body{
-    background-color:var(--gold);
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-image: url("img/Rectangle\ 14.png");
+  background-size: cover;
+  background-position-x: 40%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+}
+header nav {
+  width: 100vw;
+  height: 8vh;
+}
+header h1 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 8vw;
+  padding: 0px 0.7vw;
+}
+header h2 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 7.5vw;
+}
+header p {
+  color: white;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: medium;
+  font-size: 6vw;
+  padding: 0px 2vw;
+}
+header button {
+  height: 7vh;
+  width: 60vw;
+  align-self: center;
+  border-radius: 50px;
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+}
+.prestations {
+  width: 100vw;
+  height: 200vh;
+  background-color: var(--primary-50);
+  display: flex;
+  flex-direction: column;
+}
+.prestations .devis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  gap: 10px;
+}
+.prestations .devis h2 {
+  color: var(--primary-500);
+  text-align: center;
+}
+.prestations .devis p {
+  text-align: center;
+}
+.prestations .container-prestations .lustrage {
+  width: 100vw;
+  height: 200px;
+  background-image: url('/img/lustrage.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.prestations .container-prestations .phare {
+  width: 100vw;
+  height: 200px;
+  background-image: url('/img/phare.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
