@@ -152,7 +152,8 @@ header button {
   font-size: 1.375rem;
 }
 .forfaits-wrapper .forfaits-card > div {
-  padding: 1.25rem;
+  padding: 0 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .forfaits-wrapper .forfaits-card .forfaits-title {
   color: var(--primary-400);
