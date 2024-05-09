@@ -1,19 +1,19 @@
-:root{
-    --primary-500: #143993; 
+:root {
+    --primary-500: #143993;
     --primary-400: #2D56A5;
     --primary-50: #EEF1F9;
     --gold: #DAA520;
 
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
 
-header{
+header {
     background-image: url("./img/Rectangle\ 14.png");
     background-size: cover;
     background-position-x: 40%;
@@ -24,13 +24,13 @@ header{
     flex-direction: column;
     gap: 8vh;
 
-    nav{
+    nav {
         width: 100vw;
         height: 8vh;
 
     }
 
-    h1{
+    h1 {
         color: white;
         text-align: center;
         font-family: "Roboto", sans-serif;
@@ -38,10 +38,10 @@ header{
         font-size: 8vw;
         padding: 0px 0.7vw;
 
-     
+
     }
 
-    h2{
+    h2 {
         color: white;
         text-align: center;
         font-family: "Roboto", sans-serif;
@@ -50,17 +50,17 @@ header{
 
     }
 
-    p{
+    p {
         color: white;
         text-align: center;
         font-family: "DM Sans", sans-serif;
         font-weight: medium;
         font-size: 6vw;
         padding: 0px 2vw;
-     
+
     }
 
-    button{
+    button {
         height: 7vh;
         width: 60vw;
         align-self: center;
@@ -69,16 +69,16 @@ header{
         color: white;
         border: none;
     }
-    
+
 }
 
-.prestations{
+.prestations {
     width: 100vw;
     height: 200vh;
     background-color: var(--primary-50);
     display: flex;
     flex-direction: column;
-    
+
     .devis {
         display: flex;
         flex-direction: column;
@@ -87,21 +87,21 @@ header{
         width: 100vw;
         height: 20vh;
         gap: 10px;
-    
 
-        h2{
+
+        h2 {
             color: var(--primary-500);
             text-align: center;
         }
 
-        p{
+        p {
             text-align: center;
         }
     }
 
-    .container-prestations{
+    .container-prestations {
 
-        .lustrage{
+        .lustrage {
 
             width: 100vw;
             height: 200px;
@@ -110,7 +110,7 @@ header{
             background-repeat: no-repeat;
         }
 
-        .phare{
+        .phare {
 
             width: 100vw;
             height: 200px;
@@ -123,6 +123,8 @@ header{
 
 .forfaits-wrapper {
     background-color: var(--primary-50);
+
+    font-family: 'DM Sans';
     text-align: center;
 
     header {
@@ -135,8 +137,8 @@ header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
-        padding-bottom: 40px;
+        padding: 1rem 1.25rem;
+        padding-bottom: 2.5rem;
 
         border-bottom-left-radius: 2400px 1000px;
         border-bottom-right-radius: 2400px 1000px;
@@ -151,9 +153,95 @@ header{
             display: none;
         }
     }
-    
-    h1, h2, h3 {
-        font-family: 'Roboto', sans-serif;
+
+    h1,
+    h2,
+    h3,
+    .forfaits-title {
+        font-family: 'Roboto Serif', sans-serif;
         text-transform: uppercase;
+    }
+
+    h1 {
+        font-weight: 900;
+        color: var(--primary-500)
+    }
+
+    section {
+        padding: 3.125rem 1.25rem;
+    }
+
+    .forfaits-card {
+        overflow: hidden;
+        margin-top: 3.125rem;
+        padding-bottom: 1.25rem;
+        background-color: white;
+        border: 1px solid var(--primary-400);
+        border-radius: 1.5625rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        h2 {
+            padding: 1.875rem 0.625rem;
+            background-color: var(--primary-400);
+            color: white;
+            font-size: 1.375rem;
+        }
+
+        &>div {
+            padding: 1.25rem;
+        }
+
+        .forfaits-title {
+            color: var(--primary-400);
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+
+            h3 {
+                margin-bottom: 0.625rem;
+                font-weight: 800;
+            }
+        }
+
+        .deluxe {
+            .forfaits-title {
+                color: var(--gold);
+            }
+
+            ul {
+                li::before {
+                    background-color: var(--gold);
+                }
+            }
+        }
+
+
+        ul {
+            text-align: left;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            // marker pour les listes
+            li::before {
+                display: block;
+                content: '';
+                min-width: 1.5rem;
+                aspect-ratio: 24/25;
+                background-color: var(--primary-400);
+                -webkit-mask-image: url(img/Tick-express.svg);
+                mask-image: url(img/Tick-express.svg);
+            }
+
+            li:not(:last-of-type) {
+                margin-bottom: 0.625rem;
+            }
+        }
     }
 }
