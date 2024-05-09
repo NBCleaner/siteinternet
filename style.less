@@ -1,6 +1,6 @@
 :root{
     --primary-500: #143993; 
-    --primary-400: #668FFC;
+    --primary-400: rgb(45, 86, 165);
     --primary-50: #EEF1F9;
     --gold: #DAA520;
 
@@ -74,7 +74,6 @@ header{
 
 .prestations{
     width: 100vw;
-    height: 200vh;
     background-color: var(--primary-50);
     display: flex;
     flex-direction: column;
@@ -86,37 +85,267 @@ header{
         align-items: center;
         width: 100vw;
         height: 20vh;
-        gap: 10px;
+        gap: 5px;
     
 
         h2{
             color: var(--primary-500);
             text-align: center;
+            font-size: 2rem;
+
         }
 
         p{
             text-align: center;
+            font-size: 1rem;
         }
     }
 
     .container-prestations{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
         .lustrage{
 
             width: 100vw;
-            height: 200px;
+            height: 165px;
             background-image: url('/img/lustrage.png');
             background-size: 100vw;
             background-repeat: no-repeat;
+           
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+
+           
         }
+        
 
         .phare{
 
             width: 100vw;
-            height: 200px;
+            height: 165px;
             background-image: url('/img/phare.png');
             background-size: 100vw;
             background-repeat: no-repeat;
+            background-position-y: 20%;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        .cuir{
+
+            width: 100vw;
+            height: 165px;
+            background-image: url('/img/cuir.png');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        .moteur{
+
+            width: 100vw;
+            height: 165px;
+            background-image: url('/img/moteur.png');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        .siege{
+
+            width: 100vw;
+            height: 165px;
+            background-image: url('./img/siege.png');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        .lavage{
+
+            width: 100vw;
+            height: 165px;
+            background-image: url('./img/lavage.png');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            background-position-y: 40%;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        .ceramique{
+
+            width: 100vw;
+            height: 165px;
+            background-image: url('./img/ceramique.png');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+
+            div{
+                width: 100vw;
+                height: 165px;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+
+        h3{
+            color: white;
+            font-size: 1rem;
+            -webkit-text-stroke: 0.5px var(--primary-500);
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}
+
+.forfait{
+    width: 100vw;
+    background-color: var(--primary-50);
+
+    .forfaitDevis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 20vh;
+        gap: 3px;
+    
+
+        h2{
+            color: var(--primary-400);
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        p{
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    }
+
+    .container-forfait{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .forfait1,
+        .forfait2,
+        .forfait3 {
+            width: 80vw;
+            height: 10vh;
+            background-color: var(--primary-400);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px 20px 0px 0px;
+
+            h3{
+                color: white;
+                font-size: 1rem;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+            }
+        }
+
+        .listeforfait1,
+        .listeforfait2,
+        .listeforfait3 {
+            background-color: white;
+            width: 80vw;     
+            border: solid 1px var(--primary-400);       
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 0px 0px 20px 20px;
+            margin-bottom: 40px;
+
+            h4{
+                color: var(--primary-400);
+                padding-top: 12px;
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+            }
+
+            ul{
+                padding-bottom: 12px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 0.9rem;
+                list-style-type: none;
+                padding-left: 2vw;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            
+                li{
+
+                    i{
+                        color: var(--primary-400);
+                    }
+                }
+            }
+        }
+
+        button{
+            height: 7vh;
+            width: 75vw;
+            align-self: center;
+            border-radius: 20px;
+            background-color: var(--primary-400);
+            color: white;
+            border: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
         }
     }
 }
