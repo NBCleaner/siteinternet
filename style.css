@@ -75,10 +75,12 @@ header button {
   color: var(--primary-500);
   text-align: center;
   font-size: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 .prestations .devis p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
 }
 .prestations .container-prestations {
   display: flex;
@@ -215,10 +217,12 @@ header button {
   color: var(--primary-400);
   text-align: center;
   font-size: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 .forfait .forfaitDevis p {
   text-align: center;
   font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
 }
 .forfait .container-forfait {
   display: flex;
@@ -296,7 +300,7 @@ header button {
 }
 .contact {
   width: 100vw;
-  height: 165px;
+  height: 150px;
   background-image: url('/img/photo\ contact.png');
   background-size: 100vw;
   background-repeat: no-repeat;
@@ -319,12 +323,116 @@ header button {
   text-align: center;
   font-size: 1.3rem;
 }
+.avis {
+  display: flex;
+  flex-direction: column;
+}
+.avis h2 {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 25px;
+}
+.avis #carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.avis #carousel .review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 45vh;
+}
+.avis #carousel .review-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  width: 80vw;
+  line-height: 20px;
+}
+.avis #carousel .left-arrow,
+.avis #carousel .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.avis #carousel .left-arrow {
+  left: 10px;
+}
+.avis #carousel .right-arrow {
+  right: 10px;
+}
+.avis #carousel .fa-star {
+  color: var(--gold);
+}
+.partenaire {
+  height: 35vh;
+  width: 100vw;
+  background-color: var(--primary-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+.partenaire h2 {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 25px;
+}
+.partenaire .container-partenaire {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.partenaire .container-partenaire .ligne1,
+.partenaire .container-partenaire .ligne2 {
+  display: flex;
+  gap: 20px;
+}
+.partenaire .container-partenaire .ligne1 div img,
+.partenaire .container-partenaire .ligne2 div img {
+  width: 20vw;
+  height: 20vw;
+}
+.partenaire .container-partenaire .ligne1 div:nth-child(2),
+.partenaire .container-partenaire .ligne2 div:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0px 20px;
+}
+.partenaire .container-partenaire .ligne1 {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+.map {
+  background-image: url('/img/map.png');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 20vh;
+  width: 100vw;
+  background-color: var(--primary-50);
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
 footer {
   width: 100vw;
   height: 40vh;
   background-color: var(--primary-50);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 footer div {

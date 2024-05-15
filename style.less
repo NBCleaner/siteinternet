@@ -92,12 +92,14 @@ header {
             color: var(--primary-500);
             text-align: center;
             font-size: 2rem;
-
+            font-family: "Roboto", sans-serif;
         }
 
         p {
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-family: "DM Sans", sans-serif;
+
         }
     }
 
@@ -264,12 +266,15 @@ header {
             color: var(--primary-400);
             text-align: center;
             font-size: 2rem;
+            font-family: "Roboto", sans-serif;
 
         }
 
         p {
             text-align: center;
             font-size: 0.9rem;
+            font-family: "DM Sans", sans-serif;
+
         }
     }
 
@@ -353,7 +358,7 @@ header {
 
 .contact {
     width: 100vw;
-    height: 165px;
+    height: 150px;
     background-image: url('/img/photo\ contact.png');
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -378,37 +383,161 @@ header {
             font-size: 1.3rem;
         }
 
+
+    }
+}
+
+.avis {
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .review-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 45vh
+        }
+
+        .review-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px 0;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+            width: 80vw;
+            line-height: 20px
+        }
+
+        .left-arrow,
+        .right-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+
+        .fa-star {
+            color: var(--gold);
+        }
+    }
+}
+
+.partenaire {
+    height: 35vh;
+    width: 100vw;
+    background-color: var(--primary-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .container-partenaire{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        .ligne1,
+        .ligne2{
+            display: flex;
+            gap: 20px;
+            div{
+                img{
+                    width: 20vw;
+                    height: 20vw;
+                    
+                }
+            }
+            div:nth-child(2){
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding: 0px 20px;
+
+            }
+
+        }
+
+        .ligne1{
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+        }
         
     }
 }
 
-footer{
+.map {
+    background-image: url('/img/map.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 20vh;
+    width: 100vw;
+    background-color: var(--primary-50);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+footer {
     width: 100vw;
     height: 40vh;
     background-color: var(--primary-50);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     
-    div{
+
+    div {
         margin-left: 10vw;
 
-        h2{
+        h2 {
             color: var(--primary-500);
             font-size: 1.3rem;
             padding-bottom: 10px;
             font-family: "Roboto", sans-serif;
         }
 
-        p{
+        p {
             font-family: "DM Sans", sans-serif;
             font-size: 0.9rem;
         }
     }
-
 }
 
-.legal{
+.legal {
     background-color: white;
     width: 100vw;
     height: 15vh;
@@ -418,26 +547,26 @@ footer{
     align-items: center;
     gap: 15px;
 
-    div{
-        h2{
+    div {
+        h2 {
             font-size: 1rem;
 
-            i:nth-child(1){
+            i:nth-child(1) {
                 color: blue;
                 font-size: 2rem;
             }
 
-            i:nth-child(2){
+            i:nth-child(2) {
                 color: rgb(255, 238, 0);
                 font-size: 2rem;
             }
         }
     }
 
-    p{
+    p {
         font-size: 0.8rem;
         text-align: center;
     }
 
-   
+
 }
