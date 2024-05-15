@@ -353,10 +353,12 @@ header {
 
 .contact {
     width: 100vw;
-    height: 200px;
+    height: 165px;
     background-image: url('/img/photo\ contact.png');
     background-size: 100vw;
     background-repeat: no-repeat;
+    background-color: var(--primary-50);
+
 
     .container-contact {
         width: 100vw;
@@ -378,4 +380,64 @@ header {
 
         
     }
+}
+
+footer{
+    width: 100vw;
+    height: 40vh;
+    background-color: var(--primary-50);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    div{
+        margin-left: 10vw;
+
+        h2{
+            color: var(--primary-500);
+            font-size: 1.3rem;
+            padding-bottom: 10px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        p{
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.9rem;
+        }
+    }
+
+}
+
+.legal{
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    div{
+        h2{
+            font-size: 1rem;
+
+            i:nth-child(1){
+                color: blue;
+                font-size: 2rem;
+            }
+
+            i:nth-child(2){
+                color: rgb(255, 238, 0);
+                font-size: 2rem;
+            }
+        }
+    }
+
+    p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+   
 }
