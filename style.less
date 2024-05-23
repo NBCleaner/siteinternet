@@ -35,7 +35,7 @@ header {
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
-        font-size: 8vw;
+        font-size: 2rem;
         padding: 0px 0.7vw;
 
 
@@ -46,7 +46,7 @@ header {
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
-        font-size: 7.5vw;
+        font-size: 1.5rem;
 
     }
 
@@ -55,7 +55,7 @@ header {
         text-align: center;
         font-family: "DM Sans", sans-serif;
         font-weight: medium;
-        font-size: 6vw;
+        font-size: 1rem;
         padding: 0px 2vw;
 
     }
@@ -346,7 +346,7 @@ header {
             width: 75vw;
             align-self: center;
             border-radius: 20px;
-            background-color: var(--primary-400);
+            background-color: var(--gold);
             color: white;
             border: none;
             font-family: "Roboto", sans-serif;
@@ -448,13 +448,13 @@ header {
 }
 
 .partenaire {
-    height: 35vh;
     width: 100vw;
     background-color: var(--primary-50);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 45px;
+    padding-bottom: 20px;
 
     h2 {
         font-size: 1.2rem;
@@ -463,7 +463,7 @@ header {
         margin-top: 25px;
     }
 
-    .container-partenaire{
+    .container-partenaire {
         width: 80vw;
         display: flex;
         justify-content: center;
@@ -472,17 +472,19 @@ header {
         gap: 15px;
 
         .ligne1,
-        .ligne2{
+        .ligne2 {
             display: flex;
             gap: 20px;
-            div{
-                img{
+
+            div {
+                img {
                     width: 20vw;
-                    height: 20vw;
-                    
+                    height: 10vh;
+
                 }
             }
-            div:nth-child(2){
+
+            div:nth-child(2) {
                 border-left: 1px solid black;
                 border-right: 1px solid black;
                 padding: 0px 20px;
@@ -491,11 +493,11 @@ header {
 
         }
 
-        .ligne1{
+        .ligne1 {
             border-bottom: 1px solid black;
             padding-bottom: 20px;
         }
-        
+
     }
 }
 
@@ -512,13 +514,13 @@ header {
 
 footer {
     width: 100vw;
-    height: 40vh;
+    padding: 20px 0px;
     background-color: var(--primary-50);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    
+
 
     div {
         margin-left: 10vw;
@@ -528,6 +530,7 @@ footer {
             font-size: 1.3rem;
             padding-bottom: 10px;
             font-family: "Roboto", sans-serif;
+            text-align: center;
         }
 
         p {
@@ -568,5 +571,223 @@ footer {
         text-align: center;
     }
 
+
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+
+        button {
+            width: 40vw;
+            font-size: 1.5rem;
+        }
+    }
+
+    .prestations {
+
+        .container-prestations {
+
+            .lustrage {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .lustrage {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .phare {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .cuir {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .moteur {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .siege {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .lavage {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            .ceramique {
+                width: 100vw;
+                height: 265px;
+
+                div {
+                    height: 265px;
+                }
+
+            }
+
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .forfait {
+
+        .container-forfait {
+
+            .forfait1,
+            .forfait2,
+            .forfait3 {
+
+                h3 {
+                    color: white;
+                    font-size: 1.8rem;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                }
+            }
+
+            .listeforfait1,
+            .listeforfait2,
+            .listeforfait3 {
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+
+                ul {
+                    font-size: 1.3rem;
+
+                    li {
+
+                    }
+                }   
+            }
+
+            button {
+                   
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .contact{
+        height: 350px;
+
+        .container-contact {
+        height: 350px;
+
+        h2,
+        h3 {
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+
+        }
+    }
+
+    .avis{
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 2rem;
+        }
+
+        #carousel{
+            width: 90vw;
+        }
+    }
+
+    .partenaire{
+        h2{
+            font-size: 2rem;
+        }
+
+        .container-partenaire {
+            .ligne1,
+            .ligne2 {
+                div{
+                    img{
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .map{
+        height: 50vh;
+
+    }
+
+   
+    footer {
+      align-items: center;
+        div {
+            width: 70%;
+            h2 {
+                font-size: 1.8rem;
+            }
+    
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
 
 }

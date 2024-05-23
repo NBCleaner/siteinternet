@@ -29,7 +29,7 @@ header h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 2rem;
   padding: 0px 0.7vw;
 }
 header h2 {
@@ -37,14 +37,14 @@ header h2 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 7.5vw;
+  font-size: 1.5rem;
 }
 header p {
   color: white;
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-weight: medium;
-  font-size: 6vw;
+  font-size: 1rem;
   padding: 0px 2vw;
 }
 header button {
@@ -291,7 +291,7 @@ header button {
   width: 75vw;
   align-self: center;
   border-radius: 20px;
-  background-color: var(--primary-400);
+  background-color: var(--gold);
   color: white;
   border: none;
   font-family: "Roboto", sans-serif;
@@ -374,13 +374,13 @@ header button {
   color: var(--gold);
 }
 .partenaire {
-  height: 35vh;
   width: 100vw;
   background-color: var(--primary-50);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 45px;
+  padding-bottom: 20px;
 }
 .partenaire h2 {
   font-size: 1.2rem;
@@ -404,7 +404,7 @@ header button {
 .partenaire .container-partenaire .ligne1 div img,
 .partenaire .container-partenaire .ligne2 div img {
   width: 20vw;
-  height: 20vw;
+  height: 10vh;
 }
 .partenaire .container-partenaire .ligne1 div:nth-child(2),
 .partenaire .container-partenaire .ligne2 div:nth-child(2) {
@@ -428,7 +428,7 @@ header button {
 }
 footer {
   width: 100vw;
-  height: 40vh;
+  padding: 20px 0px;
   background-color: var(--primary-50);
   display: flex;
   flex-direction: column;
@@ -443,6 +443,7 @@ footer div h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 footer div p {
   font-family: "DM Sans", sans-serif;
@@ -472,4 +473,142 @@ footer div p {
 .legal p {
   font-size: 0.8rem;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header h2 {
+    font-size: 2.3rem;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+  header button {
+    width: 40vw;
+    font-size: 1.5rem;
+  }
+  .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .prestations .container-prestations .phare {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .phare div {
+    height: 265px;
+  }
+  .prestations .container-prestations .cuir {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .cuir div {
+    height: 265px;
+  }
+  .prestations .container-prestations .moteur {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .moteur div {
+    height: 265px;
+  }
+  .prestations .container-prestations .siege {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .siege div {
+    height: 265px;
+  }
+  .prestations .container-prestations .lavage {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .lavage div {
+    height: 265px;
+  }
+  .prestations .container-prestations .ceramique {
+    width: 100vw;
+    height: 265px;
+  }
+  .prestations .container-prestations .ceramique div {
+    height: 265px;
+  }
+  .prestations .container-prestations h3 {
+    font-size: 1.8rem;
+  }
+  .forfait .container-forfait .forfait1 h3,
+  .forfait .container-forfait .forfait2 h3,
+  .forfait .container-forfait .forfait3 h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .forfait .container-forfait .listeforfait1 h4,
+  .forfait .container-forfait .listeforfait2 h4,
+  .forfait .container-forfait .listeforfait3 h4 {
+    font-size: 1.5rem;
+  }
+  .forfait .container-forfait .listeforfait1 ul,
+  .forfait .container-forfait .listeforfait2 ul,
+  .forfait .container-forfait .listeforfait3 ul {
+    font-size: 1.3rem;
+  }
+  .forfait .container-forfait button {
+    font-size: 1.5rem;
+  }
+  .contact {
+    height: 350px;
+  }
+  .contact .container-contact {
+    height: 350px;
+  }
+  .contact .container-contact h2,
+  .contact .container-contact h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .avis {
+    display: flex;
+    align-items: center;
+  }
+  .avis h2 {
+    font-size: 2rem;
+  }
+  .avis #carousel {
+    width: 90vw;
+  }
+  .partenaire h2 {
+    font-size: 2rem;
+  }
+  .partenaire .container-partenaire .ligne1 div img,
+  .partenaire .container-partenaire .ligne2 div img {
+    height: 15vh;
+  }
+  .map {
+    height: 50vh;
+  }
+  footer {
+    align-items: center;
+  }
+  footer div {
+    width: 70%;
+  }
+  footer div h2 {
+    font-size: 1.8rem;
+  }
+  footer div p {
+    font-size: 1.3rem;
+  }
 }
