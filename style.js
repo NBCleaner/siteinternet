@@ -1,3 +1,6 @@
+
+
+// -----------------------------------------------
 function initMap() {
     let service = new google.maps.places.PlacesService(document.createElement('div.map'));
 
