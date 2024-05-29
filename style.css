@@ -97,6 +97,7 @@ header button {
 }
 .forfaits-wrapper {
   background-color: var(--primary-50);
+  min-width: 320px;
   font-family: 'DM Sans';
   text-align: center;
 }
@@ -137,7 +138,7 @@ header button {
   display: none;
 }
 .forfaits-wrapper .hero {
-  display: hidden;
+  display: none;
 }
 .forfaits-wrapper h1,
 .forfaits-wrapper h2,
