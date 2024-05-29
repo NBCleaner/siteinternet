@@ -1,6 +1,50 @@
+// Carrousel prestations 
+const leftArrowTop = document.getElementById("left-arrow-top");
+const rightArrowTop = document.getElementById("right-arrow-top");
+const prestationItems = document.querySelectorAll(".container-prestationsPc > div");
+const visibleItemsCount = 3;
+let currentIndex = 0;
 
+function updateCarousel() {
+    prestationItems.forEach((item, index) => {
+        if (index >= currentIndex && index < currentIndex + visibleItemsCount) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+rightArrowTop.addEventListener("click", function(){
+
+    leftArrowTop.style.display = "flex"
+    if (currentIndex + visibleItemsCount < prestationItems.length) {
+        currentIndex++;
+
+        updateCarousel();
+    }
+});
+
+leftArrowTop.addEventListener("click", function (){
+    if(currentIndex != 0){
+        currentIndex--;
+        updateCarousel();
+    }else{
+        leftArrowTop.style.display = "none"
+    }
+});
+
+// prestationItems.forEach((item) => {
+//     item.addEventListener ("mouseenter", function (){
+//         item.style.transform = "scale(1.2)";
+//     });
+// });
+
+
+updateCarousel();
 
 // -----------------------------------------------
+
 function initMap() {
     let service = new google.maps.places.PlacesService(document.createElement('div.map'));
 
@@ -30,16 +74,16 @@ function displayReviewsCarousel(reviews) {
 
         const rating = document.createElement('p');
         rating.textContent = `Note : ${review.rating} étoiles`;
-        
 
-        
+
+
         const starsContainer = document.createElement('div');
         starsContainer.classList.add('stars-container');
         for (let i = 0; i < review.rating; i++) {
             const star = document.createElement('i');
             star.classList.add('fas', 'fa-star');
             starsContainer.appendChild(star);
-            
+
         }
         rating.appendChild(starsContainer);
 
@@ -82,7 +126,7 @@ function displayReviewsCarousel(reviews) {
         showReview(currentIndex);
     }
 
-  
+
     document.querySelector('.left-arrow').addEventListener('click', prevReview);
     document.querySelector('.right-arrow').addEventListener('click', nextReview);
 
