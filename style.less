@@ -30,50 +30,51 @@ header {
         width: 100vw;
         height: 8vh;
 
-    }   
-        // h1 {
-        //     color: white;
-        //     text-align: center;
-        //     font-family: "Roboto", sans-serif;
-        //     font-weight: bold;
-        //     font-size: 2rem;
-        //     padding: 0px 0.7vw;
-        //     margin: 0 10vw;
+    }
 
-        // }
+    // h1 {
+    //     color: white;
+    //     text-align: center;
+    //     font-family: "Roboto", sans-serif;
+    //     font-weight: bold;
+    //     font-size: 2rem;
+    //     padding: 0px 0.7vw;
+    //     margin: 0 10vw;
 
-        h2 {
-            color: white;
-            text-align: center;
-            font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 1.5rem;
-            margin: 0 10vw;
+    // }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0 10vw;
 
 
-        }
+    }
 
-        p {
-            color: white;
-            text-align: center;
-            font-family: "DM Sans", sans-serif;
-            font-weight: medium;
-            font-size: 1rem;
-            padding: 0px 0.7vw;
-            margin: 0 10vw;
-        }
+    p {
+        color: white;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-weight: medium;
+        font-size: 1rem;
+        padding: 0px 0.7vw;
+        margin: 0 10vw;
+    }
 
-        button {
-            height: 7vh;
-            width: 60vw;
-            align-self: center;
-            border-radius: 50px;
-            background-color: var(--primary-500);
-            color: white;
-            border: none;
-        }
+    button {
+        height: 7vh;
+        width: 60vw;
+        align-self: center;
+        border-radius: 50px;
+        background-color: var(--primary-500);
+        color: white;
+        border: none;
+    }
 
-    
+
 }
 
 article {
@@ -967,7 +968,7 @@ footer {
 
         header {
             background-color: var(--primary-500);
-            padding-bottom: 1rem;
+            padding: 1rem 5rem;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
 
@@ -978,11 +979,19 @@ footer {
             nav {
                 display: flex;
                 width: fit-content;
+                font-size: 1.1rem;
+                letter-spacing: 0.05rem;
+                font-weight: 500;
             }
 
-
+            
             .socials {
                 display: flex;
+                gap: 1rem;
+                
+                &>* {
+                    font-size: 2rem;
+                }
             }
         }
 

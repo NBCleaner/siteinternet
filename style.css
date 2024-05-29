@@ -772,7 +772,7 @@ footer div p {
   }
   .forfaits-wrapper header {
     background-color: var(--primary-500);
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -782,9 +782,16 @@ footer div p {
   .forfaits-wrapper header nav {
     display: flex;
     width: fit-content;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
   }
   .forfaits-wrapper header .socials {
     display: flex;
+    gap: 1rem;
+  }
+  .forfaits-wrapper header .socials > * {
+    font-size: 2rem;
   }
   .forfaits-wrapper .hero {
     height: 85vh;
