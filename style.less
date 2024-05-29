@@ -31,48 +31,49 @@ header {
         height: 8vh;
 
 
-    // h1 {
-    //     color: white;
-    //     text-align: center;
-    //     font-family: "Roboto", sans-serif;
-    //     font-weight: bold;
-    //     font-size: 2rem;
-    //     padding: 0px 0.7vw;
-    //     margin: 0 10vw;
+        // h1 {
+        //     color: white;
+        //     text-align: center;
+        //     font-family: "Roboto", sans-serif;
+        //     font-weight: bold;
+        //     font-size: 2rem;
+        //     padding: 0px 0.7vw;
+        //     margin: 0 10vw;
 
-    // }
+        // }
 
-    h2 {
-        color: white;
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 1.5rem;
-        margin: 0 10vw;
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 0 10vw;
 
+
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-weight: medium;
+            font-size: 1rem;
+            padding: 0px 0.7vw;
+            margin: 0 10vw;
+        }
+
+        button {
+            height: 7vh;
+            width: 60vw;
+            align-self: center;
+            border-radius: 50px;
+            background-color: var(--primary-500);
+            color: white;
+            border: none;
+        }
 
     }
-
-    p {
-        color: white;
-        text-align: center;
-        font-family: "DM Sans", sans-serif;
-        font-weight: medium;
-        font-size: 1rem;
-        padding: 0px 0.7vw;
-        margin: 0 10vw;
-    }
-
-    button {
-        height: 7vh;
-        width: 60vw;
-        align-self: center;
-        border-radius: 50px;
-        background-color: var(--primary-500);
-        color: white;
-        border: none;
-    }
-
 }
 
 article {
@@ -105,7 +106,7 @@ article {
     }
 
 }
-  
+
 .prestations {
     width: 100vw;
     background-color: var(--primary-50);
@@ -120,7 +121,7 @@ article {
         width: 100vw;
         height: 20vh;
         gap: 5px;
-      
+
         h2 {
             color: var(--primary-500);
             text-align: center;
@@ -281,7 +282,7 @@ article {
     }
 }
 
-.prestationsPc{
+.prestationsPc {
     display: none;
 }
 
@@ -744,6 +745,223 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
+    // index
+    header {
+        background-image: url("/img/HEADER-pc.png");
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        nav {
+            display: none;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 0% 10%;
+        }
+
+        p {
+            display: none;
+        }
+
+        button {
+
+            display: none;
+        }
+
+    }
+
+    article {
+        display: flex;
+
+        .histoire {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 50vw;
+            background-color: var(--primary-400);
+            color: white;
+
+
+            h2 {
+                margin: 0% 10%;
+                font-size: 2rem;
+                text-align: center;
+                padding-top: 20px;
+                font-family: "Roboto", sans-serif;
+            }
+
+            p {
+                margin: 0% 10%;
+                font-size: 1rem;
+                text-align: center;
+                font-family: "DM Sans", sans-serif;
+
+
+            }
+        }
+
+        .video {
+            background-image: url('/img/photovideo.png');
+            background-size: 50vw;
+            background-position-y: bottom;
+            background-repeat: no-repeat;
+            width: 50vw;
+            height: 500px;
+        }
+    }
+
+    .prestations {
+        display: none;
+    }
+
+    .prestationsPc {
+        width: 100vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .devisPc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 20vh;
+            gap: 5px;
+
+            h2 {
+                color: var(--primary-500);
+                text-align: center;
+                font-size: 2rem;
+                font-family: "Roboto", sans-serif;
+            }
+
+            p {
+                text-align: center;
+                font-size: 0.9rem;
+                font-family: "DM Sans", sans-serif;
+
+            }
+        }
+
+        .carousel-container-pc {
+            display: flex;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+
+            .carousel-arrow {
+                cursor: pointer;
+                font-size: 2rem;
+                color: #333;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+
+                &.left-arrow {
+                    color: var(--primary-500);
+                    left: 30px;
+                    display: none;
+                }
+
+                &.right-arrow {
+                    color: var(--primary-500);
+                    right: 30px;
+
+                }
+            }
+
+            .container-prestationsPc {
+                display: flex;
+                gap: 50px;
+                overflow: hidden;
+                justify-content: center;
+
+
+                >div {
+                    min-width: 25vw;
+                    height: 400px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 50px;
+                    position: relative;
+
+                    >div {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50px;
+                    }
+                }
+
+                .lustragePc {
+                    background-image: url('/img/lustrage-pc.jpg');
+                    background-position-y: 100%;
+                }
+
+                .pharePc {
+                    background-image: url('/img/phare-pc.png');
+                }
+
+                .cuirPc {
+                    background-image: url('/img/cuir-pc.png');
+                }
+
+                .moteurPc {
+                    background-image: url('/img/moteur-pc.png');
+                    background-position-x: 40%;
+                }
+
+                .siegePc {
+                    background-image: url('/img/siege-pc.png');
+
+                }
+
+                .lavagePc {
+                    background-image: url('/img/lavage-pc.png');
+                    background-position-y: 80%;
+                }
+
+                .ceramiquePc {
+                    background-image: url('/img/ceramique-pc.png');
+                    background-position-x: 30%;
+
+                }
+            }
+
+            h3 {
+                color: white;
+                font-size: 1rem;
+                -webkit-text-stroke: 0.5px var(--primary-500);
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+
+    .wave {
+        width: 100%;
+        display: block;
+
+        svg {
+            position: relative;
+            display: block;
+            height: 150px;
+        }
+    }
+
+    // forfaits
     .forfaits-wrapper {
         background-color: #FFF;
 
@@ -897,39 +1115,40 @@ footer {
             }
         }
     }
-  
-.legal {
-    background-color: white;
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
 
-    div {
-        h2 {
-            font-size: 1rem;
+    .legal {
+        background-color: white;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
 
-            i:nth-child(1) {
-                color: blue;
-                font-size: 2rem;
-            }
+        div {
+            h2 {
+                font-size: 1rem;
 
-            i:nth-child(2) {
-                color: rgb(255, 238, 0);
-                font-size: 2rem;
+                i:nth-child(1) {
+                    color: blue;
+                    font-size: 2rem;
+                }
+
+                i:nth-child(2) {
+                    color: rgb(255, 238, 0);
+                    font-size: 2rem;
+                }
             }
         }
+
+        p {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+
     }
-
-    p {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -1070,7 +1289,6 @@ footer {
                 ul {
                     font-size: 1.3rem;
 
-                    li {}
                 }
             }
 
@@ -1150,222 +1368,4 @@ footer {
         }
     }
 
-}
-
-@media only screen and (min-width: 1024px) {
-
-    header {
-
-        background-image: url("/img/HEADER-pc.png");
-        justify-content: center;
-
-        nav {
-            display: none;
-        }
-
-        h1 {
-            display: none;
-        }
-
-        h2 {
-
-            font-size: 2.5rem;
-            margin: 0% 10%;
-        }
-
-        p {
-            display: none;
-        }
-
-        button {
-
-            display: none;
-        }
-
-    }
-
-    article {
-        display: flex;
-
-        .histoire {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            width: 50vw;
-            background-color: var(--primary-400);
-            color: white;
-
-
-            h2 {
-                margin: 0% 10%;
-                font-size: 2rem;
-                text-align: center;
-                padding-top: 20px;
-                font-family: "Roboto", sans-serif;
-            }
-
-            p {
-                margin: 0% 10%;
-                font-size: 1rem;
-                text-align: center;
-                font-family: "DM Sans", sans-serif;
-
-
-            }
-        }
-
-        .video {
-            background-image: url('/img/photovideo.png');
-            background-size: 50vw;
-            background-position-y: bottom;
-            background-repeat: no-repeat;
-            width: 50vw;
-            height: 500px;
-        }
-    }
-
-    .prestations {
-        display: none;
-    }
-
-    .prestationsPc {
-        width: 100vw;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-
-        .devisPc {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 20vh;
-            gap: 5px;
-
-            h2 {
-                color: var(--primary-500);
-                text-align: center;
-                font-size: 2rem;
-                font-family: "Roboto", sans-serif;
-            }
-
-            p {
-                text-align: center;
-                font-size: 0.9rem;
-                font-family: "DM Sans", sans-serif;
-
-            }
-        }
-
-        .carousel-container-pc {
-            display: flex;
-            position: relative;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            
-
-            .carousel-arrow {
-                cursor: pointer;
-                font-size: 2rem;
-                color: #333;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10;
-
-                &.left-arrow {
-                    color: var(--primary-500);
-                    left: 30px;
-                    display: none;
-                }
-
-                &.right-arrow {
-                    color: var(--primary-500);
-                    right: 30px;
-
-                }
-            }
-
-            .container-prestationsPc {
-                display: flex;
-                gap: 50px;
-                overflow: hidden;
-                justify-content: center; 
-
-
-                >div {
-                    min-width: 25vw;
-                    height: 400px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 50px;
-                    position: relative;
-
-                    >div {
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.2);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 50px;
-                    }
-                }
-
-                .lustragePc {
-                    background-image: url('/img/lustrage-pc.jpg');
-                    background-position-y: 100%;
-                }
-
-                .pharePc {
-                    background-image: url('/img/phare-pc.png');
-                }
-
-                .cuirPc {
-                    background-image: url('/img/cuir-pc.png');
-                }
-
-                .moteurPc {
-                    background-image: url('/img/moteur-pc.png');
-                    background-position-x: 40%;
-                }
-
-                .siegePc {
-                    background-image: url('/img/siege-pc.png');
-                   
-                }
-
-                .lavagePc {
-                    background-image: url('/img/lavage-pc.png');
-                    background-position-y: 80%; 
-                }
-
-                .ceramiquePc {
-                    background-image: url('/img/ceramique-pc.png');
-                    background-position-x: 30%; 
-
-                }
-            }
-
-            h3 {
-                color: white;
-                font-size: 1rem;
-                -webkit-text-stroke: 0.5px var(--primary-500);
-                font-family: "Roboto", sans-serif;
-            }
-        }
-    }
-
-    .wave {
-        width: 100%;
-        display: block;
-
-        svg {
-            position: relative;
-            display: block;
-            height: 150px;
-        }
-    }
 }
