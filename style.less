@@ -745,11 +745,12 @@ footer {
     // Call to action, contactez-nous !
     .question {
         background-color: #000;
-        min-height: 180px;
+        min-height: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-bottom: 5rem;
 
         color: #FFF;
         font-size: 0.9rem;
@@ -790,6 +791,40 @@ footer {
         filter: opacity(0.5);
     }
 
+    // Coordonnées
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-50);
+        text-align: start;
+
+        &>* {
+            flex: 1;
+        }
+
+        .carte {
+            background-image: url("img/map-large.png");
+            background-size: cover;
+            background-position: 50% 50%;
+            min-height: 300px;
+        }
+
+        .infos {
+            color: var(--primary-500);
+            padding: 1rem 2rem;
+
+            h3 {
+                font-family: 'Roboto';
+                font-weight: 800;
+                letter-spacing: 0.025rem;
+                margin-bottom: 2rem;
+            }
+
+            div {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
 }
 
 
@@ -1183,6 +1218,10 @@ footer {
                 font-size: 4rem;
                 padding: 1rem 5rem;
             }
+        }
+
+        .coordonnees {
+            flex-direction: row;
         }
     }
 

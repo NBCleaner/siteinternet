@@ -597,11 +597,12 @@ footer div p {
 }
 .forfaits-wrapper .question {
   background-color: #000;
-  min-height: 180px;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 5rem;
   color: #FFF;
   font-size: 0.9rem;
   font-weight: 600;
@@ -633,6 +634,34 @@ footer div p {
   width: 100%;
   height: 100%;
   filter: opacity(0.5);
+}
+.forfaits-wrapper .coordonnees {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-50);
+  text-align: start;
+}
+.forfaits-wrapper .coordonnees > * {
+  flex: 1;
+}
+.forfaits-wrapper .coordonnees .carte {
+  background-image: url("img/map-large.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 300px;
+}
+.forfaits-wrapper .coordonnees .infos {
+  color: var(--primary-500);
+  padding: 1rem 2rem;
+}
+.forfaits-wrapper .coordonnees .infos h3 {
+  font-family: 'Roboto';
+  font-weight: 800;
+  letter-spacing: 0.025rem;
+  margin-bottom: 2rem;
+}
+.forfaits-wrapper .coordonnees .infos div {
+  margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -921,6 +950,9 @@ footer div p {
   .forfaits-wrapper .question a {
     font-size: 4rem;
     padding: 1rem 5rem;
+  }
+  .forfaits-wrapper .coordonnees {
+    flex-direction: row;
   }
   .legal {
     background-color: white;
