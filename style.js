@@ -34,11 +34,7 @@ leftArrowTop.addEventListener("click", function (){
     }
 });
 
-// prestationItems.forEach((item) => {
-//     item.addEventListener ("mouseenter", function (){
-//         item.style.transform = "scale(1.2)";
-//     });
-// });
+
 
 
 updateCarousel();

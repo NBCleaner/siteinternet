@@ -476,6 +476,31 @@ footer div p {
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
 }
+.legal {
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.legal div h2 {
+  font-size: 1rem;
+}
+.legal div h2 i:nth-child(1) {
+  color: blue;
+  font-size: 2rem;
+}
+.legal div h2 i:nth-child(2) {
+  color: #ffee00;
+  font-size: 2rem;
+}
+.legal p {
+  font-size: 0.8rem;
+  text-align: center;
+}
 .forfaits-wrapper {
   background-color: var(--primary-50);
   min-width: 320px;
