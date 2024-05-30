@@ -123,8 +123,8 @@ function displayReviewsCarousel(reviews) {
     }
 
 
-    document.querySelector('.left-arrow').addEventListener('click', prevReview);
-    document.querySelector('.right-arrow').addEventListener('click', nextReview);
+    document.getElementById("arrow-left").addEventListener('click', prevReview);
+    document.getElementById("arrow-right").addEventListener('click', nextReview);
 
     // Afficher le premier avis au chargement de la page
     showReview(currentIndex);
