@@ -592,8 +592,47 @@ footer div p {
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card ul li:not(:last-of-type) {
   margin-bottom: 0.625rem;
 }
-.forfaits-wrapper .forfaits-desktopView {
+.forfaits-wrapper main .forfaits-desktopView {
   display: none;
+}
+.forfaits-wrapper .question {
+  background-color: #000;
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.forfaits-wrapper .question a {
+  display: block;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--primary-300);
+}
+.forfaits-wrapper .question > * {
+  position: relative;
+}
+.forfaits-wrapper .question::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("img/contactez.png");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.5);
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -876,43 +915,12 @@ footer div p {
     padding-right: 0.5rem;
   }
   .forfaits-wrapper .question {
-    background-color: #000;
     min-height: 680px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #FFF;
     font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
   }
   .forfaits-wrapper .question a {
-    display: block;
-    background-color: transparent;
-    color: #FFF;
     font-size: 4rem;
-    font-weight: inherit;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
     padding: 1rem 5rem;
-    margin-top: 1rem;
-    border-radius: 50px;
-    border: 1px solid var(--primary-300);
-  }
-  .forfaits-wrapper .question > * {
-    position: relative;
-  }
-  .forfaits-wrapper .question::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("img/contactez.png");
-    background-size: cover;
-    background-position: 50%;
-    width: 100%;
-    height: 100%;
-    filter: opacity(0.5);
   }
   .legal {
     background-color: white;
