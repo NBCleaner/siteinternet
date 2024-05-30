@@ -26,6 +26,10 @@ header nav {
   width: 100vw;
   height: 8vh;
 }
+header nav ul {
+  color: wheat;
+  text-decoration: none;
+}
 header h2 {
   color: white;
   text-align: center;
