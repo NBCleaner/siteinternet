@@ -29,56 +29,57 @@ header {
     nav {
         width: 100vw;
         height: 8vh;
-    
 
-        ul{
+
+        ul {
             color: wheat;
             text-decoration: none;
         }
-    }   
-        // h1 {
-        //     color: white;
-        //     text-align: center;
-        //     font-family: "Roboto", sans-serif;
-        //     font-weight: bold;
-        //     font-size: 2rem;
-        //     padding: 0px 0.7vw;
-        //     margin: 0 10vw;
+    }
 
-        // }
+    // h1 {
+    //     color: white;
+    //     text-align: center;
+    //     font-family: "Roboto", sans-serif;
+    //     font-weight: bold;
+    //     font-size: 2rem;
+    //     padding: 0px 0.7vw;
+    //     margin: 0 10vw;
 
-        h2 {
-            color: white;
-            text-align: center;
-            font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 1.5rem;
-            margin: 0 10vw;
+    // }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0 10vw;
 
 
-        }
+    }
 
-        p {
-            color: white;
-            text-align: center;
-            font-family: "DM Sans", sans-serif;
-            font-weight: medium;
-            font-size: 1rem;
-            padding: 0px 0.7vw;
-            margin: 0 10vw;
-        }
+    p {
+        color: white;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-weight: medium;
+        font-size: 1rem;
+        padding: 0px 0.7vw;
+        margin: 0 10vw;
+    }
 
-        button {
-            height: 7vh;
-            width: 60vw;
-            align-self: center;
-            border-radius: 50px;
-            background-color: var(--primary-500);
-            color: white;
-            border: none;
-        }
+    button {
+        height: 7vh;
+        width: 60vw;
+        align-self: center;
+        border-radius: 50px;
+        background-color: var(--primary-500);
+        color: white;
+        border: none;
+    }
 
-    
+
 }
 
 article {
@@ -388,6 +389,12 @@ article {
             }
         }
 
+    }
+
+    .bouttonAllForfait {
+        display: flex;
+        justify-content: center;
+
         button {
             height: 7vh;
             width: 75vw;
@@ -399,8 +406,19 @@ article {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             margin-bottom: 40px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+        }
+
+        .btnTableauForfait {
+            display: none;
         }
     }
+
 }
 
 .contact {
@@ -1000,7 +1018,88 @@ footer {
         }
     }
 
-    // forfaits
+    .forfait {
+        display: flex;
+        flex-direction: column;
+
+        .container-forfait {
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+
+            .globalForfait1,
+            .globalForfait2,
+            .globalForfait3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25vw;
+
+                &.globalForfait1 {
+                    order: 2; // Change order to 2 to place it in the middle
+                }
+
+                &.globalForfait2 {
+                    order: 1; // Keep order 1 for the first position
+                }
+
+                &.globalForfait3 {
+                    order: 3; // Keep order 3 for the last position
+                }
+
+                .forfait1,
+                .forfait2,
+                .forfait3 {
+                    width: 25vw;
+
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                }
+
+                .listeforfait1,
+                .listeforfait2,
+                .listeforfait3 {
+                    width: 25vw;
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+        }
+
+        .bouttonAllForfait {
+            button {
+                a {
+                    text-decoration: none;
+                    color: var(--primary-500);
+                }
+            }
+
+            .btnForfaitDeluxe {
+                display: none;
+            }
+
+            .btnTableauForfait {
+                display: block;
+                width: 25vw;
+                border-radius: 50px;
+                background-color: var(--primary-50);
+                border: 1px solid var(--primary-500);
+                color: var(--primary-500);
+            }
+        }
+    }
+
+
+    // Page forfaits
     .forfaits-wrapper {
         background-color: #FFF;
 
@@ -1154,6 +1253,7 @@ footer {
             }
         }
     }
+
 
     .legal {
         background-color: white;
