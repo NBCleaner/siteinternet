@@ -320,6 +320,11 @@ article .histoire p {
 .forfait .container-forfait .listeforfait3 ul li i {
   color: var(--primary-400);
 }
+.forfait .container-forfait .listeforfait1 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait2 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait3 ul .extra-deluxe {
+  display: none;
+}
 .forfait .bouttonAllForfait {
   display: flex;
   justify-content: center;
