@@ -26,6 +26,10 @@ header nav {
   width: 100vw;
   height: 8vh;
 }
+header nav ul {
+  color: wheat;
+  text-decoration: none;
+}
 header h2 {
   color: white;
   text-align: center;
@@ -313,7 +317,11 @@ article .histoire p {
 .forfait .container-forfait .listeforfait3 ul li i {
   color: var(--primary-400);
 }
-.forfait .container-forfait button {
+.forfait .bouttonAllForfait {
+  display: flex;
+  justify-content: center;
+}
+.forfait .bouttonAllForfait button {
   height: 7vh;
   width: 75vw;
   align-self: center;
@@ -324,6 +332,13 @@ article .histoire p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
+}
+.forfait .bouttonAllForfait button a {
+  text-decoration: none;
+  color: white;
+}
+.forfait .bouttonAllForfait .btnTableauForfait {
+  display: none;
 }
 .contact {
   width: 100vw;
@@ -475,6 +490,31 @@ footer div h2 {
 footer div p {
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
+}
+.legal {
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.legal div h2 {
+  font-size: 1rem;
+}
+.legal div h2 i:nth-child(1) {
+  color: blue;
+  font-size: 2rem;
+}
+.legal div h2 i:nth-child(2) {
+  color: #ffee00;
+  font-size: 2rem;
+}
+.legal p {
+  font-size: 0.8rem;
+  text-align: center;
 }
 .forfaits-wrapper {
   background-color: var(--primary-50);
@@ -834,6 +874,108 @@ footer div p {
     position: relative;
     display: block;
     height: 150px;
+  }
+  .forfait {
+    display: flex;
+    flex-direction: column;
+  }
+  .forfait .container-forfait {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .forfait .container-forfait .globalForfait1,
+  .forfait .container-forfait .globalForfait2,
+  .forfait .container-forfait .globalForfait3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait1,
+  .forfait .container-forfait .globalForfait2.globalForfait1,
+  .forfait .container-forfait .globalForfait3.globalForfait1 {
+    order: 2;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait2,
+  .forfait .container-forfait .globalForfait2.globalForfait2,
+  .forfait .container-forfait .globalForfait3.globalForfait2 {
+    order: 1;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait3,
+  .forfait .container-forfait .globalForfait2.globalForfait3,
+  .forfait .container-forfait .globalForfait3.globalForfait3 {
+    order: 3;
+  }
+  .forfait .container-forfait .globalForfait1 .forfait1,
+  .forfait .container-forfait .globalForfait2 .forfait1,
+  .forfait .container-forfait .globalForfait3 .forfait1,
+  .forfait .container-forfait .globalForfait1 .forfait2,
+  .forfait .container-forfait .globalForfait2 .forfait2,
+  .forfait .container-forfait .globalForfait3 .forfait2,
+  .forfait .container-forfait .globalForfait1 .forfait3,
+  .forfait .container-forfait .globalForfait2 .forfait3,
+  .forfait .container-forfait .globalForfait3 .forfait3 {
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1 .forfait1 h3,
+  .forfait .container-forfait .globalForfait2 .forfait1 h3,
+  .forfait .container-forfait .globalForfait3 .forfait1 h3,
+  .forfait .container-forfait .globalForfait1 .forfait2 h3,
+  .forfait .container-forfait .globalForfait2 .forfait2 h3,
+  .forfait .container-forfait .globalForfait3 .forfait2 h3,
+  .forfait .container-forfait .globalForfait1 .forfait3 h3,
+  .forfait .container-forfait .globalForfait2 .forfait3 h3,
+  .forfait .container-forfait .globalForfait3 .forfait3 h3 {
+    font-size: 1.3rem;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1,
+  .forfait .container-forfait .globalForfait2 .listeforfait1,
+  .forfait .container-forfait .globalForfait3 .listeforfait1,
+  .forfait .container-forfait .globalForfait1 .listeforfait2,
+  .forfait .container-forfait .globalForfait2 .listeforfait2,
+  .forfait .container-forfait .globalForfait3 .listeforfait2,
+  .forfait .container-forfait .globalForfait1 .listeforfait3,
+  .forfait .container-forfait .globalForfait2 .listeforfait3,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 {
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 h4 {
+    font-size: 1.2rem;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
+    font-size: 1.1rem;
+  }
+  .forfait .bouttonAllForfait button a {
+    text-decoration: none;
+    color: var(--primary-500);
+  }
+  .forfait .bouttonAllForfait .btnForfaitDeluxe {
+    display: none;
+  }
+  .forfait .bouttonAllForfait .btnTableauForfait {
+    display: block;
+    width: 25vw;
+    border-radius: 50px;
+    background-color: var(--primary-50);
+    border: 1px solid var(--primary-500);
+    color: var(--primary-500);
   }
   .forfaits-wrapper {
     background-color: #FFF;

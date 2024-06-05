@@ -30,6 +30,11 @@ header {
         width: 100vw;
         height: 8vh;
 
+
+        ul {
+            color: wheat;
+            text-decoration: none;
+        }
     }
 
     // h1 {
@@ -384,6 +389,12 @@ article {
             }
         }
 
+    }
+
+    .bouttonAllForfait {
+        display: flex;
+        justify-content: center;
+
         button {
             height: 7vh;
             width: 75vw;
@@ -395,8 +406,19 @@ article {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             margin-bottom: 40px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+        }
+
+        .btnTableauForfait {
+            display: none;
         }
     }
+
 }
 
 .contact {
@@ -581,6 +603,40 @@ footer {
             font-size: 0.9rem;
         }
     }
+}
+
+.legal {
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    div {
+        h2 {
+            font-size: 1rem;
+
+            i:nth-child(1) {
+                color: blue;
+                font-size: 2rem;
+            }
+
+            i:nth-child(2) {
+                color: rgb(255, 238, 0);
+                font-size: 2rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
 }
 
 
@@ -1046,7 +1102,88 @@ footer {
         }
     }
 
-    // forfaits
+    .forfait {
+        display: flex;
+        flex-direction: column;
+
+        .container-forfait {
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+
+            .globalForfait1,
+            .globalForfait2,
+            .globalForfait3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25vw;
+
+                &.globalForfait1 {
+                    order: 2; // Change order to 2 to place it in the middle
+                }
+
+                &.globalForfait2 {
+                    order: 1; // Keep order 1 for the first position
+                }
+
+                &.globalForfait3 {
+                    order: 3; // Keep order 3 for the last position
+                }
+
+                .forfait1,
+                .forfait2,
+                .forfait3 {
+                    width: 25vw;
+
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                }
+
+                .listeforfait1,
+                .listeforfait2,
+                .listeforfait3 {
+                    width: 25vw;
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+        }
+
+        .bouttonAllForfait {
+            button {
+                a {
+                    text-decoration: none;
+                    color: var(--primary-500);
+                }
+            }
+
+            .btnForfaitDeluxe {
+                display: none;
+            }
+
+            .btnTableauForfait {
+                display: block;
+                width: 25vw;
+                border-radius: 50px;
+                background-color: var(--primary-50);
+                border: 1px solid var(--primary-500);
+                color: var(--primary-500);
+            }
+        }
+    }
+
+
+    // Page forfaits
     .forfaits-wrapper {
         background-color: #FFF;
 
@@ -1224,6 +1361,7 @@ footer {
             flex-direction: row;
         }
     }
+
 
     .legal {
         background-color: white;
