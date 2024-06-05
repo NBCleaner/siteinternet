@@ -324,6 +324,10 @@ article {
             font-family: "DM Sans", sans-serif;
 
         }
+
+        .btn-express-deluxe{
+            display: none;
+        }
     }
 
     .container-forfait {
@@ -1022,6 +1026,48 @@ footer {
         display: flex;
         flex-direction: column;
 
+        .forfaitDevis{
+            height: 30vh;
+            p{
+                padding-bottom: 5vh;
+            }
+
+            .btn-express-deluxe{
+                display: flex;
+                position: relative;
+
+                div{
+                    border-radius: 50px;
+                    width: 20vw;
+                    height: 5vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+
+                    
+
+                    &:nth-child(1){
+                        background-color: var(--primary-500);
+                        color: white;
+                        z-index: 2;
+                        margin-right: -50px; 
+
+                    }
+                    &:nth-child(2){
+                        background-color: white;
+                        color: var(--primary-500);
+                    }
+                }
+                
+            }
+
+        }
+
         .container-forfait {
             flex-direction: row;
             justify-content: center;
@@ -1036,15 +1082,15 @@ footer {
                 width: 25vw;
 
                 &.globalForfait1 {
-                    order: 2; // Change order to 2 to place it in the middle
+                    order: 2; 
                 }
 
                 &.globalForfait2 {
-                    order: 1; // Keep order 1 for the first position
+                    order: 1; 
                 }
 
                 &.globalForfait3 {
-                    order: 3; // Keep order 3 for the last position
+                    order: 3;
                 }
 
                 .forfait1,
@@ -1076,6 +1122,7 @@ footer {
         }
 
         .bouttonAllForfait {
+            cursor: pointer;
             button {
                 a {
                     text-decoration: none;
@@ -1402,6 +1449,7 @@ footer {
     }
 
     .forfait {
+
 
         .container-forfait {
 
