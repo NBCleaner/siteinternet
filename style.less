@@ -411,7 +411,7 @@ article {
                 text-decoration: none;
                 color: white;
             }
-            
+
         }
 
         .btnTableauForfait {
@@ -683,7 +683,7 @@ footer {
                 gap: 4rem;
 
                 a {
-                    color: inherit;
+                    color: #FFF;
                 }
             }
         }
@@ -870,7 +870,7 @@ footer {
             padding: 1rem 2rem;
 
             h3 {
-                font-family: 'Roboto';
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
                 font-weight: 800;
                 letter-spacing: 0.025rem;
                 margin-bottom: 2rem;
@@ -878,6 +878,50 @@ footer {
 
             div {
                 margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+    footer {
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+
+        // Obligé de mettre ça parce qu'il y a déjà une règle sur footer div...
+        // Et qu'il y a un width: 100vw;
+        width: 100%;
+
+        // Ca aussi
+        p {
+            font-size: 1rem;
+        }
+
+        // Ca aussi
+        div {
+            width: fit-content;
+            margin: 0;
+
+        }
+
+        .footer-nav {
+            display: none;
+        }
+
+        .footer-socials {
+            .snapchat-icon {
+                color: #000;
+
+                .fa-circle {
+                    color: rgb(255, 238, 0);
+                }
+            }
+
+            .facebook-icon {
+                color: #3b5998;
             }
         }
     }
@@ -1357,8 +1401,31 @@ footer {
             }
         }
 
+        // Coordonnees
         .coordonnees {
             flex-direction: row;
+        }
+
+        // Footer
+        footer {
+            flex-direction: row;
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                color: #FFF;
+                text-align: left;
+
+
+                ul {
+                    line-height: 1.75rem;
+                    a {
+                        color: #000;
+                    }
+                }
+
+            }
         }
     }
 

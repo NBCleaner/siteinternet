@@ -553,7 +553,7 @@ footer div p {
   gap: 4rem;
 }
 .forfaits-wrapper header nav ul a {
-  color: inherit;
+  color: #FFF;
 }
 .forfaits-wrapper header .socials {
   display: none;
@@ -695,13 +695,41 @@ footer div p {
   padding: 1rem 2rem;
 }
 .forfaits-wrapper .coordonnees .infos h3 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 800;
   letter-spacing: 0.025rem;
   margin-bottom: 2rem;
 }
 .forfaits-wrapper .coordonnees .infos div {
   margin-bottom: 1.5rem;
+}
+.forfaits-wrapper footer {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  width: 100%;
+}
+.forfaits-wrapper footer p {
+  font-size: 1rem;
+}
+.forfaits-wrapper footer div {
+  width: fit-content;
+  margin: 0;
+}
+.forfaits-wrapper footer .footer-nav {
+  display: none;
+}
+.forfaits-wrapper footer .footer-socials .snapchat-icon {
+  color: #000;
+}
+.forfaits-wrapper footer .footer-socials .snapchat-icon .fa-circle {
+  color: #ffee00;
+}
+.forfaits-wrapper footer .footer-socials .facebook-icon {
+  color: #3b5998;
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -1095,6 +1123,22 @@ footer div p {
   }
   .forfaits-wrapper .coordonnees {
     flex-direction: row;
+  }
+  .forfaits-wrapper footer {
+    flex-direction: row;
+  }
+  .forfaits-wrapper footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: left;
+  }
+  .forfaits-wrapper footer .footer-nav ul {
+    line-height: 1.75rem;
+  }
+  .forfaits-wrapper footer .footer-nav ul a {
+    color: #000;
   }
   .legal {
     background-color: white;
