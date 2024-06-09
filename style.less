@@ -657,34 +657,68 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         align-items: center;
         padding: 1rem 1.25rem;
         padding-bottom: 2.5rem;
 
+        // A revoir
         border-bottom-left-radius: 2400px 1000px;
         border-bottom-right-radius: 2400px 1000px;
 
-        .burger-icon {
+        #burger-icon {
             background-image: url(img/Hamburger_icon.svg);
             height: 32px;
             aspect-ratio: 1;
+            z-index: 2;
+            position: fixed;
+            right: 1.25rem;
         }
 
         nav {
+            background-color: var(--primary-500);
+            opacity: 0.95;
             display: none;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            align-items: end;
+
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            width: 50%;
+            height: 100%;
+            padding: 0 2rem;
+
+            font-size: 1.5rem;
+            letter-spacing: 0.05rem;
+            font-weight: 700;
             text-transform: uppercase;
             color: #FFF;
 
+            z-index: 1;
 
             ul {
                 display: flex;
-                gap: 4rem;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10rem;
+                text-align: end;
 
-                a {
-                    color: #FFF;
+                li {
+                    list-style: none;
+                    border-bottom: 1px solid #FFF;
+
+                    padding: 1.5rem 0;
+                    a {
+                        color: #FFF;
+                    }
                 }
+
+            }
+
+            &.shown {
+                display: flex;
             }
         }
 
@@ -1234,19 +1268,44 @@ footer {
         header {
             background-color: var(--primary-500);
             padding: 1rem 5rem;
+
+            justify-content: space-between;
+
+
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
 
-            .burger-icon {
+            #burger-icon {
                 display: none;
             }
 
             nav {
+                background: transparent;
                 display: flex;
-                width: fit-content;
+                position: static;
+                justify-content: center;
+                align-items: center;
+
+                width: auto;
+                height: auto;
+                padding-right: 0;
+
                 font-size: 1.1rem;
-                letter-spacing: 0.05rem;
-                font-weight: 500;
+
+
+                ul {
+                    flex-direction: row;
+                    gap: 4rem;
+                    margin-top: 0;
+                    text-align: initial;
+
+                    li {
+                        border-bottom: none;
+                        a {
+                            color: #FFF;
+                        }
+                    }
+                }
             }
 
 
@@ -1420,6 +1479,7 @@ footer {
 
                 ul {
                     line-height: 1.75rem;
+
                     a {
                         color: #000;
                     }
