@@ -572,8 +572,10 @@ footer div p {
 }
 .forfaits-wrapper header nav ul li {
   list-style: none;
-  border-bottom: 1px solid #FFF;
   padding: 1.5rem 0;
+}
+.forfaits-wrapper header nav ul li:not(:last-of-type) {
+  border-bottom: 1px solid #FFF;
 }
 .forfaits-wrapper header nav ul li a {
   color: #FFF;
@@ -1061,7 +1063,7 @@ footer div p {
     margin-top: 0;
     text-align: initial;
   }
-  .forfaits-wrapper header nav ul li {
+  .forfaits-wrapper header nav ul li:not(:last-of-type) {
     border-bottom: none;
   }
   .forfaits-wrapper header nav ul li a {

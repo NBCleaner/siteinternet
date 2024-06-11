@@ -707,9 +707,13 @@ footer {
 
                 li {
                     list-style: none;
-                    border-bottom: 1px solid #FFF;
+
+                    &:not(:last-of-type) {
+                        border-bottom: 1px solid #FFF;
+                    }
 
                     padding: 1.5rem 0;
+
                     a {
                         color: #FFF;
                     }
@@ -1300,7 +1304,11 @@ footer {
                     text-align: initial;
 
                     li {
-                        border-bottom: none;
+
+                        &:not(:last-of-type) {
+                            border-bottom: none;
+                        }
+
                         a {
                             color: #FFF;
                         }
