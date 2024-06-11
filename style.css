@@ -525,6 +525,7 @@ footer div p {
 .forfaits-wrapper header {
   background-image: none;
   height: fit-content;
+  gap: 0;
   width: 100%;
   background-color: var(--primary-400);
   display: flex;
@@ -603,6 +604,11 @@ footer div p {
 .forfaits-wrapper main {
   padding: 3.125rem 1.25rem;
 }
+.forfaits-wrapper main .forfaits-smartphoneView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card {
   overflow: hidden;
   margin-top: 3.125rem;
@@ -621,7 +627,7 @@ footer div p {
   font-size: 1.375rem;
 }
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card > div {
-  padding: 0 1.25rem;
+  padding: 0 3rem;
   padding-bottom: 1.25rem;
 }
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card .forfaits-title {
