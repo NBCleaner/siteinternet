@@ -2,6 +2,10 @@
 
 <div class="navDecoration"></div>
 
+<div class="hero">
+    <p>Découvrez nos forfaits de lavage et offrez à votre véhicule le traitement qu'il mérite !</p>
+</div>
+
 <main>
     <h1>Forfaits</h1>
     <p>*Le prix varie selon le niveau de saleté et la taille du véhicule.<br>Pour plus d'informations, veuillez
