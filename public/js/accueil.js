@@ -44,6 +44,14 @@ const express = document.getElementById("express");
 const deluxe = document.getElementById("deluxe");
 const extraItems = document.querySelectorAll(".extra-deluxe");
 const extraIcons = document.querySelectorAll(".extra-deluxe i"); 
+const forfaitInt = document.querySelector(".forfait1")
+const forfaitExt = document.querySelector(".forfait3")
+const forfaitIntExt = document.querySelector(".forfait2")
+const cardForfait1 = document.querySelector(".listeforfait1")
+const cardForfait2 = document.querySelector(".listeforfait2")
+const cardForfait3 = document.querySelector(".listeforfait3")
+
+
 
 
 const white = "#FFFFFF"
@@ -56,6 +64,15 @@ deluxe.style.background = gold
 deluxe.style.zIndex = "2"
 express.style.color = blue
 express.style.background = white
+forfaitInt.style.background = gold
+forfaitExt.style.background = gold
+forfaitIntExt.style.background = gold
+cardForfait1.style.border = "1px solid gold"; 
+cardForfait2.style.border = "1px solid gold"; 
+cardForfait3.style.border = "1px solid gold"; 
+
+
+
 
 extraItems.forEach(function(item) {
     item.style.display = "block";
@@ -71,6 +88,12 @@ deluxe.style.background = white
 deluxe.style.zIndex = "1"
 express.style.color = white
 express.style.background = blue
+forfaitInt.style.background = blue
+forfaitExt.style.background = blue
+forfaitIntExt.style.background = blue
+cardForfait1.style.border = "1px solid blue"; 
+cardForfait2.style.border = "1px solid blue"; 
+cardForfait3.style.border = "1px solid blue"; 
 
 extraItems.forEach(function(item) {
     item.style.display = "none";
