@@ -1,0 +1,516 @@
+// =============================
+// STYLE COMMUN (template.php)
+// =============================
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --primary-500: #143993;
+    --primary-400: #2D56A5;
+    --primary-300: #668FFC;
+    --primary-50: #EEF1F9;
+    --gold: #DAA520;
+
+}
+
+body {
+    font-family: "DM Sans";
+}
+
+// HEADER
+header {
+    width: 100%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 1rem 1.25rem;
+    padding-bottom: 2.5rem;
+
+    // A revoir
+    border-bottom-left-radius: 2400px 1000px;
+    border-bottom-right-radius: 2400px 1000px;
+
+    #burger-icon {
+        background-image: url(../img/Hamburger_icon.svg);
+        height: 32px;
+        aspect-ratio: 1;
+        z-index: 2;
+        position: fixed;
+        right: 1.25rem;
+    }
+
+    nav {
+        background-color: var(--primary-500);
+        opacity: 0.95;
+        display: none;
+        flex-direction: column;
+        align-items: end;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        width: 50%;
+        height: 100%;
+        padding: 0 2rem;
+
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF;
+
+        z-index: 1;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10rem;
+            text-align: end;
+
+            li {
+                list-style: none;
+
+                padding: 1.5rem 0;
+
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid #FFF;
+                }
+
+                a {
+                    color: #FFF;
+                }
+            }
+
+        }
+
+        &.shown {
+            display: flex;
+        }
+    }
+
+    .socials {
+        display: none;
+    }
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+// Call to action, contactez-nous !
+.question {
+    background-color: #000;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+
+    a {
+        display: block;
+
+        background-color: transparent;
+
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: inherit;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        border-radius: 50px;
+        border: 1px solid var(--primary-300);
+    }
+
+    &>* {
+        position: relative;
+    }
+}
+
+.question::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/contactez.png");
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.5);
+}
+
+.avis {
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .review-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 45vh
+        }
+
+        .review-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px 0;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+            width: 80vw;
+            line-height: 20px
+        }
+
+        .left-arrow,
+        .right-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+
+        .fa-star {
+            color: var(--gold);
+        }
+    }
+}
+
+.partenaire {
+    width: 100%;
+    background-color: var(--primary-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    padding-bottom: 20px;
+
+    h2 {
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .container-partenaire {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        .ligne1,
+        .ligne2 {
+            display: flex;
+            gap: 20px;
+
+            div {
+                img {
+                    width: 20vw;
+                    height: 10vh;
+
+                }
+            }
+
+            div:nth-child(2) {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding: 0px 20px;
+
+            }
+
+        }
+
+        .ligne1 {
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+        }
+
+    }
+}
+
+// Coordonnées
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-50);
+    text-align: start;
+
+    &>* {
+        flex: 1;
+    }
+
+    .carte {
+        background-image: url("../img/map-large.png");
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 300px;
+    }
+
+    .infos {
+        color: var(--primary-500);
+        padding: 1rem 2rem;
+
+        h3 {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            letter-spacing: 0.025rem;
+            margin-bottom: 2rem;
+        }
+
+        div {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
+
+// FOOTER
+footer {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-socials {
+        .snapchat-icon {
+            color: #000;
+
+            .fa-circle {
+                color: rgb(255, 238, 0);
+            }
+        }
+
+        .facebook-icon {
+            color: #3b5998;
+        }
+    }
+}
+
+
+// =============================
+// STYLE ACCUEIL (accueil.php)
+// =============================
+.wrapperAccueil {
+    .hero {
+        background-image: url("../img/Rectangle\ 14.png");
+        background-size: cover;
+        background-position-x: 40%;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+        padding-top: 10rem;
+
+
+        // h1 {
+        //     color: white;
+        //     text-align: center;
+        //     font-family: "Roboto", sans-serif;
+        //     font-weight: bold;
+        //     font-size: 2rem;
+        //     padding: 0px 0.7vw;
+        //     margin: 0 10vw;
+
+        // }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 0 10vw;
+
+
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-weight: medium;
+            font-size: 1rem;
+            padding: 0px 0.7vw;
+            margin: 0 10vw;
+        }
+
+        button {
+            height: 7vh;
+            width: 60vw;
+            align-self: center;
+            border-radius: 50px;
+            background-color: var(--primary-500);
+            color: white;
+            border: none;
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    // HEADER
+    header {
+        // background-color: var(--primary-500);
+        background-color: transparent;
+        position: absolute;
+        padding: 1rem 5rem;
+
+        justify-content: space-between;
+
+
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        #burger-icon {
+            display: none;
+        }
+
+        nav {
+            background: transparent;
+            display: flex;
+            position: static;
+            justify-content: center;
+            align-items: center;
+
+            width: auto;
+            height: auto;
+            padding-right: 0;
+
+            font-size: 1.1rem;
+
+
+            ul {
+                flex-direction: row;
+                gap: 4rem;
+                margin-top: 0;
+                text-align: initial;
+
+                li {
+                    padding: 0;
+                    &:not(:last-of-type) {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        color: #FFF;
+                    }
+
+                    &:hover {
+                        border-bottom: 4px solid var(--primary-400);
+                        transform: scale(1.1);
+                    }
+                }
+
+            }
+        }
+
+
+        .socials {
+            display: flex;
+            gap: 1rem;
+
+            &>* {
+                font-size: 2rem;
+                color: #FFF;
+            }
+        }
+    }
+
+    // Call to action, contactez-nous !
+    .question {
+        min-height: 680px;
+        font-size: 3rem;
+
+        a {
+            font-size: 4rem;
+            padding: 1rem 5rem;
+        }
+    }
+
+    // Coordonnees
+    .coordonnees {
+        flex-direction: row;
+    }
+
+    // Footer
+    footer {
+        flex-direction: row;
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            color: #FFF;
+            text-align: left;
+
+
+            ul {
+                line-height: 1.75rem;
+
+                a {
+                    color: #000;
+                }
+            }
+
+        }
+    }
+}
