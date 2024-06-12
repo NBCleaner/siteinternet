@@ -255,6 +255,9 @@ article .histoire p {
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
 }
+.forfait .forfaitDevis .btn-express-deluxe {
+  display: none;
+}
 .forfait .container-forfait {
   display: flex;
   flex-direction: column;
@@ -316,6 +319,11 @@ article .histoire p {
 .forfait .container-forfait .listeforfait2 ul li i,
 .forfait .container-forfait .listeforfait3 ul li i {
   color: var(--primary-400);
+}
+.forfait .container-forfait .listeforfait1 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait2 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait3 ul .extra-deluxe {
+  display: none;
 }
 .forfait .bouttonAllForfait {
   display: flex;
@@ -941,6 +949,39 @@ footer div p {
     display: flex;
     flex-direction: column;
   }
+  .forfait .forfaitDevis {
+    height: 30vh;
+  }
+  .forfait .forfaitDevis p {
+    padding-bottom: 5vh;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe {
+    display: flex;
+    position: relative;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div {
+    border-radius: 50px;
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(1) {
+    background-color: var(--primary-500);
+    color: white;
+    z-index: 2;
+    margin-right: -50px;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(2) {
+    background-color: white;
+    color: var(--primary-500);
+  }
   .forfait .container-forfait {
     flex-direction: row;
     justify-content: center;
@@ -1023,6 +1064,9 @@ footer div p {
   .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
   .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
     font-size: 1.1rem;
+  }
+  .forfait .bouttonAllForfait {
+    cursor: pointer;
   }
   .forfait .bouttonAllForfait button a {
     text-decoration: none;
