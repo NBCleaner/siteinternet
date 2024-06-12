@@ -18,8 +18,6 @@
     </button>
 </section>
 
-
-
 <article>
     <div class="histoire">
         <h2>Votre centre de lavage

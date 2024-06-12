@@ -20,6 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: absolute;
   align-items: center;
   padding: 1rem 1.25rem;
   padding-bottom: 2.5rem;
@@ -301,10 +302,301 @@ footer .footer-socials .facebook-icon {
   color: white;
   border: none;
 }
+.wrapperAccueil article {
+  display: none;
+}
+.wrapperAccueil article .histoire {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100vw;
+  background-color: var(--primary-400);
+  color: white;
+}
+.wrapperAccueil article .histoire h2 {
+  margin: 0% 10%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.wrapperAccueil article .histoire p {
+  margin: 0% 6%;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  padding-bottom: 20px;
+}
+.wrapperAccueil .prestations {
+  width: 100vw;
+  background-color: var(--primary-50);
+  display: flex;
+  flex-direction: column;
+}
+.wrapperAccueil .prestations .devis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  gap: 5px;
+}
+.wrapperAccueil .prestations .devis h2 {
+  color: var(--primary-500);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.wrapperAccueil .prestations .devis p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
+}
+.wrapperAccueil .prestations .container-prestations {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapperAccueil .prestations .container-prestations .lustrage {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/lustrage.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .lustrage div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .phare {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/phare.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+}
+.wrapperAccueil .prestations .container-prestations .phare div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .cuir {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/cuir.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .cuir div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .moteur {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/moteur.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .moteur div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .siege {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/siege.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .siege div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .lavage {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/lavage.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+}
+.wrapperAccueil .prestations .container-prestations .lavage div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .ceramique {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/ceramique.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .ceramique div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations h3 {
+  color: white;
+  font-size: 1rem;
+  -webkit-text-stroke: 0.5px var(--primary-500);
+  font-family: "Roboto", sans-serif;
+}
+.wrapperAccueil .prestationsPc {
+  display: none;
+}
+.wrapperAccueil .wave {
+  display: none;
+}
+.wrapperAccueil .forfait {
+  width: 100vw;
+  background-color: var(--primary-50);
+}
+.wrapperAccueil .forfait .forfaitDevis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  gap: 3px;
+}
+.wrapperAccueil .forfait .forfaitDevis h2 {
+  color: var(--primary-400);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.wrapperAccueil .forfait .forfaitDevis p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
+}
+.wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe {
+  display: none;
+}
+.wrapperAccueil .forfait .container-forfait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapperAccueil .forfait .container-forfait .forfait1,
+.wrapperAccueil .forfait .container-forfait .forfait2,
+.wrapperAccueil .forfait .container-forfait .forfait3 {
+  width: 80vw;
+  height: 10vh;
+  background-color: var(--primary-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+}
+.wrapperAccueil .forfait .container-forfait .forfait1 h3,
+.wrapperAccueil .forfait .container-forfait .forfait2 h3,
+.wrapperAccueil .forfait .container-forfait .forfait3 h3 {
+  color: white;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1,
+.wrapperAccueil .forfait .container-forfait .listeforfait2,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 {
+  background-color: white;
+  width: 80vw;
+  border: solid 1px var(--primary-400);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 40px;
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
+  color: var(--primary-400);
+  padding-top: 12px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
+  padding-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  list-style-type: none;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1 ul li i,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 ul li i,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 ul li i {
+  color: var(--primary-400);
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1 ul .extra-deluxe,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 ul .extra-deluxe,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 ul .extra-deluxe {
+  display: none;
+}
+.wrapperAccueil .forfait .bouttonAllForfait {
+  display: flex;
+  justify-content: center;
+}
+.wrapperAccueil .forfait .bouttonAllForfait button {
+  height: 7vh;
+  width: 75vw;
+  align-self: center;
+  border-radius: 20px;
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.wrapperAccueil .forfait .bouttonAllForfait button a {
+  text-decoration: none;
+  color: white;
+}
+.wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
+  display: none;
+}
 @media only screen and (min-width: 1024px) {
   header {
     background-color: transparent;
-    position: absolute;
     padding: 1rem 5rem;
     justify-content: space-between;
     border-bottom-left-radius: 0;
@@ -377,5 +669,292 @@ footer .footer-socials .facebook-icon {
   }
   footer .footer-nav ul a {
     color: #000;
+  }
+  .wrapperAccueil article {
+    display: flex;
+  }
+  .wrapperAccueil article .histoire {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50vw;
+    background-color: var(--primary-400);
+    color: white;
+  }
+  .wrapperAccueil article .histoire h2 {
+    margin: 0% 10%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .wrapperAccueil article .histoire p {
+    margin: 0% 10%;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+  }
+  .wrapperAccueil article .video {
+    background-image: url('/img/photovideo.png');
+    background-size: 50vw;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 500px;
+  }
+  .wrapperAccueil .prestations {
+    display: none;
+  }
+  .wrapperAccueil .prestationsPc {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapperAccueil .prestationsPc .devisPc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    gap: 5px;
+  }
+  .wrapperAccueil .prestationsPc .devisPc h2 {
+    color: var(--primary-500);
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .wrapperAccueil .prestationsPc .devisPc p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "DM Sans", sans-serif;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow.left-arrow {
+    color: var(--primary-500);
+    left: 30px;
+    display: none;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow.right-arrow {
+    color: var(--primary-500);
+    right: 30px;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc {
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div {
+    min-width: 25vw;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    position: relative;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lustragePc {
+    background-image: url('../img/lustrage-pc.jpg');
+    background-position-y: 100%;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .pharePc {
+    background-image: url('../img/phare-pc.png');
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .cuirPc {
+    background-image: url('../img/cuir-pc.png');
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .moteurPc {
+    background-image: url('../img/moteur-pc.png');
+    background-position-x: 40%;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .siegePc {
+    background-image: url('../img/siege-pc.png');
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lavagePc {
+    background-image: url('../img/lavage-pc.png');
+    background-position-y: 80%;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .ceramiquePc {
+    background-image: url('../img/ceramique-pc.png');
+    background-position-x: 30%;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc h3 {
+    color: white;
+    font-size: 1rem;
+    -webkit-text-stroke: 0.5px var(--primary-500);
+    font-family: "Roboto", sans-serif;
+  }
+  .wrapperAccueil .wave {
+    width: 100%;
+    display: block;
+  }
+  .wrapperAccueil .wave svg {
+    position: relative;
+    display: block;
+    height: 150px;
+  }
+  .wrapperAccueil .forfait {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapperAccueil .forfait .forfaitDevis {
+    height: 30vh;
+  }
+  .wrapperAccueil .forfait .forfaitDevis p {
+    padding-bottom: 5vh;
+  }
+  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe {
+    display: flex;
+    position: relative;
+  }
+  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div {
+    border-radius: 50px;
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div:nth-child(1) {
+    background-color: var(--primary-500);
+    color: white;
+    z-index: 2;
+    margin-right: -50px;
+  }
+  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div:nth-child(2) {
+    background-color: white;
+    color: var(--primary-500);
+  }
+  .wrapperAccueil .forfait .container-forfait {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait1 {
+    order: 2;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait2 {
+    order: 1;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait3 {
+    order: 3;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait3 {
+    width: 25vw;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait1 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait1 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait1 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait2 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait2 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait2 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait3 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait3 h3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait3 h3 {
+    font-size: 1.3rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 {
+    width: 25vw;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3 h4,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 h4 {
+    font-size: 1.2rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
+  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
+    font-size: 1.1rem;
+  }
+  .wrapperAccueil .forfait .bouttonAllForfait {
+    cursor: pointer;
+  }
+  .wrapperAccueil .forfait .bouttonAllForfait button a {
+    text-decoration: none;
+    color: var(--primary-500);
+  }
+  .wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe {
+    display: none;
+  }
+  .wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
+    display: block;
+    width: 25vw;
+    border-radius: 50px;
+    background-color: var(--primary-50);
+    border: 1px solid var(--primary-500);
+    color: var(--primary-500);
   }
 }
