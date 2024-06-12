@@ -958,3 +958,113 @@ footer .footer-socials .facebook-icon {
     color: var(--primary-500);
   }
 }
+@media only screen and (min-width: 768px) {
+  .wrapperAccueil .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .phare {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .phare div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .cuir {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .cuir div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .moteur {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .moteur div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .siege {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .siege div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lavage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lavage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .ceramique {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .ceramique div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations h3 {
+    font-size: 1.8rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .forfait1 h3,
+  .wrapperAccueil .forfait .container-forfait .forfait2 h3,
+  .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
+  .wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
+  .wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
+    font-size: 1.5rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
+  .wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
+  .wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
+    font-size: 1.3rem;
+  }
+  .wrapperAccueil .forfait .container-forfait button {
+    font-size: 1.5rem;
+  }
+  .wrapperAccueil .contact {
+    height: 350px;
+  }
+  .wrapperAccueil .contact .container-contact {
+    height: 350px;
+  }
+  .wrapperAccueil .contact .container-contact h2,
+  .wrapperAccueil .contact .container-contact h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .wrapperAccueil .avis {
+    display: flex;
+    align-items: center;
+  }
+  .wrapperAccueil .avis h2 {
+    font-size: 2rem;
+  }
+  .wrapperAccueil .avis #carousel {
+    width: 90vw;
+  }
+  .wrapperAccueil .partenaire h2 {
+    font-size: 2rem;
+  }
+  .wrapperAccueil .partenaire .container-partenaire .ligne1 div img,
+  .wrapperAccueil .partenaire .container-partenaire .ligne2 div img {
+    height: 15vh;
+  }
+}
