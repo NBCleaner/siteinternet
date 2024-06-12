@@ -26,7 +26,11 @@ header nav {
   width: 100vw;
   height: 8vh;
 }
-header nav h2 {
+header nav ul {
+  color: wheat;
+  text-decoration: none;
+}
+header h2 {
   color: white;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -34,7 +38,7 @@ header nav h2 {
   font-size: 1.5rem;
   margin: 0 10vw;
 }
-header nav p {
+header p {
   color: white;
   text-align: center;
   font-family: "DM Sans", sans-serif;
@@ -43,7 +47,7 @@ header nav p {
   padding: 0px 0.7vw;
   margin: 0 10vw;
 }
-header nav button {
+header button {
   height: 7vh;
   width: 60vw;
   align-self: center;
@@ -251,6 +255,9 @@ article .histoire p {
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
 }
+.forfait .forfaitDevis .btn-express-deluxe {
+  display: none;
+}
 .forfait .container-forfait {
   display: flex;
   flex-direction: column;
@@ -313,7 +320,16 @@ article .histoire p {
 .forfait .container-forfait .listeforfait3 ul li i {
   color: var(--primary-400);
 }
-.forfait .container-forfait button {
+.forfait .container-forfait .listeforfait1 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait2 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait3 ul .extra-deluxe {
+  display: none;
+}
+.forfait .bouttonAllForfait {
+  display: flex;
+  justify-content: center;
+}
+.forfait .bouttonAllForfait button {
   height: 7vh;
   width: 75vw;
   align-self: center;
@@ -324,6 +340,13 @@ article .histoire p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
+}
+.forfait .bouttonAllForfait button a {
+  text-decoration: none;
+  color: white;
+}
+.forfait .bouttonAllForfait .btnTableauForfait {
+  display: none;
 }
 .contact {
   width: 100vw;
@@ -476,6 +499,31 @@ footer div p {
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
 }
+.legal {
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.legal div h2 {
+  font-size: 1rem;
+}
+.legal div h2 i:nth-child(1) {
+  color: blue;
+  font-size: 2rem;
+}
+.legal div h2 i:nth-child(2) {
+  color: #ffee00;
+  font-size: 2rem;
+}
+.legal p {
+  font-size: 0.8rem;
+  text-align: center;
+}
 .forfaits-wrapper {
   background-color: var(--primary-50);
   min-width: 320px;
@@ -485,6 +533,7 @@ footer div p {
 .forfaits-wrapper header {
   background-image: none;
   height: fit-content;
+  gap: 0;
   width: 100%;
   background-color: var(--primary-400);
   display: flex;
@@ -496,24 +545,52 @@ footer div p {
   border-bottom-left-radius: 2400px 1000px;
   border-bottom-right-radius: 2400px 1000px;
 }
-.forfaits-wrapper header .burger-icon {
+.forfaits-wrapper header #burger-icon {
   background-image: url(img/Hamburger_icon.svg);
   height: 32px;
   aspect-ratio: 1;
+  z-index: 2;
+  position: fixed;
+  right: 1.25rem;
 }
 .forfaits-wrapper header nav {
+  background-color: var(--primary-500);
+  opacity: 0.95;
   display: none;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: #FFF;
+  z-index: 1;
 }
 .forfaits-wrapper header nav ul {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10rem;
+  text-align: end;
 }
-.forfaits-wrapper header nav ul a {
-  color: inherit;
+.forfaits-wrapper header nav ul li {
+  list-style: none;
+  padding: 1.5rem 0;
+}
+.forfaits-wrapper header nav ul li:not(:last-of-type) {
+  border-bottom: 1px solid #FFF;
+}
+.forfaits-wrapper header nav ul li a {
+  color: #FFF;
+}
+.forfaits-wrapper header nav.shown {
+  display: flex;
 }
 .forfaits-wrapper header .socials {
   display: none;
@@ -535,6 +612,11 @@ footer div p {
 .forfaits-wrapper main {
   padding: 3.125rem 1.25rem;
 }
+.forfaits-wrapper main .forfaits-smartphoneView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card {
   overflow: hidden;
   margin-top: 3.125rem;
@@ -553,7 +635,7 @@ footer div p {
   font-size: 1.375rem;
 }
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card > div {
-  padding: 0 1.25rem;
+  padding: 0 3rem;
   padding-bottom: 1.25rem;
 }
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card .forfaits-title {
@@ -592,8 +674,104 @@ footer div p {
 .forfaits-wrapper main .forfaits-smartphoneView .forfaits-card ul li:not(:last-of-type) {
   margin-bottom: 0.625rem;
 }
-.forfaits-wrapper .forfaits-desktopView {
+.forfaits-wrapper main .forfaits-desktopView {
   display: none;
+}
+.forfaits-wrapper .question {
+  background-color: #000;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5rem;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.forfaits-wrapper .question a {
+  display: block;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--primary-300);
+}
+.forfaits-wrapper .question > * {
+  position: relative;
+}
+.forfaits-wrapper .question::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("img/contactez.png");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.5);
+}
+.forfaits-wrapper .coordonnees {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-50);
+  text-align: start;
+}
+.forfaits-wrapper .coordonnees > * {
+  flex: 1;
+}
+.forfaits-wrapper .coordonnees .carte {
+  background-image: url("img/map-large.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 300px;
+}
+.forfaits-wrapper .coordonnees .infos {
+  color: var(--primary-500);
+  padding: 1rem 2rem;
+}
+.forfaits-wrapper .coordonnees .infos h3 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.025rem;
+  margin-bottom: 2rem;
+}
+.forfaits-wrapper .coordonnees .infos div {
+  margin-bottom: 1.5rem;
+}
+.forfaits-wrapper footer {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  width: 100%;
+}
+.forfaits-wrapper footer p {
+  font-size: 1rem;
+}
+.forfaits-wrapper footer div {
+  width: fit-content;
+  margin: 0;
+}
+.forfaits-wrapper footer .footer-nav {
+  display: none;
+}
+.forfaits-wrapper footer .footer-socials .snapchat-icon {
+  color: #000;
+}
+.forfaits-wrapper footer .footer-socials .snapchat-icon .fa-circle {
+  color: #ffee00;
+}
+.forfaits-wrapper footer .footer-socials .facebook-icon {
+  color: #3b5998;
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -767,24 +945,187 @@ footer div p {
     display: block;
     height: 150px;
   }
+  .forfait {
+    display: flex;
+    flex-direction: column;
+  }
+  .forfait .forfaitDevis {
+    height: 30vh;
+  }
+  .forfait .forfaitDevis p {
+    padding-bottom: 5vh;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe {
+    display: flex;
+    position: relative;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div {
+    border-radius: 50px;
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(1) {
+    background-color: var(--primary-500);
+    color: white;
+    z-index: 2;
+    margin-right: -50px;
+  }
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(2) {
+    background-color: white;
+    color: var(--primary-500);
+  }
+  .forfait .container-forfait {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .forfait .container-forfait .globalForfait1,
+  .forfait .container-forfait .globalForfait2,
+  .forfait .container-forfait .globalForfait3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait1,
+  .forfait .container-forfait .globalForfait2.globalForfait1,
+  .forfait .container-forfait .globalForfait3.globalForfait1 {
+    order: 2;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait2,
+  .forfait .container-forfait .globalForfait2.globalForfait2,
+  .forfait .container-forfait .globalForfait3.globalForfait2 {
+    order: 1;
+  }
+  .forfait .container-forfait .globalForfait1.globalForfait3,
+  .forfait .container-forfait .globalForfait2.globalForfait3,
+  .forfait .container-forfait .globalForfait3.globalForfait3 {
+    order: 3;
+  }
+  .forfait .container-forfait .globalForfait1 .forfait1,
+  .forfait .container-forfait .globalForfait2 .forfait1,
+  .forfait .container-forfait .globalForfait3 .forfait1,
+  .forfait .container-forfait .globalForfait1 .forfait2,
+  .forfait .container-forfait .globalForfait2 .forfait2,
+  .forfait .container-forfait .globalForfait3 .forfait2,
+  .forfait .container-forfait .globalForfait1 .forfait3,
+  .forfait .container-forfait .globalForfait2 .forfait3,
+  .forfait .container-forfait .globalForfait3 .forfait3 {
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1 .forfait1 h3,
+  .forfait .container-forfait .globalForfait2 .forfait1 h3,
+  .forfait .container-forfait .globalForfait3 .forfait1 h3,
+  .forfait .container-forfait .globalForfait1 .forfait2 h3,
+  .forfait .container-forfait .globalForfait2 .forfait2 h3,
+  .forfait .container-forfait .globalForfait3 .forfait2 h3,
+  .forfait .container-forfait .globalForfait1 .forfait3 h3,
+  .forfait .container-forfait .globalForfait2 .forfait3 h3,
+  .forfait .container-forfait .globalForfait3 .forfait3 h3 {
+    font-size: 1.3rem;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1,
+  .forfait .container-forfait .globalForfait2 .listeforfait1,
+  .forfait .container-forfait .globalForfait3 .listeforfait1,
+  .forfait .container-forfait .globalForfait1 .listeforfait2,
+  .forfait .container-forfait .globalForfait2 .listeforfait2,
+  .forfait .container-forfait .globalForfait3 .listeforfait2,
+  .forfait .container-forfait .globalForfait1 .listeforfait3,
+  .forfait .container-forfait .globalForfait2 .listeforfait3,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 {
+    width: 25vw;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 h4 {
+    font-size: 1.2rem;
+  }
+  .forfait .container-forfait .globalForfait1 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
+    font-size: 1.1rem;
+  }
+  .forfait .bouttonAllForfait {
+    cursor: pointer;
+  }
+  .forfait .bouttonAllForfait button a {
+    text-decoration: none;
+    color: var(--primary-500);
+  }
+  .forfait .bouttonAllForfait .btnForfaitDeluxe {
+    display: none;
+  }
+  .forfait .bouttonAllForfait .btnTableauForfait {
+    display: block;
+    width: 25vw;
+    border-radius: 50px;
+    background-color: var(--primary-50);
+    border: 1px solid var(--primary-500);
+    color: var(--primary-500);
+  }
   .forfaits-wrapper {
     background-color: #FFF;
   }
   .forfaits-wrapper header {
     background-color: var(--primary-500);
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
+    justify-content: space-between;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .forfaits-wrapper header .burger-icon {
+  .forfaits-wrapper header #burger-icon {
     display: none;
   }
   .forfaits-wrapper header nav {
+    background: transparent;
     display: flex;
-    width: fit-content;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding-right: 0;
+    font-size: 1.1rem;
+  }
+  .forfaits-wrapper header nav ul {
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 0;
+    text-align: initial;
+  }
+  .forfaits-wrapper header nav ul li:not(:last-of-type) {
+    border-bottom: none;
+  }
+  .forfaits-wrapper header nav ul li a {
+    color: #FFF;
   }
   .forfaits-wrapper header .socials {
     display: flex;
+    gap: 1rem;
+  }
+  .forfaits-wrapper header .socials > * {
+    font-size: 2rem;
+    color: #FFF;
   }
   .forfaits-wrapper .hero {
     height: 85vh;
@@ -866,6 +1207,33 @@ footer div p {
   .forfaits-wrapper main .forfaits-desktopView table tbody tr:last-of-type :first-child {
     text-align: right;
     padding-right: 0.5rem;
+  }
+  .forfaits-wrapper .question {
+    min-height: 680px;
+    font-size: 3rem;
+  }
+  .forfaits-wrapper .question a {
+    font-size: 4rem;
+    padding: 1rem 5rem;
+  }
+  .forfaits-wrapper .coordonnees {
+    flex-direction: row;
+  }
+  .forfaits-wrapper footer {
+    flex-direction: row;
+  }
+  .forfaits-wrapper footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: left;
+  }
+  .forfaits-wrapper footer .footer-nav ul {
+    line-height: 1.75rem;
+  }
+  .forfaits-wrapper footer .footer-nav ul a {
+    color: #000;
   }
   .legal {
     background-color: white;

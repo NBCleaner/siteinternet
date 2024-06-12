@@ -31,49 +31,55 @@ header {
         height: 8vh;
 
 
-        // h1 {
-        //     color: white;
-        //     text-align: center;
-        //     font-family: "Roboto", sans-serif;
-        //     font-weight: bold;
-        //     font-size: 2rem;
-        //     padding: 0px 0.7vw;
-        //     margin: 0 10vw;
-
-        // }
-
-        h2 {
-            color: white;
-            text-align: center;
-            font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 1.5rem;
-            margin: 0 10vw;
-
-
+        ul {
+            color: wheat;
+            text-decoration: none;
         }
+    }
 
-        p {
-            color: white;
-            text-align: center;
-            font-family: "DM Sans", sans-serif;
-            font-weight: medium;
-            font-size: 1rem;
-            padding: 0px 0.7vw;
-            margin: 0 10vw;
-        }
+    // h1 {
+    //     color: white;
+    //     text-align: center;
+    //     font-family: "Roboto", sans-serif;
+    //     font-weight: bold;
+    //     font-size: 2rem;
+    //     padding: 0px 0.7vw;
+    //     margin: 0 10vw;
 
-        button {
-            height: 7vh;
-            width: 60vw;
-            align-self: center;
-            border-radius: 50px;
-            background-color: var(--primary-500);
-            color: white;
-            border: none;
-        }
+    // }
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0 10vw;
+
 
     }
+
+    p {
+        color: white;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-weight: medium;
+        font-size: 1rem;
+        padding: 0px 0.7vw;
+        margin: 0 10vw;
+    }
+
+    button {
+        height: 7vh;
+        width: 60vw;
+        align-self: center;
+        border-radius: 50px;
+        background-color: var(--primary-500);
+        color: white;
+        border: none;
+    }
+
+
 }
 
 article {
@@ -318,6 +324,10 @@ article {
             font-family: "DM Sans", sans-serif;
 
         }
+
+        .btn-express-deluxe{
+            display: none;
+        }
     }
 
     .container-forfait {
@@ -379,9 +389,22 @@ article {
                     i {
                         color: var(--primary-400);
                     }
+                    
+        
                 }
+
+                .extra-deluxe{
+                    display: none;
+                }
+
             }
         }
+
+    }
+
+    .bouttonAllForfait {
+        display: flex;
+        justify-content: center;
 
         button {
             height: 7vh;
@@ -394,8 +417,19 @@ article {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             margin-bottom: 40px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+
+        .btnTableauForfait {
+            display: none;
         }
     }
+
 }
 
 .contact {
@@ -582,6 +616,40 @@ footer {
     }
 }
 
+.legal {
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    div {
+        h2 {
+            font-size: 1rem;
+
+            i:nth-child(1) {
+                color: blue;
+                font-size: 2rem;
+            }
+
+            i:nth-child(2) {
+                color: rgb(255, 238, 0);
+                font-size: 2rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
+}
+
 
 // Style pour la page forfaits.html
 .forfaits-wrapper {
@@ -594,40 +662,79 @@ footer {
     header {
         background-image: none; // Pareil que le commentaire d'en-dessous mais pour une autre règle
         height: fit-content; // Obligé d'utiliser ça à cause de règle précedente (height: 100vh; pour le header)
+        gap: 0; // Obligé d'utiliser ça à cause de règle précedente (gap: 8vh; pour le header)
         width: 100%;
         background-color: var(--primary-400);
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         align-items: center;
         padding: 1rem 1.25rem;
         padding-bottom: 2.5rem;
 
+        // A revoir
         border-bottom-left-radius: 2400px 1000px;
         border-bottom-right-radius: 2400px 1000px;
 
-        .burger-icon {
+        #burger-icon {
             background-image: url(img/Hamburger_icon.svg);
             height: 32px;
             aspect-ratio: 1;
+            z-index: 2;
+            position: fixed;
+            right: 1.25rem;
         }
 
         nav {
+            background-color: var(--primary-500);
+            opacity: 0.95;
             display: none;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            align-items: end;
+
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            width: 50%;
+            height: 100%;
+            padding: 0 2rem;
+
+            font-size: 1.5rem;
+            letter-spacing: 0.05rem;
+            font-weight: 700;
             text-transform: uppercase;
             color: #FFF;
 
+            z-index: 1;
 
             ul {
                 display: flex;
-                gap: 4rem;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10rem;
+                text-align: end;
 
-                a {
-                    color: inherit;
+                li {
+                    list-style: none;
+
+                    &:not(:last-of-type) {
+                        border-bottom: 1px solid #FFF;
+                    }
+
+                    padding: 1.5rem 0;
+
+                    a {
+                        color: #FFF;
+                    }
                 }
+
+            }
+
+            &.shown {
+                display: flex;
             }
         }
 
@@ -658,6 +765,9 @@ footer {
 
 
         .forfaits-smartphoneView {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .forfaits-card {
                 overflow: hidden;
                 margin-top: 3.125rem;
@@ -678,7 +788,7 @@ footer {
                 }
 
                 &>div {
-                    padding: 0 1.25rem;
+                    padding: 0 3rem;
                     padding-bottom: 1.25rem;
                 }
 
@@ -733,13 +843,141 @@ footer {
                 }
             }
         }
+
+        .forfaits-desktopView {
+            display: none;
+        }
     }
 
 
-    .forfaits-desktopView {
-        display: none;
+
+    // Call to action, contactez-nous !
+    .question {
+        background-color: #000;
+        min-height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 5rem;
+
+        color: #FFF;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        a {
+            display: block;
+
+            background-color: transparent;
+
+            color: #FFF;
+            font-size: 1rem;
+            font-weight: inherit;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            border-radius: 50px;
+            border: 1px solid var(--primary-300);
+        }
+
+        &>* {
+            position: relative;
+        }
     }
 
+    .question::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("img/contactez.png");
+        background-size: cover;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0.5);
+    }
+
+    // Coordonnées
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-50);
+        text-align: start;
+
+        &>* {
+            flex: 1;
+        }
+
+        .carte {
+            background-image: url("img/map-large.png");
+            background-size: cover;
+            background-position: 50% 50%;
+            min-height: 300px;
+        }
+
+        .infos {
+            color: var(--primary-500);
+            padding: 1rem 2rem;
+
+            h3 {
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                font-weight: 800;
+                letter-spacing: 0.025rem;
+                margin-bottom: 2rem;
+            }
+
+            div {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+    footer {
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+
+        // Obligé de mettre ça parce qu'il y a déjà une règle sur footer div...
+        // Et qu'il y a un width: 100vw;
+        width: 100%;
+
+        // Ca aussi
+        p {
+            font-size: 1rem;
+        }
+
+        // Ca aussi
+        div {
+            width: fit-content;
+            margin: 0;
+
+        }
+
+        .footer-nav {
+            display: none;
+        }
+
+        .footer-socials {
+            .snapchat-icon {
+                color: #000;
+
+                .fa-circle {
+                    color: rgb(255, 238, 0);
+                }
+            }
+
+            .facebook-icon {
+                color: #3b5998;
+            }
+        }
+    }
 }
 
 
@@ -961,28 +1199,190 @@ footer {
         }
     }
 
-    // forfaits
+    .forfait {
+        display: flex;
+        flex-direction: column;
+
+        .forfaitDevis{
+            height: 30vh;
+            p{
+                padding-bottom: 5vh;
+            }
+
+            .btn-express-deluxe{
+                display: flex;
+                position: relative;
+
+                div{
+                    border-radius: 50px;
+                    width: 20vw;
+                    height: 5vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+
+                    
+
+                    &:nth-child(1){
+                        background-color: var(--primary-500);
+                        color: white;
+                        z-index: 2;
+                        margin-right: -50px; 
+
+                    }
+                    &:nth-child(2){
+                        background-color: white;
+                        color: var(--primary-500);
+                    }
+                }
+                
+            }
+
+        }
+
+        .container-forfait {
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+
+            .globalForfait1,
+            .globalForfait2,
+            .globalForfait3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25vw;
+
+                &.globalForfait1 {
+                    order: 2; 
+                }
+
+                &.globalForfait2 {
+                    order: 1; 
+                }
+
+                &.globalForfait3 {
+                    order: 3;
+                }
+
+                .forfait1,
+                .forfait2,
+                .forfait3 {
+                    width: 25vw;
+
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                }
+
+                .listeforfait1,
+                .listeforfait2,
+                .listeforfait3 {
+                    width: 25vw;
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    ul {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+        }
+
+        .bouttonAllForfait {
+            cursor: pointer;
+            button {
+                a {
+                    text-decoration: none;
+                    color: var(--primary-500);
+                }
+            }
+
+            .btnForfaitDeluxe {
+                display: none;
+            }
+
+            .btnTableauForfait {
+                display: block;
+                width: 25vw;
+                border-radius: 50px;
+                background-color: var(--primary-50);
+                border: 1px solid var(--primary-500);
+                color: var(--primary-500);
+            }
+        }
+    }
+
+
+    // Page forfaits
     .forfaits-wrapper {
         background-color: #FFF;
 
         header {
             background-color: var(--primary-500);
-            padding-bottom: 1rem;
+            padding: 1rem 5rem;
+
+            justify-content: space-between;
+
+
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
 
-            .burger-icon {
+            #burger-icon {
                 display: none;
             }
 
             nav {
+                background: transparent;
                 display: flex;
-                width: fit-content;
+                position: static;
+                justify-content: center;
+                align-items: center;
+
+                width: auto;
+                height: auto;
+                padding-right: 0;
+
+                font-size: 1.1rem;
+
+
+                ul {
+                    flex-direction: row;
+                    gap: 4rem;
+                    margin-top: 0;
+                    text-align: initial;
+
+                    li {
+
+                        &:not(:last-of-type) {
+                            border-bottom: none;
+                        }
+
+                        a {
+                            color: #FFF;
+                        }
+                    }
+                }
             }
 
 
             .socials {
                 display: flex;
+                gap: 1rem;
+
+                &>* {
+                    font-size: 2rem;
+                    color: #FFF;
+                }
             }
         }
 
@@ -1114,7 +1514,47 @@ footer {
                 }
             }
         }
+
+        // Call to action, contactez-nous !
+        .question {
+            min-height: 680px;
+            font-size: 3rem;
+
+            a {
+                font-size: 4rem;
+                padding: 1rem 5rem;
+            }
+        }
+
+        // Coordonnees
+        .coordonnees {
+            flex-direction: row;
+        }
+
+        // Footer
+        footer {
+            flex-direction: row;
+
+            .footer-nav {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                color: #FFF;
+                text-align: left;
+
+
+                ul {
+                    line-height: 1.75rem;
+
+                    a {
+                        color: #000;
+                    }
+                }
+
+            }
+        }
     }
+
 
     .legal {
         background-color: white;
@@ -1263,6 +1703,7 @@ footer {
     }
 
     .forfait {
+
 
         .container-forfait {
 

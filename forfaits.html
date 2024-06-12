@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -18,20 +18,22 @@
         <header>
             <img src="img/logo.svg" alt="Logo de l'entreprise NBCleaner">
 
-            <div class="burger-icon">
+            <div id="burger-icon">
 
             </div>
             <nav>
                 <ul>
-                    <a href="index.html">Accueil</a>
-                    <a href="prestations.html">Prestations</a>
-                    <a href="forfaits.html">Forfaits</a>
-                    <a href="contact.html">Contact</a>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="forfaits.html">Forfaits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="socials">
-
+                <!-- Mettre les liens vers les réseaux de NBCleaner -->
+                <a href="https://www.facebook.com/Nb.cleanerauto/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
             </div>
         </header>
 
@@ -43,6 +45,7 @@
             <h1>Forfaits</h1>
             <p>*Le prix varie selon le niveau de saleté et la taille du véhicule.<br>Pour plus d'informations, veuillez
                 nous contacter.</p>
+            <!-- FORFAIT SMARTPHONE -->
             <section class="forfaits-smartphoneView">
                 <!-- FORFAIT INTERIEUR + EXTERIEUR -->
                 <article class="forfaits-card">
@@ -131,6 +134,7 @@
                 </article>
             </section>
 
+            <!-- FORFAIT PC -->
             <section class="forfaits-desktopView">
                 <table>
                     <thead>
@@ -264,16 +268,78 @@
             </section>
         </main>
 
+        <!-- CALL TO ACTION QUESTION -->
+        <div class="question">
+            <div>
+                <p>Une question ?</p>
+                <a href="contact.html">Contactez-nous !</a>
+            </div>
+        </div>
 
+        <!-- COORDONNEES -->
+        <div class="coordonnees">
+            <div class="carte"></div>
+            <div class="infos">
+                <h3>Coordonnées</h3>
+                <div>
+                    <p>14 bis, route de Bourbourg <br>
+                        59210 Coudekerque-Branche</p>
+                </div>
+                <div>
+                    <p>Téléphone : <a href="tel:+33783354934">0783354934</a></p>
+                    <p>Mail : <a href="mailto:Nbcleaner.auto@gmail.com">Nbcleaner.auto@gmail.com</a></p>
+                </div>
 
+                <h3>Horaires d'ouverture</h3>
+                <div>
+                    <p>Du lundi au vendredi :</p>
+                    <p>09:00 - 13:00 <br>
+                        14:00 - 18:00</p>
+                </div>
+                <div>
+                    <p>Samedi :</p>
+                    <p>09:00 - 13:00</p>
+                </div>
+                <p>Fermé le dimanche.</p>
+            </div>
+        </div>
 
-        <!-- Footer commun à toutes les pages -->
         <footer>
-            <!-- A remplir -->
+            <div class="footer-nav">
+                <ul>
+                    <ul><a href="index.html">Accueil</a></ul>
+                    <ul><a href="prestations.html">Prestations</a></ul>
+                    <ul><a href="forfaits.html">Forfaits</a></ul>
+                    <ul><a href="contact.html">Contact</a></ul>
+                </ul>
+            </div>
+            <div>
+                <p>Copyright 2024 | Tous droits réservés</p>
+                <a href="#">Mentions légales</a> - <a href="#">Plan du site</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/Nb.cleanerauto/">
+                    <span class="fa-stack facebook-icon">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        <!-- <i class="fas fa-chevron-up fa-stack-2x fa-inverse"></i> -->
+                    </span>
+                </a>
+
+                <a href="">
+                    <span class="fa-stack snapchat-icon">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-brands fa-snapchat fa-stack-1x"></i>
+                    </span>
+                </a>
+                NB CLEANER
+            </div>
+
         </footer>
     </div>
 
-    <script src="test.js"></script>
+    <script src="https://kit.fontawesome.com/f528326dfa.js" crossorigin="anonymous"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxHxsvlYwRxbUO8Kz3D2lF1QmaLz5M04Q&loading=async&libraries=places&callback=initMap"></script>
+        <script src="burgerMenu.js"></script>
 </body>
