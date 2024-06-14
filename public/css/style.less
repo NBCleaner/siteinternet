@@ -349,7 +349,7 @@ footer {
 
 
 // =============================
-// STYLE ACCUEIL (accueil.php)
+// STYLE ACCUEIL (index.php)
 // =============================
 .wrapperAccueil {
     .hero {
@@ -360,21 +360,11 @@ footer {
         width: 100vw;
         height: 100vh;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         gap: 8vh;
-        padding-top: 10rem;
 
 
-        // h1 {
-        //     color: white;
-        //     text-align: center;
-        //     font-family: "Roboto", sans-serif;
-        //     font-weight: bold;
-        //     font-size: 2rem;
-        //     padding: 0px 0.7vw;
-        //     margin: 0 10vw;
-
-        // }
 
         h2 {
             color: white;
@@ -1464,3 +1454,40 @@ footer {
 
     }
 }
+
+
+@media only screen and (min-width: 1440px) {
+    // =============================
+    // STYLE ACCUEIL (index.php)
+    // =============================
+
+    .wrapperAccueil {
+        .hero {
+            background-size: 100%;
+
+
+            h2{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+
+            button{
+                width: 20vw;
+            }
+        }
+
+        article {
+
+            .histoire{
+        
+                p{
+                  font-size: 1.2rem;
+                }
+            }
+        }
+    }    
+}
+

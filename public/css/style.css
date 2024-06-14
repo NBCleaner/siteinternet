@@ -278,9 +278,9 @@ footer .footer-socials .facebook-icon {
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 8vh;
-  padding-top: 10rem;
 }
 .wrapperAccueil .hero h2 {
   color: white;
@@ -1121,5 +1121,22 @@ footer .footer-socials .facebook-icon {
     background-color: var(--primary-50);
     border: 1px solid var(--primary-500);
     color: var(--primary-500);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .wrapperAccueil .hero {
+    background-size: 100%;
+  }
+  .wrapperAccueil .hero h2 {
+    font-size: 3rem;
+  }
+  .wrapperAccueil .hero p {
+    font-size: 2rem;
+  }
+  .wrapperAccueil .hero button {
+    width: 20vw;
+  }
+  .wrapperAccueil article .histoire p {
+    font-size: 1.2rem;
   }
 }
