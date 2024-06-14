@@ -72,7 +72,7 @@
                 <div class="ligne2">
                     <div><img src="img/🦆 icon _citroen_.png" alt="logo citroen"></div>
                     <div> <img src="img/simple-icons_toyota.png" alt="logo toyota"></div>
-                    <div> <img src="img/simple-icons_toyota.png" alt="logo toyota"></div>
+                    <div> <img class="arcelor" src="/public/img/arcelor mital.png" alt="logo toyota"></div>
                 </div>
             </div>
         </section>

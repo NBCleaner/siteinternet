@@ -220,6 +220,10 @@ h3 {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
 }
+.partenaire .container-partenaire .ligne2 .arcelor {
+  width: 125px;
+  color: grey;
+}
 .coordonnees {
   display: flex;
   flex-direction: column;
@@ -1138,5 +1142,13 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil article .histoire p {
     font-size: 1.2rem;
+  }
+  .wrapperAccueil .avis #carousel .left-arrow {
+    left: 250px;
+    font-size: 2rem;
+  }
+  .wrapperAccueil .avis #carousel .right-arrow {
+    right: 250px;
+    font-size: 2rem;
   }
 }
