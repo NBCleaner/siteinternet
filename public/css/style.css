@@ -24,12 +24,13 @@ header {
   align-items: center;
   padding: 1rem 1.25rem;
   padding-bottom: 2.5rem;
+  z-index: 1000;
 }
 header #burger-icon {
   background-image: url(../img/Hamburger_icon.svg);
   height: 32px;
   aspect-ratio: 1;
-  z-index: 2;
+  z-index: 1001;
   position: fixed;
   right: 1.25rem;
 }
@@ -43,6 +44,7 @@ header nav {
   top: 0;
   right: 0;
   width: 50%;
+  min-width: 250px;
   height: 100%;
   padding: 0 2rem;
   font-size: 1.5rem;
@@ -50,7 +52,6 @@ header nav {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFF;
-  z-index: 1;
 }
 header nav ul {
   display: flex;
@@ -78,6 +79,7 @@ header .socials {
 h1,
 h2,
 h3 {
+  font-family: 'Roboto Serif', sans-serif;
   text-transform: uppercase;
 }
 .question {
@@ -692,6 +694,173 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperForfaits main .forfaits-desktopView {
   display: none;
+}
+.wrapperPrestations h2 {
+  text-align: center;
+  color: var(--primary-500);
+  padding: 0 1rem;
+}
+.wrapperPrestations .hero {
+  background-image: url('../img-sarah/traitement\ cuir.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .hero .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .hero h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .hero h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 7vw;
+}
+.wrapperPrestations .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.wrapperPrestations .section1 p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.wrapperPrestations .section1 img {
+  width: 300px;
+  height: auto;
+}
+.wrapperPrestations .section1 .descriptionPrestation {
+  max-width: 650px;
+}
+.wrapperPrestations .section1 *,
+.wrapperPrestations .section1 *::after,
+.wrapperPrestations .section1 *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapperPrestations .section1 img {
+  display: block;
+  max-width: 100%;
+}
+.wrapperPrestations .section1 .containerjs {
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 50%;
+}
+.wrapperPrestations .section1 .image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+.wrapperPrestations .section1 .slider-image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.wrapperPrestations .section1 img {
+  width: 100%;
+}
+.wrapperPrestations .section1 .image-before {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+}
+.wrapperPrestations .section1 .slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+}
+.wrapperPrestations .section1 .slider:focus-visible ~ .slider-button {
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+.wrapperPrestations .section1 .slider-line {
+  position: absolute;
+  inset: 0;
+  width: 0.2rem;
+  background-color: #fff;
+  z-index: 10;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.wrapperPrestations .section1 .slider-button {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  z-index: 100;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%);
+}
+.wrapperPrestations .section2 {
+  background-color: var(--primary-50);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperPrestations .section2 ul {
+  color: var(--primary-500);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 6vw;
+}
+.wrapperPrestations .section2 button {
+  background-color: var(--primary-500);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding: 2vw;
+  border-radius: 10vw;
+  margin-bottom: 6vw;
 }
 @media only screen and (min-width: 768px) {
   .wrapperAccueil .prestations .container-prestations .lustrage {

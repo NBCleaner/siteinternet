@@ -11,7 +11,7 @@
   padding: 0px;
 }
 
-body{
+
 
   p{
     font-family: "DM Sans", sans-serif;
@@ -31,9 +31,7 @@ body{
     text-align: center;
   }
 
-}
-
-header {
+.hero {
   background-image: url('/siteinternet/img-sarah/traitement\ cuir.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,16 +51,6 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
-  }
-
-  .menuPc{
-    display: none;
-  }
-  
-  .menuburger{
-    display: none;
-    position: absolute;
-    z-index: 2; 
   }
 
   .headerContent {
@@ -233,87 +221,8 @@ header {
 
 }
 
-.contact{
-  background-image: url("/siteinternet/img-sarah/contact.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1;
-  }
 
-  .h2question{
-    color: var(--primary-50);
-    position: relative;
-    z-index: 2; 
-  }
-
-  .h3telephone{
-    color: var(--primary-50);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    position: relative;
-    z-index: 2; 
-  }
-
-  
-}
-
-footer{
-  background-color: var(--primary-50);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-
-  .container-map{
-    background-image: url(./img-sarah/mapnbcleaner.png);
-    background-size:cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vw;
-  }
-
-  .container2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  .legal{
-    background-color: white;
-    width: 100vw;
-  }
-
-  .socialnetwork{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 6vw;
-  }
-
-}
 
 @media only screen and (min-width: 768px){
   body{
