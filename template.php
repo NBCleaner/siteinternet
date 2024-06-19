@@ -65,14 +65,14 @@
             <h2>ILS NOUS FONT CONFIANCE</h2>
             <div class="container-partenaire">
                 <div class="ligne1">
-                    <div><img src="img/🦆 icon _peugeot_.png" alt="logo peugeot"></div>
-                    <div><img src="img/🦆 icon _mercedes_.png" alt="logo mercedes"></div>
-                    <div><img src="img/🦆 icon _dsautomobiles_.png" alt="logo dsautomobiles"></div>
+                    <div><img src="img/peugeot.svg" alt="logo peugeot"></div>
+                    <div><img src="img/mercedes.svg" alt="logo mercedes"></div>
+                    <div><img src="img/ds.svg" alt="logo dsautomobiles"></div>
                 </div>
                 <div class="ligne2">
-                    <div><img src="img/🦆 icon _citroen_.png" alt="logo citroen"></div>
-                    <div> <img src="img/simple-icons_toyota.png" alt="logo toyota"></div>
-                    <div> <img src="img/simple-icons_toyota.png" alt="logo toyota"></div>
+                    <div><img src="img/citroen.svg" alt="logo citroen"></div>
+                    <div><img src="img/toyota.svg" alt="logo toyota"></div>
+                    <div><img class="arcelor" src="/public/img/arcelor mital.png" alt="logo toyota"></div>
                 </div>
             </div>
         </section>
