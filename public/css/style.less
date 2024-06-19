@@ -113,7 +113,7 @@ h3 {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
     color: #FFF;
     font-size: 0.9rem;
@@ -164,7 +164,6 @@ h3 {
         font-size: 1.2rem;
         font-family: "Roboto", sans-serif;
         text-align: center;
-        margin-top: 25px;
     }
 
     #carousel {
@@ -179,7 +178,7 @@ h3 {
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            height: 45vh
+            height: 50vh
         }
 
         .review-card {
@@ -190,7 +189,13 @@ h3 {
             width: calc(100% - 20px);
             box-sizing: border-box;
             width: 80vw;
-            line-height: 20px
+            line-height: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+        }
+
+        .review-card:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); 
         }
 
         .left-arrow,
@@ -248,7 +253,6 @@ h3 {
                 img {
                     width: 20vw;
                     height: 10vh;
-
                 }
             }
 
@@ -265,7 +269,7 @@ h3 {
             border-bottom: 1px solid black;
             padding-bottom: 20px;
         }
-
+        
     }
 }
 
@@ -281,6 +285,8 @@ h3 {
     }
 
     .carte {
+        margin-left: 5%;
+        width: 90%;
         background-image: url("../img/map-large.png");
         background-size: cover;
         background-position: 50% 50%;
@@ -336,7 +342,7 @@ footer {
 
 
 // =============================
-// STYLE ACCUEIL (accueil.php)
+// STYLE ACCUEIL (index.php)
 // =============================
 .wrapperAccueil {
     .hero {
@@ -347,21 +353,11 @@ footer {
         width: 100vw;
         height: 100vh;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         gap: 8vh;
-        padding-top: 10rem;
 
 
-        // h1 {
-        //     color: white;
-        //     text-align: center;
-        //     font-family: "Roboto", sans-serif;
-        //     font-weight: bold;
-        //     font-size: 2rem;
-        //     padding: 0px 0.7vw;
-        //     margin: 0 10vw;
-
-        // }
 
         h2 {
             color: white;
@@ -468,8 +464,9 @@ footer {
 
                 width: 100vw;
                 height: 165px;
-                background-image: url('../img/lustrage.png');
-                background-size: 100vw;
+                background-image: url('../img/lustrage.jpeg');
+                background-position-y: 50%;
+                background-size: 100%;
                 background-repeat: no-repeat;
 
                 div {
@@ -872,7 +869,6 @@ footer {
 }
 
 
-
 @media only screen and (min-width: 1024px) {
     // =============================
     // STYLE COMMUN (template.php)
@@ -951,11 +947,88 @@ footer {
     // Call to action, contactez-nous !
     .question {
         min-height: 680px;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+
 
         a {
-            font-size: 4rem;
+            font-size: 2.5rem;
             padding: 1rem 5rem;
+        }
+    }
+
+    .avis {
+
+        h2 {
+            margin-top: 0;
+            font-size: 2rem;
+
+        }
+
+        #carousel {
+
+            .review-container {
+                height: 40vh;
+            }
+
+            .review-card {
+                width: 50%;
+            }
+
+            .left-arrow {
+                left: 150px;
+                font-size: 2rem;
+
+            }
+    
+            .right-arrow {
+                right: 150px;
+                font-size: 2rem;
+            }
+
+        }
+    }
+
+    .partenaire {
+
+        h2{
+            font-size: 2rem;
+
+        }
+        .container-partenaire {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+    
+            .ligne1,
+            .ligne2 {
+                display: flex;
+
+                div {
+
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+    
+                div:nth-child(2) {
+                    border-left: none;
+                    border-right: none;
+                    padding: 0px 20px;
+    
+                }
+    
+            }
+    
+            .ligne1 {
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+            
         }
     }
 
@@ -1022,7 +1095,7 @@ footer {
             }
 
             .video {
-                background-image: url('/img/photovideo.png');
+                background-image: url('../img/photovideo.png');
                 background-size: 50vw;
                 background-position-y: bottom;
                 background-repeat: no-repeat;
@@ -1122,8 +1195,8 @@ footer {
                     }
 
                     .lustragePc {
-                        background-image: url('../img/lustrage-pc.jpg');
-                        background-position-y: 100%;
+                        background-image: url('../img/lustrage.svg');
+                        background-position-x: 60%;
                     }
 
                     .pharePc {
@@ -1166,15 +1239,19 @@ footer {
         }
 
         .wave {
-            width: 100%;
+            width: 100%; 
             display: block;
-
+            overflow: hidden; 
+            margin-top: 100px;
+        
             svg {
+                width: 100%; 
+                height: auto; 
+                display: block; 
                 position: relative;
-                display: block;
-                height: 150px;
             }
         }
+        
 
         .forfait {
             display: flex;
@@ -1448,187 +1525,70 @@ footer {
     }
 }
 
-
-
-@media only screen and (min-width: 768px) {
-
+@media only screen and (min-width: 1440px) {
     // =============================
-    // STYLE ACCUEIL (accueil.php)
+    // STYLE ACCUEIL (index.php)
     // =============================
+
     .wrapperAccueil {
-        .prestations {
-            .container-prestations {
+        .hero {
+            background-size: 100%;
 
-                .lustrage {
-                    width: 100vw;
-                    height: 265px;
 
-                    div {
-                        height: 265px;
-                    }
+            h2{
+                font-size: 3rem;
+            }
 
-                }
+            p{
+                font-size: 2rem;
+            }
 
-                .lustrage {
-                    width: 100vw;
-                    height: 265px;
+            button{
+                width: 20vw;
+            }
+        }
 
-                    div {
-                        height: 265px;
-                    }
+        article {
 
-                }
-
-                .phare {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                .cuir {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                .moteur {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                .siege {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                .lavage {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                .ceramique {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
-                    }
-
-                }
-
-                h3 {
-                    font-size: 1.8rem;
+            .histoire{
+        
+                p{
+                  font-size: 1.2rem;
                 }
             }
         }
 
-        .forfait {
+        .prestationsPc {
 
+                .container-prestationsPc {
 
-            .container-forfait {
-
-                .forfait1,
-                .forfait2,
-                .forfait3 {
-
-                    h3 {
-                        color: white;
-                        font-size: 1.8rem;
-                        font-family: "Roboto", sans-serif;
-                        font-weight: 500;
+                    .lustragePc {
+                        background-image: url('../img/lustrage.svg');
+                        background-position-y: 50%;
                     }
-                }
-
-                .listeforfait1,
-                .listeforfait2,
-                .listeforfait3 {
-
-                    h4 {
-                        font-size: 1.5rem;
-                    }
-
-                    ul {
-                        font-size: 1.3rem;
-
-                    }
-                }
-
-                button {
-
-                    font-size: 1.5rem;
                 }
             }
-        }
+        
 
-        .contact {
-            height: 350px;
-
-            .container-contact {
-                height: 350px;
-
-                h2,
-                h3 {
-                    font-size: 2rem;
-                    line-height: 1.5;
-                }
-
-            }
-        }
 
         .avis {
-            display: flex;
-            align-items: center;
-
-            h2 {
-                font-size: 2rem;
-            }
-
+    
             #carousel {
-                width: 90vw;
-            }
-        }
-
-        .partenaire {
-            h2 {
-                font-size: 2rem;
-            }
-
-            .container-partenaire {
-
-                .ligne1,
-                .ligne2 {
-                    div {
-                        img {
-                            height: 15vh;
-                        }
-                    }
+    
+    
+                .left-arrow {
+                    left: 250px;
+                    font-size: 2rem;
+    
                 }
+        
+                .right-arrow {
+                    right: 250px;
+                    font-size: 2rem;
+                }
+    
             }
-
         }
-
-    }
+    }    
 }
+

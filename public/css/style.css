@@ -87,7 +87,7 @@ h3 {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   color: #FFF;
   font-size: 0.9rem;
   font-weight: 600;
@@ -129,7 +129,6 @@ h3 {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 25px;
 }
 .avis #carousel {
   display: flex;
@@ -143,7 +142,7 @@ h3 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 45vh;
+  height: 50vh;
 }
 .avis #carousel .review-card {
   border: 1px solid #ccc;
@@ -154,6 +153,11 @@ h3 {
   box-sizing: border-box;
   width: 80vw;
   line-height: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.avis #carousel .review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 .avis #carousel .left-arrow,
 .avis #carousel .right-arrow {
@@ -224,6 +228,8 @@ h3 {
   flex: 1;
 }
 .coordonnees .carte {
+  margin-left: 5%;
+  width: 90%;
   background-image: url("../img/map-large.png");
   background-size: cover;
   background-position: 50% 50%;
@@ -270,9 +276,9 @@ footer .footer-socials .facebook-icon {
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 8vh;
-  padding-top: 10rem;
 }
 .wrapperAccueil .hero h2 {
   color: white;
@@ -359,8 +365,9 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lustrage {
   width: 100vw;
   height: 165px;
-  background-image: url('../img/lustrage.png');
-  background-size: 100vw;
+  background-image: url('../img/lustrage.jpeg');
+  background-position-y: 50%;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .lustrage div {
@@ -730,11 +737,59 @@ footer .footer-socials .facebook-icon {
   }
   .question {
     min-height: 680px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
   .question a {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 1rem 5rem;
+  }
+  .avis h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .avis #carousel .review-container {
+    height: 40vh;
+  }
+  .avis #carousel .review-card {
+    width: 50%;
+  }
+  .avis #carousel .left-arrow {
+    left: 150px;
+    font-size: 2rem;
+  }
+  .avis #carousel .right-arrow {
+    right: 150px;
+    font-size: 2rem;
+  }
+  .partenaire h2 {
+    font-size: 2rem;
+  }
+  .partenaire .container-partenaire {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .partenaire .container-partenaire .ligne1,
+  .partenaire .container-partenaire .ligne2 {
+    display: flex;
+  }
+  .partenaire .container-partenaire .ligne1 div img,
+  .partenaire .container-partenaire .ligne2 div img {
+    width: 100%;
+  }
+  .partenaire .container-partenaire .ligne1 div:nth-child(2),
+  .partenaire .container-partenaire .ligne2 div:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    padding: 0px 20px;
+  }
+  .partenaire .container-partenaire .ligne1 {
+    padding-bottom: 0px;
+    border-bottom: none;
   }
   .coordonnees {
     flex-direction: row;
@@ -780,7 +835,7 @@ footer .footer-socials .facebook-icon {
     font-family: "DM Sans", sans-serif;
   }
   .wrapperAccueil article .video {
-    background-image: url('/img/photovideo.png');
+    background-image: url('../img/photovideo.png');
     background-size: 50vw;
     background-position-y: bottom;
     background-repeat: no-repeat;
@@ -865,8 +920,8 @@ footer .footer-socials .facebook-icon {
     border-radius: 50px;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lustragePc {
-    background-image: url('../img/lustrage-pc.jpg');
-    background-position-y: 100%;
+    background-image: url('../img/lustrage.svg');
+    background-position-x: 60%;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .pharePc {
     background-image: url('../img/phare-pc.png');
@@ -898,11 +953,14 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .wave {
     width: 100%;
     display: block;
+    overflow: hidden;
+    margin-top: 100px;
   }
   .wrapperAccueil .wave svg {
-    position: relative;
+    width: 100%;
+    height: auto;
     display: block;
-    height: 150px;
+    position: relative;
   }
   .wrapperAccueil .forfait {
     display: flex;
@@ -1133,113 +1191,32 @@ footer .footer-socials .facebook-icon {
     padding-right: 0.5rem;
   }
 }
-@media only screen and (min-width: 768px) {
-  .wrapperAccueil .prestations .container-prestations .lustrage {
-    width: 100vw;
-    height: 265px;
+@media only screen and (min-width: 1440px) {
+  .wrapperAccueil .hero {
+    background-size: 100%;
   }
-  .wrapperAccueil .prestations .container-prestations .lustrage div {
-    height: 265px;
+  .wrapperAccueil .hero h2 {
+    font-size: 3rem;
   }
-  .wrapperAccueil .prestations .container-prestations .lustrage {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .lustrage div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .phare {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .phare div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .cuir {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .cuir div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .moteur {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .moteur div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .siege {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .siege div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .lavage {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .lavage div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .ceramique {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .ceramique div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations h3 {
-    font-size: 1.8rem;
-  }
-  .wrapperAccueil .forfait .container-forfait .forfait1 h3,
-  .wrapperAccueil .forfait .container-forfait .forfait2 h3,
-  .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
-    color: white;
-    font-size: 1.8rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-  }
-  .wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
-  .wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
-  .wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
-    font-size: 1.5rem;
-  }
-  .wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
-  .wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
-  .wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
-    font-size: 1.3rem;
-  }
-  .wrapperAccueil .forfait .container-forfait button {
-    font-size: 1.5rem;
-  }
-  .wrapperAccueil .contact {
-    height: 350px;
-  }
-  .wrapperAccueil .contact .container-contact {
-    height: 350px;
-  }
-  .wrapperAccueil .contact .container-contact h2,
-  .wrapperAccueil .contact .container-contact h3 {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-  .wrapperAccueil .avis {
-    display: flex;
-    align-items: center;
-  }
-  .wrapperAccueil .avis h2 {
+  .wrapperAccueil .hero p {
     font-size: 2rem;
   }
-  .wrapperAccueil .avis #carousel {
-    width: 90vw;
+  .wrapperAccueil .hero button {
+    width: 20vw;
   }
-  .wrapperAccueil .partenaire h2 {
+  .wrapperAccueil article .histoire p {
+    font-size: 1.2rem;
+  }
+  .wrapperAccueil .prestationsPc .container-prestationsPc .lustragePc {
+    background-image: url('../img/lustrage.svg');
+    background-position-y: 50%;
+  }
+  .wrapperAccueil .avis #carousel .left-arrow {
+    left: 250px;
     font-size: 2rem;
   }
-  .wrapperAccueil .partenaire .container-partenaire .ligne1 div img,
-  .wrapperAccueil .partenaire .container-partenaire .ligne2 div img {
-    height: 15vh;
+  .wrapperAccueil .avis #carousel .right-arrow {
+    right: 250px;
+    font-size: 2rem;
   }
 }
