@@ -701,7 +701,7 @@ footer .footer-socials .facebook-icon {
   padding: 0 1rem;
 }
 .wrapperPrestations .hero {
-  background-image: url('../img-sarah/traitement\ cuir.jpg');
+  background-image: url('../img/traitement-cuir.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -728,14 +728,12 @@ footer .footer-socials .facebook-icon {
   z-index: 2;
 }
 .wrapperPrestations .hero h3 {
-  font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-style: normal;
   color: #EEF1F9;
   margin: 1vw;
 }
 .wrapperPrestations .hero h1 {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: white;

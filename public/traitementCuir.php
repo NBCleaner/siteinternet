@@ -23,8 +23,8 @@
         </div>
         <div class="containerjs">
             <div class="image-container">
-                <img class="image-before slider-image" src="img-sarah/lustrageavant.jpeg" alt="Rendu avant travail">
-                <img class="image-after slider-image" src="img-sarah/lustrageapres.jpeg" alt="Rendu après travail">
+                <img class="image-before slider-image" src="img/lustrageavant.jpeg" alt="Rendu avant travail">
+                <img class="image-after slider-image" src="img/lustrageapres.jpeg" alt="Rendu après travail">
             </div>
             <div class="slider-line"></div>
             <div class="slider-button" aria-hidden="true">
