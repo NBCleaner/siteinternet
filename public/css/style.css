@@ -693,6 +693,125 @@ footer .footer-socials .facebook-icon {
 .wrapperForfaits main .forfaits-desktopView {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .wrapperAccueil .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lustrage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .phare {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .phare div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .cuir {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .cuir div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .moteur {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .moteur div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .siege {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .siege div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lavage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .lavage div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .ceramique {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .ceramique div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations h3 {
+    font-size: 1.8rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .forfait1 h3,
+  .wrapperAccueil .forfait .container-forfait .forfait2 h3,
+  .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
+  .wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
+  .wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
+    font-size: 1.5rem;
+  }
+  .wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
+  .wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
+  .wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
+    font-size: 1.3rem;
+  }
+  .wrapperAccueil .forfait .container-forfait button {
+    font-size: 1.5rem;
+  }
+  .question {
+    font-size: 1.8rem;
+  }
+  .question a {
+    font-size: 1.8rem;
+  }
+  .avis h2 {
+    margin-top: 0;
+  }
+  .avis #carousel .review-container {
+    height: 40vh;
+  }
+  .avis #carousel .review-card {
+    width: 50%;
+  }
+  .avis #carousel .left-arrow {
+    left: 125px;
+    font-size: 2rem;
+  }
+  .avis #carousel .right-arrow {
+    right: 125px;
+    font-size: 2rem;
+  }
+  .partenaire {
+    border-bottom: 10px solid white;
+  }
+  .partenaire .container-partenaire .ligne1 div img,
+  .partenaire .container-partenaire .ligne2 div img {
+    width: 17vw;
+    height: 13vh;
+  }
+  .coordonnees {
+    flex-direction: row;
+  }
+  .coordonnees .carte {
+    margin-left: 2%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   header {
     background-color: transparent;
