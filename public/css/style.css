@@ -614,6 +614,13 @@ footer .footer-socials .facebook-icon {
 .wrapperForfaits .hero {
   display: none;
 }
+.wrapperForfaits h1,
+.wrapperForfaits h2,
+.wrapperForfaits h3,
+.wrapperForfaits .forfaits-title {
+  font-family: 'Roboto Serif', sans-serif;
+  text-transform: uppercase;
+}
 .wrapperForfaits h1 {
   font-weight: 900;
   color: var(--primary-500);
@@ -1106,8 +1113,6 @@ footer .footer-socials .facebook-icon {
   .wrapperForfaits .navDecoration {
     background-color: var(--primary-500);
     padding: 1rem 5rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
   .wrapperForfaits .hero {
     height: 85vh;
