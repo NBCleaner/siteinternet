@@ -1,15 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
 :root {
   --primary-500: #143993;
   --primary-400: #2d56a5;
   --primary-300: #668FFC;
   --primary-50: #EEF1F9;
   --gold: #DAA520;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 body {
   font-family: "DM Sans";
@@ -24,8 +24,6 @@ header {
   align-items: center;
   padding: 1rem 1.25rem;
   padding-bottom: 2.5rem;
-  border-bottom-left-radius: 2400px 1000px;
-  border-bottom-right-radius: 2400px 1000px;
 }
 header #burger-icon {
   background-image: url(../img/Hamburger_icon.svg);
@@ -601,6 +599,100 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
   display: none;
 }
+.wrapperForfaits {
+  background-color: var(--primary-50);
+  min-width: 320px;
+  text-align: center;
+}
+.wrapperForfaits .navDecoration {
+  display: block;
+  background-color: var(--primary-400);
+  border-bottom-left-radius: 2400px 1000px;
+  border-bottom-right-radius: 2400px 1000px;
+  min-height: 85px;
+}
+.wrapperForfaits .hero {
+  display: none;
+}
+.wrapperForfaits h1,
+.wrapperForfaits h2,
+.wrapperForfaits h3,
+.wrapperForfaits .forfaits-title {
+  font-family: 'Roboto Serif', sans-serif;
+  text-transform: uppercase;
+}
+.wrapperForfaits h1 {
+  font-weight: 900;
+  color: var(--primary-500);
+}
+.wrapperForfaits main {
+  padding: 3.125rem 1.25rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card {
+  overflow: hidden;
+  margin-top: 3.125rem;
+  padding-bottom: 1.25rem;
+  background-color: white;
+  border: 1px solid var(--primary-400);
+  border-radius: 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card h2 {
+  padding: 1.875rem 0.625rem;
+  background-color: var(--primary-400);
+  color: white;
+  font-size: 1.375rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card > div {
+  padding: 0 3rem;
+  padding-bottom: 1.25rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card .forfaits-title {
+  color: var(--primary-400);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card .forfaits-title h3 {
+  margin-bottom: 0.625rem;
+  font-weight: 800;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card .deluxe .forfaits-title {
+  color: var(--gold);
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card .deluxe ul li::before {
+  background-color: var(--gold);
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card ul {
+  text-align: left;
+  list-style: none;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card ul li::before {
+  display: block;
+  content: '';
+  min-width: 1.5rem;
+  aspect-ratio: 24/25;
+  background-color: var(--primary-400);
+  -webkit-mask-image: url("../img/Tick-express.svg");
+  mask-image: url("../img/Tick-express.svg");
+}
+.wrapperForfaits main .forfaits-smartphoneView .forfaits-card ul li:not(:last-of-type) {
+  margin-bottom: 0.625rem;
+}
+.wrapperForfaits main .forfaits-desktopView {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .wrapperAccueil .prestations .container-prestations .lustrage {
     width: 100vw;
@@ -1145,6 +1237,94 @@ footer .footer-socials .facebook-icon {
     background-color: var(--primary-50);
     border: 1px solid var(--primary-500);
     color: var(--primary-500);
+  }
+  .wrapperForfaits {
+    background-color: #FFF;
+  }
+  .wrapperForfaits .navDecoration {
+    background-color: var(--primary-500);
+    padding: 1rem 5rem;
+  }
+  .wrapperForfaits .hero {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-500);
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom-left-radius: 1000px 33%;
+    border-bottom-right-radius: 1000px 33%;
+  }
+  .wrapperForfaits .hero p {
+    max-width: 800px;
+  }
+  .wrapperForfaits main {
+    padding: 3rem 5rem;
+  }
+  .wrapperForfaits main .forfaits-smartphoneView {
+    display: none;
+  }
+  .wrapperForfaits main h1 {
+    margin-bottom: 1rem;
+  }
+  .wrapperForfaits main .forfaits-desktopView {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 1250px;
+  }
+  .wrapperForfaits main .forfaits-desktopView table {
+    flex: 1;
+    color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .wrapperForfaits main .forfaits-desktopView table td img {
+    max-width: 24px;
+  }
+  .wrapperForfaits main .forfaits-desktopView table thead tr > * {
+    width: 25%;
+  }
+  .wrapperForfaits main .forfaits-desktopView table thead tr > *:not(:first-child) {
+    background-color: var(--primary-500);
+    padding: 0.5rem;
+    font-weight: 900;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody .express {
+    filter: invert(12%) sepia(96%) saturate(2474%) hue-rotate(219deg) brightness(104%) contrast(94%);
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody .deluxe {
+    filter: invert(85%) sepia(9%) saturate(6473%) hue-rotate(346deg) brightness(91%) contrast(87%);
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:not(:first-child, :last-child) {
+    border-bottom: 1px solid #D6D6D6;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:first-child > * {
+    background-color: var(--primary-300);
+    font-weight: 800;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:first-child :first-child {
+    border-top-left-radius: 10% 100%;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr :first-child {
+    text-align: start;
+    color: #000;
+    height: 3rem;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:last-of-type {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:last-of-type :not(:first-child) {
+    background-color: var(--primary-500);
+  }
+  .wrapperForfaits main .forfaits-desktopView table tbody tr:last-of-type :first-child {
+    text-align: right;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
