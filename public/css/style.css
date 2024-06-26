@@ -271,42 +271,112 @@ footer .footer-socials .facebook-icon {
   color: #3b5998;
 }
 .wrapperAccueil .hero {
-  background-image: url("../img/Rectangle\ 14.png");
-  background-size: cover;
-  background-position-x: 40%;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+}
+.wrapperAccueil .hero .carouselHero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease;
+}
+.wrapperAccueil .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.wrapperAccueil .hero .slide1 {
+  background-image: url('../img/hero6.jpeg');
+}
+.wrapperAccueil .hero .slide2 {
+  background-image: url('../img/hero2.jpeg');
+}
+.wrapperAccueil .hero .slide3 {
+  background-image: url('../img/hero9.jpeg');
+}
+.wrapperAccueil .hero .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+.wrapperAccueil .hero .carousel-indicators .indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.wrapperAccueil .hero .carousel-indicators .indicator.active {
+  background-color: var(--primary-400);
+  opacity: 1;
+}
+.wrapperAccueil .heroContent {
+  width: 100vw;
+  height: 55vh;
+  display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  gap: 8vh;
+  z-index: 55;
 }
-.wrapperAccueil .hero h2 {
+.wrapperAccueil .heroContent h2 {
   color: white;
-  text-align: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
   margin: 0 10vw;
+  z-index: 55;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(41, 26, 26, 0.9);
 }
-.wrapperAccueil .hero p {
+.wrapperAccueil .heroContent p {
   color: white;
-  text-align: center;
   font-family: "DM Sans", sans-serif;
-  font-weight: medium;
-  font-size: 1rem;
-  padding: 0px 0.7vw;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 2vh 0.7vw 3vh 0.7vw;
   margin: 0 10vw;
+  z-index: 55;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
-.wrapperAccueil .hero button {
-  height: 7vh;
-  width: 60vw;
-  align-self: center;
+.wrapperAccueil .heroContent button {
+  height: 5vh;
+  width: 50vw;
   border-radius: 50px;
   background-color: var(--primary-500);
   color: white;
   border: none;
+  padding: 0 0.7vw;
+  margin: 0 10vw 7vh 10vw;
+  z-index: 55;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wrapperAccueil .heroContent button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .wrapperAccueil article {
   display: none;
@@ -375,9 +445,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lustrage div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .phare {
@@ -391,9 +462,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .phare div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .cuir {
@@ -406,9 +478,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .cuir div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .moteur {
@@ -421,9 +494,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .moteur div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .siege {
@@ -436,9 +510,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .siege div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .lavage {
@@ -452,9 +527,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lavage div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations .ceramique {
@@ -467,9 +543,10 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .ceramique div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
   justify-content: center;
 }
 .wrapperAccueil .prestations .container-prestations h3 {
@@ -477,6 +554,13 @@ footer .footer-socials .facebook-icon {
   font-size: 1rem;
   -webkit-text-stroke: 0.5px var(--primary-500);
   font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: rgba(45, 86, 165, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .wrapperAccueil .prestationsPc {
   display: none;
@@ -613,7 +697,7 @@ footer .footer-socials .facebook-icon {
   border-bottom-right-radius: 2400px 1000px;
   min-height: 85px;
 }
-.wrapperForfaits .hero {
+.wrapperForfaits .heroContent {
   display: none;
 }
 .wrapperForfaits h1,
@@ -700,7 +784,7 @@ footer .footer-socials .facebook-icon {
   color: var(--primary-500);
   padding: 0 1rem;
 }
-.wrapperPrestations .hero {
+.wrapperPrestations .heroContent {
   background-image: url('../img/traitement-cuir.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -710,7 +794,7 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   position: relative;
 }
-.wrapperPrestations .hero::before {
+.wrapperPrestations .heroContent::before {
   content: '';
   position: absolute;
   top: 0;
@@ -720,20 +804,20 @@ footer .footer-socials .facebook-icon {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.wrapperPrestations .hero .headerContent {
+.wrapperPrestations .heroContent .headerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-.wrapperPrestations .hero h3 {
+.wrapperPrestations .heroContent h3 {
   font-weight: 200;
   font-style: normal;
   color: #EEF1F9;
   margin: 1vw;
 }
-.wrapperPrestations .hero h1 {
+.wrapperPrestations .heroContent h1 {
   font-weight: 700;
   font-style: normal;
   color: white;
@@ -861,6 +945,33 @@ footer .footer-socials .facebook-icon {
   margin-bottom: 6vw;
 }
 @media only screen and (min-width: 768px) {
+  .wrapperAccueil .hero .slide1 {
+    background-image: url('../img/hero6.jpeg');
+    background-position-y: 80% ;
+  }
+  .wrapperAccueil .hero .slide2 {
+    background-image: url('../img/hero2.jpeg');
+    background-position-y: 50% ;
+  }
+  .wrapperAccueil .hero .slide3 {
+    background-image: url('../img/hero9.jpeg');
+    background-position-y: 65% ;
+  }
+  .wrapperAccueil .heroContent {
+    height: 75vh;
+  }
+  .wrapperAccueil .heroContent h2 {
+    font-size: 2rem;
+    margin: 0 15vw 0 10vw;
+  }
+  .wrapperAccueil .heroContent p {
+    font-size: 1.3rem;
+    margin: 0 20vw 0 10vw;
+  }
+  .wrapperAccueil .heroContent button {
+    width: 25vw;
+    margin-bottom: 15vh;
+  }
   .wrapperAccueil .prestations .container-prestations .lustrage {
     width: 100vw;
     height: 265px;
@@ -1102,6 +1213,37 @@ footer .footer-socials .facebook-icon {
   }
   footer .footer-nav ul a {
     color: #000;
+  }
+  .wrapperAccueil .hero {
+    height: 85vh;
+  }
+  .wrapperAccueil .hero .slide1 {
+    background-image: url('../img/hero6.jpeg');
+    background-position-y: 80% ;
+  }
+  .wrapperAccueil .hero .slide2 {
+    background-image: url('../img/hero2.jpeg');
+    background-position-y: 50% ;
+  }
+  .wrapperAccueil .hero .slide3 {
+    background-image: url('../img/hero9.jpeg');
+    background-position-y: 65% ;
+  }
+  .wrapperAccueil .heroContent {
+    height: 85vh;
+  }
+  .wrapperAccueil .heroContent h2 {
+    font-size: 2.3rem;
+    margin: 0 15vw 0 10vw;
+  }
+  .wrapperAccueil .heroContent p {
+    font-size: 1.5rem;
+    margin: 0 20vw 0 10vw;
+  }
+  .wrapperAccueil .heroContent button {
+    width: 25vw;
+    margin-bottom: 10vh;
+    font-size: 1.1rem;
   }
   .wrapperAccueil article {
     display: flex;
@@ -1412,7 +1554,7 @@ footer .footer-socials .facebook-icon {
     background-color: var(--primary-500);
     padding: 1rem 5rem;
   }
-  .wrapperForfaits .hero {
+  .wrapperForfaits .heroContent {
     height: 85vh;
     display: flex;
     justify-content: center;
@@ -1426,7 +1568,7 @@ footer .footer-socials .facebook-icon {
     border-bottom-left-radius: 1000px 33%;
     border-bottom-right-radius: 1000px 33%;
   }
-  .wrapperForfaits .hero p {
+  .wrapperForfaits .heroContent p {
     max-width: 800px;
   }
   .wrapperForfaits main {
@@ -1496,16 +1638,35 @@ footer .footer-socials .facebook-icon {
 }
 @media only screen and (min-width: 1440px) {
   .wrapperAccueil .hero {
-    background-size: 100%;
+    height: 100vh;
   }
-  .wrapperAccueil .hero h2 {
+  .wrapperAccueil .hero .slide1 {
+    background-image: url('../img/hero6.jpeg');
+    background-position-y: 80% ;
+  }
+  .wrapperAccueil .hero .slide2 {
+    background-image: url('../img/hero2.jpeg');
+    background-position-y: 50% ;
+  }
+  .wrapperAccueil .hero .slide3 {
+    background-image: url('../img/hero9.jpeg');
+    background-position-y: 65% ;
+  }
+  .wrapperAccueil .heroContent {
+    height: 100vh;
+    background-position-y: 10%;
+  }
+  .wrapperAccueil .heroContent h2 {
     font-size: 3rem;
   }
-  .wrapperAccueil .hero p {
+  .wrapperAccueil .heroContent p {
     font-size: 2rem;
+    margin: 0 20vw 0 10vw;
   }
-  .wrapperAccueil .hero button {
+  .wrapperAccueil .heroContent button {
     width: 20vw;
+    margin-bottom: 20vh;
+    font-size: 1.5rem;
   }
   .wrapperAccueil article .histoire p {
     font-size: 1.2rem;

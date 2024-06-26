@@ -1,22 +1,25 @@
 <?php ob_start(); ?>
 
 <section class="hero">
-    <!-- <h1>
-            VOTRE CENTRE DE LAVAGE ET NETTOYAGE SUR COUDEKERQUE-BRANCHE
-        </h1> -->
-    <h2>
-        NB CLEANER <br> Auto
-    </h2>
+    <div class="carouselHero">
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
 
-    <p>
-        Respectueux de l'environnement et des techniques de lavage
-        éco-responsables. Nous offrons un service de qualité exceptionnelle.
-    </p>
-
-    <button>
-        CONTACTEZ-NOUS
-    </button>
+    </div>
+    <div class="heroContent">
+        <h2>NB CLEANER Auto</h2>
+        <p>
+            Respectueux de l'environnement et des techniques de lavage
+            éco-responsables. Nous offrons un service de qualité exceptionnelle.
+        </p>
+        <button>CONTACTEZ-NOUS</button>
+    </div>
 </section>
+
+
 
 <article>
     <div class="histoire">
@@ -227,6 +230,7 @@
     </div>
 </section>
 <script src="js/accueil.js"></script>
+<script src="js/carouselHero.js" ></script>
 
 <?php
 $content = ob_get_clean();
