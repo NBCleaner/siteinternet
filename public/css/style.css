@@ -289,7 +289,29 @@ footer .footer-socials .facebook-icon {
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: background-image 1s ease;
+}
+.wrapperAccueil .hero .carouselHero .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+.wrapperAccueil .hero .carouselHero .slide1 {
+  background-image: url('../img/hero6.jpeg');
+}
+.wrapperAccueil .hero .carouselHero .slide2 {
+  background-image: url('../img/hero2.jpeg');
+}
+.wrapperAccueil .hero .carouselHero .slide3 {
+  background-image: url('../img/hero9.jpeg');
+}
+.wrapperAccueil .hero .carouselHero .active {
+  opacity: 1;
 }
 .wrapperAccueil .hero::before {
   content: "";
@@ -301,15 +323,6 @@ footer .footer-socials .facebook-icon {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-.wrapperAccueil .hero .slide1 {
-  background-image: url('../img/hero6.jpeg');
-}
-.wrapperAccueil .hero .slide2 {
-  background-image: url('../img/hero2.jpeg');
-}
-.wrapperAccueil .hero .slide3 {
-  background-image: url('../img/hero9.jpeg');
-}
 .wrapperAccueil .hero .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -317,7 +330,7 @@ footer .footer-socials .facebook-icon {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 .wrapperAccueil .hero .carousel-indicators .indicator {
   width: 15px;
@@ -945,17 +958,51 @@ footer .footer-socials .facebook-icon {
   margin-bottom: 6vw;
 }
 @media only screen and (min-width: 768px) {
-  .wrapperAccueil .hero .slide1 {
+  .wrapperAccueil .hero {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  .wrapperAccueil .hero .carouselHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapperAccueil .hero .carouselHero .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  .wrapperAccueil .hero .carouselHero .slide1 {
     background-image: url('../img/hero6.jpeg');
-    background-position-y: 80% ;
+    background-position-y: 80%;
   }
-  .wrapperAccueil .hero .slide2 {
+  .wrapperAccueil .hero .carouselHero .slide2 {
     background-image: url('../img/hero2.jpeg');
-    background-position-y: 50% ;
+    background-position-y: 50%;
   }
-  .wrapperAccueil .hero .slide3 {
+  .wrapperAccueil .hero .carouselHero .slide3 {
     background-image: url('../img/hero9.jpeg');
-    background-position-y: 65% ;
+    background-position-y: 65%;
+  }
+  .wrapperAccueil .hero .carouselHero .active {
+    opacity: 1;
   }
   .wrapperAccueil .heroContent {
     height: 75vh;

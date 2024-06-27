@@ -3,11 +3,10 @@
 <section class="hero">
     <div class="carouselHero">
         <div class="carousel-indicators">
-            <span class="indicator active" data-slide="0"></span>
-            <span class="indicator" data-slide="1"></span>
-            <span class="indicator" data-slide="2"></span>
+            <span class="indicator active" data-slide="0" onclick="showSlide(0)"></span>
+            <span class="indicator" data-slide="1" onclick="showSlide(1)"></span>
+            <span class="indicator" data-slide="2" onclick="showSlide(2)"></span>
         </div>
-
     </div>
     <div class="heroContent">
         <h2>NB CLEANER Auto</h2>
@@ -18,6 +17,7 @@
         <button>CONTACTEZ-NOUS</button>
     </div>
 </section>
+
 
 
 
