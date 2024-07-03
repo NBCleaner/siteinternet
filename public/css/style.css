@@ -52,23 +52,57 @@ header nav {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFF;
+  overflow: scroll;
 }
-header nav ul {
+header nav .dropdownPrestations {
+  position: relative;
+}
+header nav .dropdownPrestations #dropdownPrestationsButton {
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  text-align: inherit;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 0;
+}
+header nav .dropdownPrestations #dropdownPrestationsContent {
+  display: none;
+}
+header nav .dropdownPrestations #dropdownPrestationsContent ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+header nav .dropdownPrestations #dropdownPrestationsContent ul li {
+  font-size: 0.75em;
+  padding: 0.5em 0;
+  text-transform: initial;
+}
+header nav .dropdownPrestations #dropdownPrestationsContent.show {
+  display: block;
+}
+header nav > ul {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 10rem;
   text-align: end;
 }
-header nav ul li {
+header nav > ul > li {
   list-style: none;
   padding: 1.5rem 0;
 }
-header nav ul li:not(:last-of-type) {
+header nav > ul > li:not(:last-of-type) {
   border-bottom: 1px solid #FFF;
 }
-header nav ul li a {
+header nav > ul > li a {
+  display: inline-block;
   color: #FFF;
+  width: 100%;
 }
 header nav.shown {
   display: flex;
@@ -1221,24 +1255,60 @@ footer .footer-socials .facebook-icon {
     height: auto;
     padding-right: 0;
     font-size: 1.1rem;
+    overflow: initial;
   }
-  header nav ul {
+  header nav .dropdownPrestations #dropdownPrestationsButton {
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    text-align: inherit;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent {
+    position: absolute;
+    background-color: var(--primary-500);
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent ul {
+    margin-top: 0;
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent ul li {
+    padding: 0;
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent ul li a {
+    display: block;
+    padding: 0.5rem;
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent ul li a:hover {
+    background-color: #FFF;
+    color: var(--primary-400);
+  }
+  header nav .dropdownPrestations #dropdownPrestationsContent.show {
+    display: block;
+  }
+  header nav > ul {
     flex-direction: row;
     gap: 4rem;
     margin-top: 0;
     text-align: initial;
   }
-  header nav ul li {
+  header nav > ul > li {
     padding: 0;
   }
-  header nav ul li:not(:last-of-type) {
+  header nav > ul > li:not(:last-of-type) {
     border-bottom: none;
   }
-  header nav ul li a {
+  header nav > ul > li a {
     color: #FFF;
   }
-  header nav ul li:hover {
+  header nav > ul > li:hover {
     border-bottom: 4px solid var(--primary-400);
+    margin-top: -4px;
     transform: scale(1.1);
   }
   header .socials {
@@ -1332,15 +1402,15 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .hero .slide1 {
     background-image: url('../img/hero6.jpeg');
-    background-position-y: 80% ;
+    background-position-y: 80%;
   }
   .wrapperAccueil .hero .slide2 {
     background-image: url('../img/hero2.jpeg');
-    background-position-y: 50% ;
+    background-position-y: 50%;
   }
   .wrapperAccueil .hero .slide3 {
     background-image: url('../img/hero9.jpeg');
-    background-position-y: 65% ;
+    background-position-y: 65%;
   }
   .wrapperAccueil .heroContent {
     height: 85vh;
@@ -1752,15 +1822,15 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .hero .slide1 {
     background-image: url('../img/hero6.jpeg');
-    background-position-y: 80% ;
+    background-position-y: 80%;
   }
   .wrapperAccueil .hero .slide2 {
     background-image: url('../img/hero2.jpeg');
-    background-position-y: 100% ;
+    background-position-y: 100%;
   }
   .wrapperAccueil .hero .slide3 {
     background-image: url('../img/hero9.jpeg');
-    background-position-y: 65% ;
+    background-position-y: 65%;
   }
   .wrapperAccueil .heroContent {
     height: 100vh;
