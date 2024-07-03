@@ -797,10 +797,9 @@ footer .footer-socials .facebook-icon {
 .wrapperPrestations h2 {
   text-align: center;
   color: var(--primary-500);
-  padding: 0 1rem;
+  padding: 3vw;
 }
-.wrapperPrestations .heroContent {
-  background-image: url('../img/traitement-cuir.jpg');
+.wrapperPrestations .hero {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -809,7 +808,7 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   position: relative;
 }
-.wrapperPrestations .heroContent::before {
+.wrapperPrestations .hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -819,24 +818,52 @@ footer .footer-socials .facebook-icon {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.wrapperPrestations .heroContent .headerContent {
+.wrapperPrestations .hero .headerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-.wrapperPrestations .heroContent h3 {
+.wrapperPrestations .hero h3 {
   font-weight: 200;
   font-style: normal;
   color: #EEF1F9;
   margin: 1vw;
 }
-.wrapperPrestations .heroContent h1 {
+.wrapperPrestations .hero h1 {
   font-weight: 700;
   font-style: normal;
   color: white;
-  font-size: 7vw;
+  font-size: 5vw;
+  text-align: center;
+}
+.wrapperPrestations .traitementCuir {
+  background-image: url('../img/traitement-cuir.jpg');
+}
+.wrapperPrestations .shampoinageSiege {
+  background-image: url('../img/siege.png');
+}
+.wrapperPrestations .poseCeramique {
+  background-image: url('../img/ceramique.png');
+}
+.wrapperPrestations .optiquePhare {
+  background-image: url('../img/optiquePhrareApres.jpg');
+}
+.wrapperPrestations .nettoyageMoteur {
+  background-image: url('../img/lavagemoteurApres.jpg');
+}
+.wrapperPrestations .nettoyageInterieur {
+  background-image: url('../img/nettoyageApres.jpg');
+}
+.wrapperPrestations .nettoyageExterieur {
+  background-image: url('../img/NettoyageExterieurApres.jpeg');
+}
+.wrapperPrestations .lustragePolissage {
+  background-image: url('../img/lustragePolissageApres.jpg');
+}
+.wrapperPrestations .deflocageVehicule {
+  background-image: url('../img/deflocageApres.jpg');
 }
 .wrapperPrestations .section1 {
   display: flex;
@@ -848,6 +875,7 @@ footer .footer-socials .facebook-icon {
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
+  padding: 2rem;
 }
 .wrapperPrestations .section1 img {
   width: 300px;
@@ -881,6 +909,12 @@ footer .footer-socials .facebook-icon {
   overflow: hidden;
   height: 500px;
 }
+.wrapperPrestations .section1 .image-containerCeramique {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
 .wrapperPrestations .section1 .slider-image {
   top: 0;
   left: 0;
@@ -896,6 +930,9 @@ footer .footer-socials .facebook-icon {
   position: absolute;
   inset: 0;
   width: var(--position);
+}
+.wrapperPrestations .section1 .image-before2 {
+  width: 800px;
 }
 .wrapperPrestations .section1 .slider {
   position: absolute;
@@ -941,12 +978,15 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   justify-content: center;
 }
+.wrapperPrestations .section2 h2 {
+  padding: 2rem;
+}
 .wrapperPrestations .section2 ul {
   color: var(--primary-500);
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin: 6vw;
+  margin: 2rem;
 }
 .wrapperPrestations .section2 button {
   background-color: var(--primary-500);
@@ -955,9 +995,23 @@ footer .footer-socials .facebook-icon {
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  padding: 2vw;
+  padding: 2rem;
   border-radius: 10vw;
-  margin-bottom: 6vw;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+}
+.wrapperPrestations .section2 a {
+  color: white;
+  text-decoration: none;
+}
+.wrapperPrestations .section2 a:visited {
+  color: white;
+}
+.wrapperPrestations .section2 a:hover {
+  color: white;
+}
+.wrapperPrestations .section2 a:active {
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .wrapperAccueil .hero {
@@ -1136,6 +1190,20 @@ footer .footer-socials .facebook-icon {
   }
   .coordonnees .carte {
     margin-left: 2%;
+  }
+  .wrapperPrestations .section1 {
+    flex-direction: row;
+  }
+  .wrapperPrestations .section1 .hero h1 {
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 7vw;
+  }
+  .wrapperPrestations .section1 .descriptionPrestation,
+  .wrapperPrestations .section1 .containerjs {
+    flex: 1;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1766,5 +1834,19 @@ footer .footer-socials .facebook-icon {
   }
   footer .footer-socials .facebook-icon {
     color: #3b5998;
+  }
+  .section1 {
+    flex-direction: row;
+  }
+  .section1 .descriptionPrestation,
+  .section1 .containerjs {
+    flex: 1;
+    padding: 1rem;
+  }
+  .wrapperPrestations .hero h1 {
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 7vw;
   }
 }

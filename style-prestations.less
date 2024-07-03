@@ -17,7 +17,7 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin: 3vw;
+    margin: 10vw;
     text-align: center;
 
   }
@@ -80,39 +80,23 @@
   
 }
 
+.section1 {
+  display: flex;
+  flex-direction: column; 
 
-.section1{
- 
-  p{
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 8vw;
-
+  .descriptionPrestation,
+  .containerjs {
+    flex: 1; 
+    padding: 10px;
   }
-  
-  img{
-    width: 300px; 
+
+
+  img {
+    width: 300px;
     height: auto;
-
-  }
-  .container-section1 {
-    display: flex;
-    flex-direction: column;
   }
 
-  ::after, ::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  img{
-    display: block;
-    max-width: 100%;
-  }
-
-  .avantApres{
+  .avantApres {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,44 +104,43 @@
     overflow: hidden;
     border-radius: 1rem;
     --position: 50%;
-
   }
 
-  .containerImage{
+  .containerImage {
     max-width: 800px;
     max-height: 90vh;
     aspect-ratio: 16/9;
   }
 
-  .beforeAfter{
+  .beforeAfter {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left;
   }
 
-  .image-before{
+  .image-before {
     position: absolute;
     inset: 0;
     width: var(--position);
-
   }
-  .slider{
+
+  .slider {
     position: absolute;
     inset: 0;
     cursor: pointer;
     opacity: 0;
-    // pour firefox
+    // Pour Firefox
     width: 100%;
     height: 100%;
   }
 
-  .slider:focus-visible ~ .slider-button{
+  .slider:focus-visible ~ .slider-button {
     outline: 5px solid black;
     outline-offset: 3px;
   }
 
-  .slider-line{
+  .slider-line {
     position: absolute;
     inset: 0;
     width: 2rem;
@@ -169,7 +152,7 @@
     pointer-events: none;
   }
 
-  .slider-button{
+  .slider-button {
     position: absolute;
     background-color: white;
     color: black;
@@ -183,12 +166,7 @@
     pointer-events: none;
     z-index: 100;
     box-shadow: 1px 1px 1px;
-
-
   }
-
-
-
 }
 
 .section2{
@@ -203,7 +181,6 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin: 6vw;
   
   }
 
@@ -214,9 +191,24 @@
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    padding: 2vw;
+    padding: vw;
     border-radius: 10vw;
-    margin-bottom: 6vw;
+  }
+  a {
+    color: white; 
+    text-decoration: none; 
+  
+    &:visited {
+      color: white; 
+    }
+  
+    &:hover {
+      color: white; 
+    }
+  
+    &:active {
+      color: white; 
+    }
   }
 
 }
@@ -231,31 +223,31 @@
       margin: 1vw;
     }
   
-    h2{
-      padding: 2vw;
 
-    }
   }
   header {
     width: 100vw;
     height: 40vw;
   }
+  
   .section1{
-    padding: 6vw;
- 
-    p{
-      margin: 4vw;
-    }
-    .container-section1 {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .container1-section1,
-    #container2-image {
-      flex-basis: 50%;
-    }
+      flex-direction: row; 
+      
+      .descriptionPrestation,
+      .containerjs {
+        flex: 1;
+      }
+  
+      .descriptionPrestation {
+        order: 1; 
+      }
+  
+      .containerjs {
+        order: 2; 
+      }
   }
+  
+    
   footer {
     display: flex;
     flex-direction: column;
@@ -292,6 +284,15 @@
       padding-top: 6vw;
     }
   }
-  
-  
+  .section2{
+    padding: 1vw;
+ 
+    p{
+      margin: 1vw;
+    }
+
+    
   }
+  
+  
+}
