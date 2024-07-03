@@ -1273,6 +1273,7 @@ footer .footer-socials .facebook-icon {
   header nav .dropdownPrestations #dropdownPrestationsContent {
     position: absolute;
     background-color: var(--primary-500);
+    margin-top: 1rem;
   }
   header nav .dropdownPrestations #dropdownPrestationsContent ul {
     margin-top: 0;
@@ -1281,6 +1282,7 @@ footer .footer-socials .facebook-icon {
     padding: 0;
   }
   header nav .dropdownPrestations #dropdownPrestationsContent ul li a {
+    font-size: 1.1em;
     display: block;
     padding: 0.5rem;
   }
