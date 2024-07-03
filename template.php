@@ -109,9 +109,9 @@
         <footer>
             <div class="footer-nav">
                 <ul>
-                    <ul><a href="index.html">Accueil</a></ul>
+                    <ul><a href="index.php">Accueil</a></ul>
                     <ul><a href="prestations.html">Prestations</a></ul>
-                    <ul><a href="forfaits.html">Forfaits</a></ul>
+                    <ul><a href="forfaits.php">Forfaits</a></ul>
                     <ul><a href="contact.html">Contact</a></ul>
                 </ul>
             </div>

@@ -102,40 +102,40 @@
     <div class="carousel-container-pc">
         <i class="fa-solid fa-circle-arrow-left carousel-arrow left-arrow" id="left-arrow-top"></i>
         <div class="container-prestationsPc">
-            <div class="lustragePc">
-                <div>
-                    <H3>LUSTRAGE / POLISSAGE</H3>
-                    <a href=""></a>
-                </div>
+        <div class="lustragePc" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
+            <div>
+                <h3>LUSTRAGE / POLISSAGE</h3>
             </div>
-            <div class="pharePc">
+        </div>
+
+            <div class="pharePc" onclick="location.href='optiqueDePhares.php';" style="cursor: pointer;">
                 <div>
                     <H3>RÉNOVATION OPTIQUE DE PHARE</H3>
                     <a href=""></a>
                 </div>
             </div>
-            <div class="cuirPc">
+            <div class="cuirPc" onclick="location.href='traitementCuir.php';" style="cursor: pointer;">
                 <div>
                     <H3>TRAITEMENT CUIR</H3>
                     <a href=""></a>
                 </div>
             </div>
-            <div class="moteurPc">
+            <div class="moteurPc" onclick="location.href='nettoyageMoteur.php';" style="cursor: pointer;">
                 <div>
                     <H3>LAVAGE MOTEUR</H3>
                 </div>
             </div>
-            <div class="siegePc">
+            <div class="siegePc" onclick="location.href='shampoinageSiege.php';" style="cursor: pointer;">
                 <div>
                     <H3>SHAMPOINGAGE SIÈGE</H3>
                 </div>
             </div>
-            <div class="lavagePc">
+            <div class="lavagePc" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
                 <div>
                     <H3>NETTOYAGE EXTÉRIEUR</H3>
                 </div>
             </div>
-            <div class="ceramiquePc">
+            <div class="ceramiquePc" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">
                 <div>
                     <H3>POSE CÉRAMIQUE</H3>
                 </div>

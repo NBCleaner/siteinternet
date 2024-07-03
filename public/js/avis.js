@@ -69,7 +69,16 @@ function displayReviewsCarousel(reviews) {
         if (currentIndex >= reviewsCount) {
             currentIndex = 0; // Revenir au premier avis s'il n'y a pas d'avis suivant
         }
+
         showReview(currentIndex);
+    // Ajouter la classe pour la transition vers la gauche
+    reviewContainer.classList.add('slide-left');
+
+    // Supprimer la classe après la fin de la transition
+    setTimeout(() => {
+        reviewContainer.classList.remove('slide-left');
+    }, 500); // Correspond à la durée de la transition en millisecondes
+
     }
 
     // Fonction pour passer à l'avis précédent
@@ -80,6 +89,13 @@ function displayReviewsCarousel(reviews) {
             currentIndex = reviewsCount - 1; // Aller au dernier avis s'il n'y a pas d'avis précédent
         }
         showReview(currentIndex);
+        reviewContainer.classList.add('slide-right');
+
+        // Supprimer la classe après la fin de la transition
+        setTimeout(() => {
+            reviewContainer.classList.remove('slide-right');
+        }, 500); // Correspond à la durée de la transition en millisecondes
+
     }
 
     document.getElementById("arrow-left").addEventListener('click', prevReview);

@@ -145,6 +145,13 @@ h3 {
   justify-content: center;
   overflow: hidden;
   height: 45vh;
+  transition: transform 0.5s ease-in-out;
+}
+.avis #carousel .slide-left {
+  transform: translateX(-100%);
+}
+.avis #carousel .slide-right {
+  transform: translateX(100%);
 }
 .avis #carousel .review-card {
   border: 1px solid #ccc;
@@ -695,7 +702,7 @@ footer .footer-socials .facebook-icon {
   display: none;
 }
 .wrapperForfaits {
-  background-color: var(--primary-50);
+  background-color: #fff;
   min-width: 320px;
   text-align: center;
 }
@@ -1466,7 +1473,7 @@ footer .footer-socials .facebook-icon {
     position: relative;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lustragePc {
-    background-image: url('../img/lustrage.svg');
+    background-image: url('../img/lustrage.jpeg');
     background-position-x: 60%;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .pharePc {
@@ -1656,9 +1663,6 @@ footer .footer-socials .facebook-icon {
     background-color: var(--primary-50);
     border: 1px solid var(--primary-500);
     color: var(--primary-500);
-  }
-  .wrapperForfaits {
-    background-color: #FFF;
   }
   .wrapperForfaits .navDecoration {
     background-color: var(--primary-500);
