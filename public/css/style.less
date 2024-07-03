@@ -351,51 +351,150 @@ footer {
 // =============================
 .wrapperAccueil {
     .hero {
-        background-image: url("../img/Rectangle\ 14.png");
-        background-size: cover;
-        background-position-x: 40%;
-        background-repeat: no-repeat;
-        width: 100vw;
-        height: 100vh;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        overflow: hidden;
         display: flex;
+        align-items: center;
         justify-content: center;
+        text-align: center;
+        color: white;
+
+        .carouselHero {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            // transition: background-image 1s ease;
+
+            .slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                transition: opacity 0.5s ease-in-out;
+                opacity: 0;
+            }
+
+            .slide1 {
+                background-image: url('../img/hero6small.png');
+                background-position-x: 60%;
+            }
+    
+            .slide2 {
+                background-image: url('../img/hero2bisbis.png');
+
+            }
+    
+            .slide3 {
+                background-image: url('../img/hero9small.png');
+            }
+    
+            .active {
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+
+ 
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 2; 
+
+            .indicator {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: white;
+                cursor: pointer;
+                opacity: 0.5;
+
+                &.active {
+                    background-color: var(--primary-400);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .heroContent {
+
+        width: 100vw;
+        height: 55vh;
+        display: flex;
+        justify-content: flex-end;
         flex-direction: column;
-        gap: 8vh;
-
-
+        z-index: 55;
 
         h2 {
             color: white;
-            text-align: center;
             font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 1.5rem;
+            font-weight: bold;
+            font-size: 1.3rem;
             margin: 0 10vw;
-
+            z-index: 55;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(41, 26, 26, 0.9);
 
         }
 
         p {
             color: white;
-            text-align: center;
             font-family: "DM Sans", sans-serif;
-            font-weight: medium;
-            font-size: 1rem;
-            padding: 0px 0.7vw;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 2vh 0.7vw 3vh 0.7vw;
             margin: 0 10vw;
+            z-index: 55;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
         }
 
         button {
-            height: 7vh;
-            width: 60vw;
-            align-self: center;
+            height: 5vh;
+            width: 50vw;
             border-radius: 50px;
             background-color: var(--primary-500);
             color: white;
             border: none;
+            padding: 0 0.7vw;
+            margin: 0 10vw 7vh 10vw;
+            z-index: 55;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
         }
+        
 
-
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
     }
 
     article {
@@ -421,7 +520,7 @@ footer {
             p {
                 margin: 0% 6%;
                 font-size: 0.8rem;
-                text-align: center;
+                text-align: left;
                 font-family: "DM Sans", sans-serif;
                 padding-bottom: 20px;
             }
@@ -455,7 +554,7 @@ footer {
                 text-align: center;
                 font-size: 0.9rem;
                 font-family: "DM Sans", sans-serif;
-
+                font-style: italic;
             }
         }
 
@@ -477,9 +576,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
 
@@ -498,9 +598,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -516,9 +617,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -534,9 +636,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -552,9 +655,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -571,9 +675,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.5);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -589,9 +694,10 @@ footer {
                 div {
                     width: 100vw;
                     height: 165px;
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.5);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
+                    padding-bottom: 5%;
                     justify-content: center;
                 }
             }
@@ -601,6 +707,13 @@ footer {
                 font-size: 1rem;
                 -webkit-text-stroke: 0.5px var(--primary-500);
                 font-family: "Roboto", sans-serif;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                background: rgba(45, 86, 165, 0.5);
+                padding: 5px 10px;
+                border-radius: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
@@ -773,7 +886,7 @@ footer {
         min-height: 85px;
     }
 
-    .hero {
+    .heroContent {
         display: none;
     }
 
@@ -1462,6 +1575,84 @@ footer {
     // STYLE ACCUEIL (accueil.php)
     // =============================
     .wrapperAccueil {
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 55vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+    
+            .carouselHero {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                // transition: background-image 1s ease;
+    
+                .slide {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    transition: opacity 0.5s ease-in-out;
+                    opacity: 0;
+                }
+    
+                .slide1 {
+                    background-image: url('../img/hero6.jpeg');
+                    background-position-y: 80%;
+                }
+        
+                .slide2 {
+                    background-image: url('../img/hero2bis.jpeg');
+
+
+                }
+        
+                .slide3 {
+                    background-image: url('../img/hero9.jpeg');
+
+                    background-position-y: 65%;
+
+                }
+        
+                .active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .heroContent {
+            height: 75vh;
+
+            h2 {
+                font-size: 2rem;
+                margin: 0 15vw 0 10vw;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin: 0 20vw 0 10vw;
+            }
+
+            button {
+                width: 25vw;
+                margin-bottom: 15vh;
+            }
+
+
+        }
+
         .prestations {
             .container-prestations {
 
@@ -1798,13 +1989,13 @@ footer {
             }
 
             .left-arrow {
-                left: 150px;
+                left: 20%;
                 font-size: 2rem;
 
             }
 
             .right-arrow {
-                right: 150px;
+                right: 20%;
                 font-size: 2rem;
             }
 
@@ -1887,6 +2078,46 @@ footer {
     // STYLE ACCUEIL (accueil.php)
     // =============================
     .wrapperAccueil {
+
+        .hero {
+            height: 85vh;
+            .slide1 {
+                background-image: url('../img/hero6.jpeg');
+                background-position-y: 80% ;
+            }
+    
+            .slide2 {
+                background-image: url('../img/hero2.jpeg');
+                background-position-y: 50% ;
+
+            }
+    
+            .slide3 {
+                background-image: url('../img/hero9.jpeg');
+                background-position-y: 65% ;
+
+            }
+        }
+        .heroContent {
+            height: 85vh;
+
+            h2 {
+                font-size: 2.3rem;
+                margin: 0 15vw 0 10vw;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin: 0 20vw 0 10vw;
+            }
+
+            button {
+                width: 25vw;
+                margin-bottom: 10vh;
+                font-size: 1.1rem;
+            }
+        }
+
         article {
             display: flex;
 
@@ -1910,7 +2141,7 @@ footer {
                 p {
                     margin: 0% 10%;
                     font-size: 1rem;
-                    text-align: center;
+                    text-align: left;
                     font-family: "DM Sans", sans-serif;
 
 
@@ -2223,7 +2454,7 @@ footer {
             padding: 1rem 5rem;
         }
 
-        .hero {
+        .heroContent {
             height: 85vh;
             display: flex;
             justify-content: center;
@@ -2361,8 +2592,28 @@ footer {
 
     .wrapperAccueil {
         .hero {
-            background-size: 100%;
+            height: 100vh;
+            .slide1 {
+                background-image: url('../img/hero6.jpeg');
+                background-position-y: 80% ;
+            }
+    
+            .slide2 {
+                background-image: url('../img/hero2.jpeg');
+                background-position-y: 100% ;
 
+            }
+    
+            .slide3 {
+                background-image: url('../img/hero9.jpeg');
+                background-position-y: 65% ;
+
+            }
+        }
+
+        .heroContent {
+            height: 100vh;
+            background-position-y: 10%;
 
             h2 {
                 font-size: 3rem;
@@ -2370,10 +2621,13 @@ footer {
 
             p {
                 font-size: 2rem;
+                margin: 0 30vw 0 10vw;
             }
 
             button {
                 width: 20vw;
+                margin-bottom: 20vh;
+                font-size: 1.5rem;
             }
         }
 
@@ -2382,7 +2636,7 @@ footer {
             .histoire {
 
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1.28vw;
                 }
             }
         }
@@ -2402,19 +2656,30 @@ footer {
             }
         }
 
+    // =============================
+    // STYLE COMMUN (template.php)
+    // =============================
+
         .avis {
 
             #carousel {
 
-
+                .review-container {
+                    height: 50vh
+                }
+        
+                .review-card {
+                    width: 35vw;
+                }
+        
                 .left-arrow {
-                    left: 250px;
+                    left: 28%;
                     font-size: 2rem;
 
                 }
 
                 .right-arrow {
-                    right: 250px;
+                    right: 28%;
                     font-size: 2rem;
                 }
 
