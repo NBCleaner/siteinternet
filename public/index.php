@@ -52,39 +52,49 @@
         </p>
     </div>
     <div class="container-prestations">
-        <div class="lustrage">
+        <div class="lustrage" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
             <div>
                 <H3>LUSTRAGE / POLISSAGE</H3>
             </div>
         </div>
-        <div class="phare">
+        <div class="phare" onclick="location.href='optiqueDePhares.php';" style="cursor: pointer;">
             <div>
                 <H3>RÉNOVATION OPTIQUE DE PHARE</H3>
             </div>
         </div>
-        <div class="cuir">
+        <div class="cuir" onclick="location.href='traitementCuir.php';" style="cursor: pointer;">
             <div>
                 <H3>TRAITEMENT CUIR</H3>
             </div>
         </div>
-        <div class="moteur">
+        <div class="moteur" onclick="location.href='nettoyageMoteur.php';" style="cursor: pointer;">
             <div>
                 <H3>LAVAGE MOTEUR</H3>
             </div>
         </div>
-        <div class="siege">
+        <div class="siege" onclick="location.href='shampoinageSiege.php';" style="cursor: pointer;">
             <div>
                 <H3>SHAMPOINGAGE SIÈGE</H3>
             </div>
         </div>
-        <div class="lavage">
+        <div class="lavage" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
             <div>
                 <H3>NETTOYAGE EXTÉRIEUR</H3>
             </div>
         </div>
-        <div class="ceramique">
+        <div class="nettoyageInt" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
+            <div>
+                <H3>NETTOYAGE INTÉRIEUR</H3>
+            </div>
+        </div>
+        <div class="ceramique" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">
             <div>
                 <H3>POSE CÉRAMIQUE</H3>
+            </div>
+        </div>
+        <div class="deflocage" onclick="location.href='deflocageVehicule.php';" style="cursor: pointer;">
+            <div>
+                <H3>DÉFLOCAGE</H3>
             </div>
         </div>
     </div>
@@ -135,9 +145,19 @@
                     <H3>NETTOYAGE EXTÉRIEUR</H3>
                 </div>
             </div>
+            <div class="nettoyageIntPc" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
+                <div>
+                    <H3>NÉTTOYAGE INTÉRIEUR</H3>
+                </div>
+            </div>
             <div class="ceramiquePc" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">
                 <div>
                     <H3>POSE CÉRAMIQUE</H3>
+                </div>
+            </div>
+            <div class="deflocagePc" onclick="location.href='deflocageVehicule.php';" style="cursor: pointer;">
+                <div>
+                    <H3>DÉFLOCAGE</H3>
                 </div>
             </div>
             <i class="fa-solid fa-circle-arrow-right carousel-arrow right-arrow" id="right-arrow-top"></i>

@@ -372,7 +372,7 @@ footer .footer-socials .facebook-icon {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  z-index: 2;
+  z-index: 56;
 }
 .wrapperAccueil .hero .carousel-indicators .indicator {
   width: 15px;
@@ -489,7 +489,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lustrage {
   width: 100vw;
   height: 165px;
-  background-image: url('../img/lustrage.jpeg');
+  background-image: url('../img/lustragebis.png');
   background-position-y: 50%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -497,7 +497,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lustrage div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -514,7 +514,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .phare div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -530,7 +530,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .cuir div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -546,7 +546,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .moteur div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -562,7 +562,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .siege div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -579,7 +579,24 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .lavage div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5%;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .nettoyageInt {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/nettoyageApres.jpg');
+  background-position-y: 30%;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .nettoyageInt div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -595,7 +612,24 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .prestations .container-prestations .ceramique div {
   width: 100vw;
   height: 165px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5%;
+  justify-content: center;
+}
+.wrapperAccueil .prestations .container-prestations .deflocage {
+  width: 100vw;
+  height: 165px;
+  background-image: url('../img/deflocageApres.jpg');
+  background-position-y: 30%;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.wrapperAccueil .prestations .container-prestations .deflocage div {
+  width: 100vw;
+  height: 165px;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-end;
   padding-bottom: 5%;
@@ -1158,11 +1192,25 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestations .container-prestations .lavage div {
     height: 265px;
   }
+  .wrapperAccueil .prestations .container-prestations .nettoyageInt {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .nettoyageInt div {
+    height: 265px;
+  }
   .wrapperAccueil .prestations .container-prestations .ceramique {
     width: 100vw;
     height: 265px;
   }
   .wrapperAccueil .prestations .container-prestations .ceramique div {
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .deflocage {
+    width: 100vw;
+    height: 265px;
+  }
+  .wrapperAccueil .prestations .container-prestations .deflocage div {
     height: 265px;
   }
   .wrapperAccueil .prestations .container-prestations h3 {
@@ -1565,8 +1613,16 @@ footer .footer-socials .facebook-icon {
     background-image: url('../img/lavage-pc.png');
     background-position-y: 80%;
   }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .nettoyageIntPc {
+    background-image: url('../img/nettoyageApres.jpg');
+    background-position-x: 30%;
+  }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .ceramiquePc {
     background-image: url('../img/ceramique-pc.png');
+    background-position-x: 30%;
+  }
+  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .deflocagePc {
+    background-image: url('../img/deflocageApres.jpg');
     background-position-x: 30%;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc h3 {
