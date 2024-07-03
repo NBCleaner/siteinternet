@@ -698,9 +698,9 @@ footer .footer-socials .facebook-icon {
 .wrapperPrestations h2 {
   text-align: center;
   color: var(--primary-500);
-  padding: 0 1rem;
+  padding: 3vw;
 }
-.wrapperPrestations .hero {
+.wrapperPrestations .heroTraitementCuir {
   background-image: url('../img/traitement-cuir.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -710,7 +710,7 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   position: relative;
 }
-.wrapperPrestations .hero::before {
+.wrapperPrestations .heroTraitementCuir::before {
   content: '';
   position: absolute;
   top: 0;
@@ -720,24 +720,336 @@ footer .footer-socials .facebook-icon {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.wrapperPrestations .hero .headerContent {
+.wrapperPrestations .heroTraitementCuir .headerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-.wrapperPrestations .hero h3 {
+.wrapperPrestations .heroTraitementCuir h3 {
   font-weight: 200;
   font-style: normal;
   color: #EEF1F9;
   margin: 1vw;
 }
-.wrapperPrestations .hero h1 {
+.wrapperPrestations .heroTraitementCuir h1 {
   font-weight: 700;
   font-style: normal;
   color: white;
-  font-size: 7vw;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroShampoinageSiege {
+  background-image: url('../img/siege.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroShampoinageSiege::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroShampoinageSiege .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroShampoinageSiege h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroShampoinageSiege h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroPoseCeramique {
+  background-image: url('../img/ceramique.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroPoseCeramique::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroPoseCeramique .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroPoseCeramique h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroPoseCeramique h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroOptique {
+  background-image: url('../img/optiquePhrareApres.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroOptique::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroOptique .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroOptique h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroOptique h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroNettoyageMoteur {
+  background-image: url('../img/lavagemoteurApres.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroNettoyageMoteur::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroNettoyageMoteur .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroNettoyageMoteur h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroNettoyageMoteur h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroNettoyageInterieur {
+  background-image: url('../img/nettoyageApres.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroNettoyageInterieur::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroNettoyageInterieur .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroNettoyageInterieur h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroNettoyageInterieur h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 4vw;
+}
+.wrapperPrestations .heroNettoyageExterieur {
+  background-image: url('../img/NettoyageExterieurApres.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroNettoyageExterieur::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroNettoyageExterieur .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroNettoyageExterieur h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroNettoyageExterieur h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 4vw;
+}
+.wrapperPrestations .heroLustragePolissage {
+  background-image: url('../img/lustragePolissageApres.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroLustragePolissage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroLustragePolissage .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroLustragePolissage h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroLustragePolissage h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+}
+.wrapperPrestations .heroDeflocageVehicule {
+  background-image: url('../img/deflocageApres.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperPrestations .heroDeflocageVehicule::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wrapperPrestations .heroDeflocageVehicule .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.wrapperPrestations .heroDeflocageVehicule h3 {
+  font-weight: 200;
+  font-style: normal;
+  color: #EEF1F9;
+  margin: 1vw;
+}
+.wrapperPrestations .heroDeflocageVehicule h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
 }
 .wrapperPrestations .section1 {
   display: flex;
@@ -749,6 +1061,7 @@ footer .footer-socials .facebook-icon {
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
+  padding: 2rem;
 }
 .wrapperPrestations .section1 img {
   width: 300px;
@@ -782,6 +1095,12 @@ footer .footer-socials .facebook-icon {
   overflow: hidden;
   height: 500px;
 }
+.wrapperPrestations .section1 .image-containerCeramique {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
 .wrapperPrestations .section1 .slider-image {
   top: 0;
   left: 0;
@@ -797,6 +1116,9 @@ footer .footer-socials .facebook-icon {
   position: absolute;
   inset: 0;
   width: var(--position);
+}
+.wrapperPrestations .section1 .image-before2 {
+  width: 800px;
 }
 .wrapperPrestations .section1 .slider {
   position: absolute;
@@ -842,12 +1164,15 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   justify-content: center;
 }
+.wrapperPrestations .section2 h2 {
+  padding: 2rem;
+}
 .wrapperPrestations .section2 ul {
   color: var(--primary-500);
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin: 6vw;
+  margin: 2rem;
 }
 .wrapperPrestations .section2 button {
   background-color: var(--primary-500);
@@ -856,9 +1181,23 @@ footer .footer-socials .facebook-icon {
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  padding: 2vw;
+  padding: 2rem;
   border-radius: 10vw;
-  margin-bottom: 6vw;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+}
+.wrapperPrestations .section2 a {
+  color: white;
+  text-decoration: none;
+}
+.wrapperPrestations .section2 a:visited {
+  color: white;
+}
+.wrapperPrestations .section2 a:hover {
+  color: white;
+}
+.wrapperPrestations .section2 a:active {
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .wrapperAccueil .prestations .container-prestations .lustrage {
@@ -977,6 +1316,20 @@ footer .footer-socials .facebook-icon {
   }
   .coordonnees .carte {
     margin-left: 2%;
+  }
+  .wrapperPrestations .section1 {
+    flex-direction: row;
+  }
+  .wrapperPrestations .section1 .hero h1 {
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 7vw;
+  }
+  .wrapperPrestations .section1 .descriptionPrestation,
+  .wrapperPrestations .section1 .containerjs {
+    flex: 1;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1545,5 +1898,19 @@ footer .footer-socials .facebook-icon {
   }
   footer .footer-socials .facebook-icon {
     color: #3b5998;
+  }
+  .section1 {
+    flex-direction: row;
+  }
+  .section1 .descriptionPrestation,
+  .section1 .containerjs {
+    flex: 1;
+    padding: 1rem;
+  }
+  .wrapperPrestations .hero h1 {
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 7vw;
   }
 }

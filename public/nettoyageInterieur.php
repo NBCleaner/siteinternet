@@ -1,30 +1,29 @@
 <?php ob_start(); ?>
 
-<section class="heroTraitementCuir">
+<section class="heroNettoyageInterieur">
     <div class="headerContent">
         <h3>Nos prestations</h3>
-        <h1>Traitement du cuir</h1>
+        <h1>Nettoyage intérieur du véhicule</h1>
     </div>
 </section>
 
 <section class="section1">
         <div class="descriptionPrestation">
-            <h2>RAJEUNISSEZ VOTRE CUIR ET RAVIVEZ SON ECLAT !</h2>
+            <h2>RENDEZ A VOTRE VOITURE TOUT SON ECLAT AVEC LE NETTOYAGE INTERIEUR !</h2>
             <p>
-                Faire un traitement sur le cuir de votre voiture est essentiel pour assurer leur protection, leur
-                durabilité et leur esthétique. Ce traitement préserve l'aspect neuf du cuir tout en le protégeant contre
-                l'usure, les dommages et la décoloration.
+                Nettoyer l'intérieur de votre véhicule est essentiel pour éliminer la poussière, 
+                les allergènes et les bactéries, assurant ainsi un environnement sain et hygiénique.
+                Un intérieur propre améliore le confort de conduite, préserve la valeur de votre voiture et 
+                prolonge la durée de vie des matériaux. De plus, il contribue à la sécurité en 
+                réduisant les distractions causées par des surfaces sales. Confier ce travail à 
+                des professionnels garantit un nettoyage minutieux et de haute qualité.
             </p>
-            <p>
-                De plus, il sera plus faciles à nettoyer et à entretenir, ce qui permet de maintenir un intérieur propre
-                avec moins d'effort. Enfin, il contribue également à réduire l'absorption des odeurs indésirables,
-                assurant ainsi une atmosphère fraîche et agréable à l'intérieur de la voiture.
-            </p>
+        
         </div>
         <div class="containerjs">
             <div class="image-container">
-                <img class="image-before slider-image" src="img/lustrageavant.jpeg" alt="Rendu avant travail">
-                <img class="image-after slider-image" src="img/lustrageapres.jpeg" alt="Rendu après travail">
+                <img class="image-before slider-image" src="img/nettoyageAvant.jpg" alt="Rendu avant travail">
+                <img class="image-after slider-image" src="img/nettoyageApres.jpg" alt="Rendu après travail">
             </div>
             <div class="slider-line"></div>
             <div class="slider-button" aria-hidden="true">
@@ -43,18 +42,19 @@
 
 <section class="section2">
     <h2>
-        POURQUOI EFFECTUER UN TRAITEMENT CUIR POUR VOTRE VEHICULE?
+        POURQUOI NETTOYER L'INTERIEUR DE VOTRE VEHICULE?
     </h2>
-    <ul>
-        <li>Protection contre l'usure et les dégâts</li>
-        <li>Facilité d'entretien </li>
-        <li> Réduction des odeurs indésirables</li>
+    <ul> 
+
         <li> Maintien de l'apparence esthétique </li>
+        <li> Protection du cuir et du véhicule</li>
+        <li> Préservation de la valeur du véhicule </li>
+        
     </ul>
     <p> 
-        Prix : à partir de 10€ par siège.
+        Prix : selon forfait.
     </p>
-        <button> <a href="forfaits.php"> VOIR NOS FORFAITS </a></button>
+    <button> <a href="forfaits.php">VOIR NOS FORFAITS </a></button>
 
 </section>
 
@@ -62,7 +62,7 @@
 
 <?php
 $content = ob_get_clean();
-$title = "Traitement du cuir";
+$title = "Nettoyage interieur";
 $wrapperName = "wrapperPrestations";
 require "../template.php";
 ?>
