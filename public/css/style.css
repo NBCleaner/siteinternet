@@ -144,7 +144,7 @@ h3 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 50vh;
+  height: 45vh;
 }
 .avis #carousel .review-card {
   border: 1px solid #ccc;
@@ -1243,6 +1243,9 @@ footer .footer-socials .facebook-icon {
     padding-bottom: 0px;
     border-bottom: none;
   }
+  .partenaire .container-partenaire .ligne2 > div:nth-child(2) img {
+    width: 13vw;
+  }
   .coordonnees {
     flex-direction: row;
   }
@@ -1738,6 +1741,9 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .avis #carousel .right-arrow {
     right: 28%;
     font-size: 2rem;
+  }
+  .partenaire .container-partenaire .ligne2 > div:nth-child(2) img {
+    width: 150px;
   }
   .coordonnees {
     display: flex;
