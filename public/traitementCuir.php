@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroTraitementCuir">
+<section class="hero traitementCuir">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Traitement du cuir</h1>

@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroNettoyageExterieur">
+<section class="hero nettoyageExterieur">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Nettoyage exterieur du véhicule</h1>

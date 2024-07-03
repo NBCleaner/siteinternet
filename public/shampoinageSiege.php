@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroShampoinageSiege">
+<section class="hero shampoinageSiege">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Shampoinage siège</h1>

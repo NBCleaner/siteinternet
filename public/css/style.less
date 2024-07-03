@@ -1005,393 +1005,87 @@ footer {
         padding: 3vw;
     }
 
-    .heroTraitementCuir{
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .headerContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        h3 {
+            font-weight: 200;
+            font-style: normal;
+            color: #EEF1F9;
+            margin: 1vw;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-style: normal;
+            color: white;
+            font-size: 5vw;
+            text-align: center;
+        }
+    }
+    .traitementCuir{
         background-image: url('../img/traitement-cuir.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
     }
-    .heroShampoinageSiege{
+
+    .shampoinageSiege{
         background-image: url('../img/siege.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
+        
     }
-    .heroPoseCeramique{
+    .poseCeramique{
         background-image: url('../img/ceramique.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
     }
-    .heroOptique{
+    .optiquePhare{
         background-image: url('../img/optiquePhrareApres.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
     }
-    .heroNettoyageMoteur{
+
+    .nettoyageMoteur{
         background-image: url('../img/lavagemoteurApres.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
+        
     }
-    .heroNettoyageInterieur{
+    .nettoyageInterieur{
         background-image: url('../img/nettoyageApres.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 4vw;
-        }
+        
     }
-    .heroNettoyageExterieur{
+    .nettoyageExterieur{
         background-image: url('../img/NettoyageExterieurApres.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 4vw;
-        }
+        
     }
-    .heroLustragePolissage{
+    .lustragePolissage{
         background-image: url('../img/lustragePolissageApres.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
+        
     }
-    .heroDeflocageVehicule{
+    .deflocageVehicule{
         background-image: url('../img/deflocageApres.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .headerContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        h3 {
-            font-weight: 200;
-            font-style: normal;
-            color: #EEF1F9;
-            margin: 1vw;
-        }
-
-        h1 {
-            font-weight: 700;
-            font-style: normal;
-            color: white;
-            font-size: 5vw;
-        }
+        
     }
+
     .section1 {
         display: flex;
         flex-direction: column;

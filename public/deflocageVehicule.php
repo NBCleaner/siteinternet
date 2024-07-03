@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroDeflocageVehicule">
+<section class="hero deflocageVehicule">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Deflocage véhicule</h1>

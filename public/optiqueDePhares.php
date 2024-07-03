@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroOptique">
+<section class="hero optiquePhare">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Rénovation des Optiques de phares</h1>

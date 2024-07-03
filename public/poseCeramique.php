@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroPoseCeramique">
+<section class="hero poseCeramique">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Pose céramique</h1>

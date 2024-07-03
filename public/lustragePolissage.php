@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<section class="heroLustragePolissage">
+<section class="hero lustragePolissage">
     <div class="headerContent">
         <h3>Nos prestations</h3>
         <h1>Lustrage Pollisage</h1>
