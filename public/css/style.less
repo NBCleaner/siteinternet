@@ -997,18 +997,15 @@ footer {
 // =============================
 
 .wrapperPrestations {
-
     h2 {
         text-align: center;
         color: var(--primary-500);
-        padding: 0 1rem;
+        padding: 3vw;
     }
 
-    .heroContent {
-        background-image: url('../img/traitement-cuir.jpg');
+    .hero {
         background-size: cover;
         background-repeat: no-repeat;
-        // width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -1039,21 +1036,55 @@ footer {
             font-style: normal;
             color: #EEF1F9;
             margin: 1vw;
-
         }
 
         h1 {
             font-weight: 700;
             font-style: normal;
             color: white;
-            font-size: 7vw;
+            font-size: 5vw;
+            text-align: center;
         }
+    }
+    .traitementCuir{
+        background-image: url('../img/traitement-cuir.jpg');
+    }
+
+    .shampoinageSiege{
+        background-image: url('../img/siege.png');
+        
+    }
+    .poseCeramique{
+        background-image: url('../img/ceramique.png');
+
+    }
+    .optiquePhare{
+        background-image: url('../img/optiquePhrareApres.jpg');
 
     }
 
+    .nettoyageMoteur{
+        background-image: url('../img/lavagemoteurApres.jpg');
+        
+    }
+    .nettoyageInterieur{
+        background-image: url('../img/nettoyageApres.jpg');
+        
+    }
+    .nettoyageExterieur{
+        background-image: url('../img/NettoyageExterieurApres.jpeg');
+        
+    }
+    .lustragePolissage{
+        background-image: url('../img/lustragePolissageApres.jpg');
+        
+    }
+    .deflocageVehicule{
+        background-image: url('../img/deflocageApres.jpg');
+        
+    }
 
     .section1 {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1063,7 +1094,7 @@ footer {
             font-family: "DM Sans", sans-serif;
             font-weight: 300;
             font-style: normal;
-
+            padding: 2rem;
         }
 
         img {
@@ -1104,6 +1135,13 @@ footer {
             height: 500px;
         }
 
+        .image-containerCeramique{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+        }
+
         .slider-image {
             height: 100%;
             top: 0;
@@ -1123,6 +1161,11 @@ footer {
             inset: 0;
             width: var(--position);
         }
+
+        .image-before2{
+            width: 800px;
+        }
+        
 
         .slider {
             position: absolute;
@@ -1164,7 +1207,6 @@ footer {
             transform: translate(-50%, -50%);
             box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
         }
-
     }
 
     .section2 {
@@ -1174,13 +1216,16 @@ footer {
         align-items: center;
         justify-content: center;
 
+        h2{
+            padding: 2rem;
+        }
+
         ul {
             color: var(--primary-500);
             font-family: "DM Sans", sans-serif;
             font-weight: 300;
             font-style: normal;
-            margin: 6vw;
-
+            margin: 2rem;
         }
 
         button {
@@ -1190,14 +1235,30 @@ footer {
             font-weight: 700;
             font-style: normal;
             text-align: center;
-            padding: 2vw;
+            padding: 2rem;
             border-radius: 10vw;
-            margin-bottom: 6vw;
+            margin-bottom: 4vw;
+            margin-top: 2vw;
         }
 
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:visited {
+                color: white;
+            }
+
+            &:hover {
+                color: white;
+            }
+
+            &:active {
+                color: white;
+            }
+        }
     }
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -1479,6 +1540,37 @@ footer {
             margin-left: 2%;
         }
     }
+
+    // =============================
+    // PRESTATIONS 
+    // =============================
+
+    .wrapperPrestations {
+
+        .section1 {
+            flex-direction: row;
+
+            .hero {
+               
+        
+                h1{
+                    font-weight: 700;
+                    font-style: normal;
+                    color: white;
+                    font-size: 7vw;
+                }
+            }
+            .descriptionPrestation,
+            .containerjs {
+                flex: 1;
+                padding: 1rem;
+            }
+        }
+    }
+    
+    
+
+
 }
 
 
@@ -2350,5 +2442,35 @@ footer {
                 color: #3b5998;
             }
         }
+    }
+
+    // =============================
+    // PRESTATIONS 
+    // =============================
+
+    .section1 {
+        flex-direction: row;
+
+        .descriptionPrestation,
+        .containerjs {
+            flex: 1;
+            padding: 1rem;
+        }
+        
+    }
+
+    .wrapperPrestations {
+    
+        .hero {
+           
+    
+            h1{
+                font-weight: 700;
+                font-style: normal;
+                color: white;
+                font-size: 7vw;
+            }
+        }
+
     }
 }

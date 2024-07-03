@@ -13,7 +13,7 @@ p {
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin: 3vw;
+  margin: 10vw;
   text-align: center;
 }
 h2 {
@@ -66,29 +66,18 @@ h2 {
   color: white;
   font-size: 7vw;
 }
-.section1 p {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 8vw;
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+.section1 .descriptionPrestation,
+.section1 .containerjs {
+  flex: 1;
+  padding: 10px;
 }
 .section1 img {
   width: 300px;
   height: auto;
-}
-.section1 .container-section1 {
-  display: flex;
-  flex-direction: column;
-}
-.section1 ::after,
-.section1 ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.section1 img {
-  display: block;
-  max-width: 100%;
 }
 .section1 .avantApres {
   display: flex;
@@ -165,7 +154,6 @@ h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin: 6vw;
 }
 .section2 button {
   background-color: var(--primary-500);
@@ -174,34 +162,42 @@ h2 {
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  padding: 2vw;
+  padding: vw;
   border-radius: 10vw;
-  margin-bottom: 6vw;
+}
+.section2 a {
+  color: white;
+  text-decoration: none;
+}
+.section2 a:visited {
+  color: white;
+}
+.section2 a:hover {
+  color: white;
+}
+.section2 a:active {
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   body p {
     margin: 1vw;
-  }
-  body h2 {
-    padding: 2vw;
   }
   header {
     width: 100vw;
     height: 40vw;
   }
   .section1 {
-    padding: 6vw;
-  }
-  .section1 p {
-    margin: 4vw;
-  }
-  .section1 .container-section1 {
-    display: flex;
     flex-direction: row;
   }
-  .section1 .container1-section1,
-  .section1 #container2-image {
-    flex-basis: 50%;
+  .section1 .descriptionPrestation,
+  .section1 .containerjs {
+    flex: 1;
+  }
+  .section1 .descriptionPrestation {
+    order: 1;
+  }
+  .section1 .containerjs {
+    order: 2;
   }
   footer {
     display: flex;
@@ -233,5 +229,11 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding-top: 6vw;
+  }
+  .section2 {
+    padding: 1vw;
+  }
+  .section2 p {
+    margin: 1vw;
   }
 }
