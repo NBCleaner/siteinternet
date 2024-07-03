@@ -222,10 +222,10 @@
     </div>
     <div class="bouttonAllForfait">
         <button class="btnForfaitDeluxe">
-            <a href="forfaits.html">VOIR LES FORFAITS DELUXE</a>
+            <a href="forfaits.php">VOIR LES FORFAITS DELUXE</a>
         </button>
         <button class="btnTableauForfait">
-            <a href="forfaits.html">VOIR TOUS LES FORFAITS</a>
+            <a href="forfaits.php">VOIR TOUS LES FORFAITS</a>
         </button>
     </div>
 </section>

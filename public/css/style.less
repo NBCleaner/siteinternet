@@ -384,15 +384,17 @@ footer {
             }
 
             .slide1 {
-                background-image: url('../img/hero6.jpeg');
+                background-image: url('../img/hero6small.png');
+                background-position-x: 60%;
             }
     
             .slide2 {
-                background-image: url('../img/hero2.jpeg');
+                background-image: url('../img/hero2bisbis.png');
+
             }
     
             .slide3 {
-                background-image: url('../img/hero9.jpeg');
+                background-image: url('../img/hero9small.png');
             }
     
             .active {
@@ -410,6 +412,7 @@ footer {
             background-color: rgba(0, 0, 0, 0.3);
             z-index: 1;
         }
+
 
  
 
@@ -517,7 +520,7 @@ footer {
             p {
                 margin: 0% 6%;
                 font-size: 0.8rem;
-                text-align: center;
+                text-align: left;
                 font-family: "DM Sans", sans-serif;
                 padding-bottom: 20px;
             }
@@ -551,7 +554,7 @@ footer {
                 text-align: center;
                 font-size: 0.9rem;
                 font-family: "DM Sans", sans-serif;
-
+                font-style: italic;
             }
         }
 
@@ -1244,13 +1247,14 @@ footer {
                 }
         
                 .slide2 {
-                    background-image: url('../img/hero2.jpeg');
-                    background-position-y: 50%;
+                    background-image: url('../img/hero2bis.jpeg');
+
 
                 }
         
                 .slide3 {
                     background-image: url('../img/hero9.jpeg');
+
                     background-position-y: 65%;
 
                 }
@@ -1587,13 +1591,13 @@ footer {
             }
 
             .left-arrow {
-                left: 150px;
+                left: 20%;
                 font-size: 2rem;
 
             }
 
             .right-arrow {
-                right: 150px;
+                right: 20%;
                 font-size: 2rem;
             }
 
@@ -1739,7 +1743,7 @@ footer {
                 p {
                     margin: 0% 10%;
                     font-size: 1rem;
-                    text-align: center;
+                    text-align: left;
                     font-family: "DM Sans", sans-serif;
 
 
@@ -2198,7 +2202,7 @@ footer {
     
             .slide2 {
                 background-image: url('../img/hero2.jpeg');
-                background-position-y: 50% ;
+                background-position-y: 100% ;
 
             }
     
@@ -2208,6 +2212,7 @@ footer {
 
             }
         }
+
         .heroContent {
             height: 100vh;
             background-position-y: 10%;
@@ -2218,7 +2223,7 @@ footer {
 
             p {
                 font-size: 2rem;
-                margin: 0 20vw 0 10vw;
+                margin: 0 30vw 0 10vw;
             }
 
             button {
@@ -2233,7 +2238,7 @@ footer {
             .histoire {
 
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1.28vw;
                 }
             }
         }
@@ -2253,19 +2258,30 @@ footer {
             }
         }
 
+    // =============================
+    // STYLE COMMUN (template.php)
+    // =============================
+
         .avis {
 
             #carousel {
 
-
+                .review-container {
+                    height: 50vh
+                }
+        
+                .review-card {
+                    width: 35vw;
+                }
+        
                 .left-arrow {
-                    left: 250px;
+                    left: 28%;
                     font-size: 2rem;
 
                 }
 
                 .right-arrow {
-                    right: 250px;
+                    right: 28%;
                     font-size: 2rem;
                 }
 

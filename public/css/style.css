@@ -302,13 +302,14 @@ footer .footer-socials .facebook-icon {
   opacity: 0;
 }
 .wrapperAccueil .hero .carouselHero .slide1 {
-  background-image: url('../img/hero6.jpeg');
+  background-image: url('../img/hero6small.png');
+  background-position-x: 60%;
 }
 .wrapperAccueil .hero .carouselHero .slide2 {
-  background-image: url('../img/hero2.jpeg');
+  background-image: url('../img/hero2bisbis.png');
 }
 .wrapperAccueil .hero .carouselHero .slide3 {
-  background-image: url('../img/hero9.jpeg');
+  background-image: url('../img/hero9small.png');
 }
 .wrapperAccueil .hero .carouselHero .active {
   opacity: 1;
@@ -412,7 +413,7 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil article .histoire p {
   margin: 0% 6%;
   font-size: 0.8rem;
-  text-align: center;
+  text-align: left;
   font-family: "DM Sans", sans-serif;
   padding-bottom: 20px;
 }
@@ -441,6 +442,7 @@ footer .footer-socials .facebook-icon {
   text-align: center;
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
+  font-style: italic;
 }
 .wrapperAccueil .prestations .container-prestations {
   display: flex;
@@ -994,8 +996,7 @@ footer .footer-socials .facebook-icon {
     background-position-y: 80%;
   }
   .wrapperAccueil .hero .carouselHero .slide2 {
-    background-image: url('../img/hero2.jpeg');
-    background-position-y: 50%;
+    background-image: url('../img/hero2bis.jpeg');
   }
   .wrapperAccueil .hero .carouselHero .slide3 {
     background-image: url('../img/hero9.jpeg');
@@ -1206,11 +1207,11 @@ footer .footer-socials .facebook-icon {
     width: 50%;
   }
   .avis #carousel .left-arrow {
-    left: 150px;
+    left: 20%;
     font-size: 2rem;
   }
   .avis #carousel .right-arrow {
-    right: 150px;
+    right: 20%;
     font-size: 2rem;
   }
   .partenaire h2 {
@@ -1313,7 +1314,7 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil article .histoire p {
     margin: 0% 10%;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     font-family: "DM Sans", sans-serif;
   }
   .wrapperAccueil article .video {
@@ -1693,7 +1694,7 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .hero .slide2 {
     background-image: url('../img/hero2.jpeg');
-    background-position-y: 50% ;
+    background-position-y: 100% ;
   }
   .wrapperAccueil .hero .slide3 {
     background-image: url('../img/hero9.jpeg');
@@ -1708,7 +1709,7 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .heroContent p {
     font-size: 2rem;
-    margin: 0 20vw 0 10vw;
+    margin: 0 30vw 0 10vw;
   }
   .wrapperAccueil .heroContent button {
     width: 20vw;
@@ -1716,7 +1717,7 @@ footer .footer-socials .facebook-icon {
     font-size: 1.5rem;
   }
   .wrapperAccueil article .histoire p {
-    font-size: 1.2rem;
+    font-size: 1.28vw;
   }
   .wrapperAccueil .prestationsPc .container-prestationsPc .lustragePc {
     background-position-y: 50%;
@@ -1724,12 +1725,18 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestationsPc .container-prestationsPc h3 {
     font-size: 1.2rem;
   }
+  .wrapperAccueil .avis #carousel .review-container {
+    height: 50vh;
+  }
+  .wrapperAccueil .avis #carousel .review-card {
+    width: 35vw;
+  }
   .wrapperAccueil .avis #carousel .left-arrow {
-    left: 250px;
+    left: 28%;
     font-size: 2rem;
   }
   .wrapperAccueil .avis #carousel .right-arrow {
-    right: 250px;
+    right: 28%;
     font-size: 2rem;
   }
   .coordonnees {
