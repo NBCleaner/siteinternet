@@ -69,15 +69,57 @@ header {
         text-transform: uppercase;
         color: #FFF;
 
+        overflow: scroll;
 
-        ul {
+
+        .dropdownPrestations {
+            position: relative;
+
+            #dropdownPrestationsButton {
+                background-color: transparent;
+                font-family: inherit;
+                color: inherit;
+                font-size: inherit;
+                font-weight: inherit;
+                text-transform: uppercase;
+                text-align: inherit;
+                border: none;
+                cursor: pointer;
+
+                width: 100%;
+                padding: 0;
+            }
+
+            #dropdownPrestationsContent {
+                display: none;
+
+
+                ul {
+                    list-style: none;
+                    margin-top: 0.5rem;
+
+                    li {
+                        font-size: 0.75em;
+                        padding: 0.5em 0;
+                        text-transform: initial;
+                    }
+                }
+
+
+                &.show {
+                    display: block;
+                }
+            }
+        }
+
+        &>ul {
             display: flex;
             flex-direction: column;
             width: 100%;
             margin-top: 10rem;
             text-align: end;
 
-            li {
+            &>li {
                 list-style: none;
 
                 padding: 1.5rem 0;
@@ -87,7 +129,9 @@ header {
                 }
 
                 a {
+                    display: inline-block;
                     color: #FFF;
+                    width: 100%;
                 }
             }
 
@@ -388,16 +432,16 @@ footer {
                 background-image: url('../img/hero6small.png');
                 background-position-x: 60%;
             }
-    
+
             .slide2 {
                 background-image: url('../img/hero2bisbis.png');
 
             }
-    
+
             .slide3 {
                 background-image: url('../img/hero9small.png');
             }
-    
+
             .active {
                 opacity: 1;
             }
@@ -415,7 +459,7 @@ footer {
         }
 
 
- 
+
 
         .carousel-indicators {
             position: absolute;
@@ -424,7 +468,7 @@ footer {
             transform: translateX(-50%);
             display: flex;
             gap: 10px;
-            z-index: 2; 
+            z-index: 2;
 
             .indicator {
                 width: 15px;
@@ -486,15 +530,15 @@ footer {
             margin: 0 10vw 7vh 10vw;
             z-index: 55;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
 
         }
-        
+
 
         button:hover {
             transform: scale(1.1);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     }
 
@@ -1046,42 +1090,49 @@ footer {
             text-align: center;
         }
     }
-    .traitementCuir{
+
+    .traitementCuir {
         background-image: url('../img/traitement-cuir.jpg');
     }
 
-    .shampoinageSiege{
+    .shampoinageSiege {
         background-image: url('../img/siege.png');
-        
+
     }
-    .poseCeramique{
+
+    .poseCeramique {
         background-image: url('../img/ceramique.png');
 
     }
-    .optiquePhare{
+
+    .optiquePhare {
         background-image: url('../img/optiquePhrareApres.jpg');
 
     }
 
-    .nettoyageMoteur{
+    .nettoyageMoteur {
         background-image: url('../img/lavagemoteurApres.jpg');
-        
+
     }
-    .nettoyageInterieur{
+
+    .nettoyageInterieur {
         background-image: url('../img/nettoyageApres.jpg');
-        
+
     }
-    .nettoyageExterieur{
+
+    .nettoyageExterieur {
         background-image: url('../img/NettoyageExterieurApres.jpeg');
-        
+
     }
-    .lustragePolissage{
+
+    .lustragePolissage {
         background-image: url('../img/lustragePolissageApres.jpg');
-        
+
     }
-    .deflocageVehicule{
+
+    .deflocageVehicule {
         background-image: url('../img/deflocageApres.jpg');
-        
+
     }
 
     .section1 {
@@ -1135,7 +1186,7 @@ footer {
             height: 500px;
         }
 
-        .image-containerCeramique{
+        .image-containerCeramique {
             position: relative;
             width: 100%;
             overflow: hidden;
@@ -1162,10 +1213,10 @@ footer {
             width: var(--position);
         }
 
-        .image-before2{
+        .image-before2 {
             width: 800px;
         }
-        
+
 
         .slider {
             position: absolute;
@@ -1216,7 +1267,7 @@ footer {
         align-items: center;
         justify-content: center;
 
-        h2{
+        h2 {
             padding: 2rem;
         }
 
@@ -1277,7 +1328,7 @@ footer {
             justify-content: center;
             text-align: center;
             color: white;
-    
+
             .carouselHero {
                 position: absolute;
                 top: 0;
@@ -1287,7 +1338,7 @@ footer {
                 background-size: cover;
                 background-position: center;
                 // transition: background-image 1s ease;
-    
+
                 .slide {
                     position: absolute;
                     top: 0;
@@ -1299,25 +1350,25 @@ footer {
                     transition: opacity 0.5s ease-in-out;
                     opacity: 0;
                 }
-    
+
                 .slide1 {
                     background-image: url('../img/hero6.jpeg');
                     background-position-y: 80%;
                 }
-        
+
                 .slide2 {
                     background-image: url('../img/hero2bis.jpeg');
 
 
                 }
-        
+
                 .slide3 {
                     background-image: url('../img/hero9.jpeg');
 
                     background-position-y: 65%;
 
                 }
-        
+
                 .active {
                     opacity: 1;
                 }
@@ -1551,15 +1602,14 @@ footer {
             flex-direction: row;
 
             .hero {
-               
-        
-                h1{
+                h1 {
                     font-weight: 700;
                     font-style: normal;
                     color: white;
                     font-size: 7vw;
                 }
             }
+
             .descriptionPrestation,
             .containerjs {
                 flex: 1;
@@ -1567,8 +1617,8 @@ footer {
             }
         }
     }
-    
-    
+
+
 
 
 }
@@ -1610,14 +1660,63 @@ footer {
 
             font-size: 1.1rem;
 
+            overflow: initial;
 
-            ul {
+
+            .dropdownPrestations {
+
+                #dropdownPrestationsButton {
+                    background-color: transparent;
+                    font-family: inherit;
+                    color: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    text-transform: uppercase;
+                    text-align: inherit;
+                    border: none;
+                    cursor: pointer;
+
+                    width: 100%;
+                    padding: 0;
+                }
+
+                #dropdownPrestationsContent {
+                    position: absolute;
+                    background-color: var(--primary-500);
+                    margin-top: 1rem;
+
+                    ul {
+                        margin-top: 0;
+
+                        li {
+                            padding: 0;
+
+                            a {
+                                font-size: 1.1em;
+                                display: block;
+                                padding: 0.5rem;
+                            }
+
+                            a:hover {
+                                background-color: #FFF;
+                                color: var(--primary-400);
+                            }
+                        }
+                    }
+
+                    &.show {
+                        display: block;
+                    }
+                }
+            }
+
+            &>ul {
                 flex-direction: row;
                 gap: 4rem;
                 margin-top: 0;
                 text-align: initial;
 
-                li {
+                &>li {
                     padding: 0;
 
                     &:not(:last-of-type) {
@@ -1630,6 +1729,7 @@ footer {
 
                     &:hover {
                         border-bottom: 4px solid var(--primary-400);
+                        margin-top: -4px;
                         transform: scale(1.1);
                     }
                 }
@@ -1736,9 +1836,9 @@ footer {
             }
 
             .ligne2 {
-                > div:nth-child(2) {
+                >div:nth-child(2) {
                     img {
-                        width: 13vw; 
+                        width: 13vw;
                     }
                 }
             }
@@ -1781,23 +1881,25 @@ footer {
 
         .hero {
             height: 85vh;
+
             .slide1 {
                 background-image: url('../img/hero6.jpeg');
-                background-position-y: 80% ;
+                background-position-y: 80%;
             }
-    
+
             .slide2 {
                 background-image: url('../img/hero2.jpeg');
-                background-position-y: 50% ;
+                background-position-y: 50%;
 
             }
-    
+
             .slide3 {
                 background-image: url('../img/hero9.jpeg');
-                background-position-y: 65% ;
+                background-position-y: 65%;
 
             }
         }
+
         .heroContent {
             height: 85vh;
 
@@ -2291,20 +2393,21 @@ footer {
     .wrapperAccueil {
         .hero {
             height: 100vh;
+
             .slide1 {
                 background-image: url('../img/hero6.jpeg');
-                background-position-y: 80% ;
+                background-position-y: 80%;
             }
-    
+
             .slide2 {
                 background-image: url('../img/hero2.jpeg');
-                background-position-y: 100% ;
+                background-position-y: 100%;
 
             }
-    
+
             .slide3 {
                 background-image: url('../img/hero9.jpeg');
-                background-position-y: 65% ;
+                background-position-y: 65%;
 
             }
         }
@@ -2354,9 +2457,9 @@ footer {
             }
         }
 
-    // =============================
-    // STYLE COMMUN (template.php)
-    // =============================
+        // =============================
+        // STYLE COMMUN (template.php)
+        // =============================
 
         .avis {
 
@@ -2365,11 +2468,11 @@ footer {
                 .review-container {
                     height: 50vh
                 }
-        
+
                 .review-card {
                     width: 35vw;
                 }
-        
+
                 .left-arrow {
                     left: 28%;
                     font-size: 2rem;
@@ -2391,7 +2494,7 @@ footer {
 
 
             .ligne2 {
-                > div:nth-child(2) {
+                >div:nth-child(2) {
                     img {
                         width: 150px
                     }
@@ -2401,7 +2504,7 @@ footer {
         }
     }
 
-  
+
 
 
     .coordonnees {
@@ -2456,15 +2559,15 @@ footer {
             flex: 1;
             padding: 1rem;
         }
-        
+
     }
 
     .wrapperPrestations {
-    
+
         .hero {
-           
-    
-            h1{
+
+
+            h1 {
                 font-weight: 700;
                 font-style: normal;
                 color: white;
