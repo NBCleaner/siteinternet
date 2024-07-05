@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="heroContent">
-        <h2>NB CLEANER Auto</h2>
+        <h1>NB CLEANER Auto</h2>
         <p>
             Respectueux de l'environnement et des techniques de lavage
             éco-responsables. Nous offrons un service de qualité exceptionnelle.
@@ -17,7 +17,6 @@
         <button>CONTACTEZ-NOUS</button>
     </div>
 </section>
-
 
 
 

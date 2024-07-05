@@ -55,7 +55,8 @@ const cardForfait3 = document.querySelector(".listeforfait3")
 
 
 const white = "#FFFFFF"
-const gold = "#DAA520"
+const gold = "linear-gradient(to right, #BF953F, #E0C97D, #B38728, #EAD49F, #AA771C)";
+const goldChek = "#DAA520"
 const blue = "#143993"
 
 deluxe.addEventListener("click",  function() {
@@ -78,7 +79,7 @@ extraItems.forEach(function(item) {
     item.style.display = "block";
 });
 extraIcons.forEach(function(icon) {
-    icon.style.color = gold;
+    icon.style.color = goldChek;
 });
 });
 
@@ -101,3 +102,72 @@ extraItems.forEach(function(item) {
 });
 
 // -----------------------------------------------
+
+
+// Effet de scroll js sur la page index
+
+
+// Effet sur l'a section article 
+
+// Fonction pour ajouter un observateur d'intersection sur le viewport et ajoute des classe name
+function setupIntersectionObserver(selector, className, options = { threshold: 0.20 }) {
+    const elements = document.querySelectorAll(selector);
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Ajoute la classe pour l'animation
+                entry.target.classList.add(className);
+
+                // Une fois l'animation déclenchée, arrêter d'observer cet élément
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupIntersectionObserver('article', 'visible');
+    setupIntersectionObserver('.devisPc', 'visible');  
+});
+
+// -------------------------------------
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionner la section contenant les images
+    const container = document.querySelector('.carousel-container-pc');
+    
+    // Fonction pour gérer le zoom des images
+    const handleZoom = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                // Ajoute la classe zoomed pour zoomer les images
+                container.querySelectorAll('div').forEach(div => {
+                    div.classList.add('zoomed');
+                });
+                
+                setTimeout(() => {
+                    container.querySelectorAll('div').forEach(div => {
+                        div.classList.remove('zoomed');
+                    });
+                }, 1200); 
+
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    // Créer un observateur pour gérer le zoom
+    const observer = new IntersectionObserver(handleZoom, {
+        threshold: 0.5 
+    });
+
+    // Observer la section entière (ou un élément spécifique si nécessaire)
+    observer.observe(container);
+});

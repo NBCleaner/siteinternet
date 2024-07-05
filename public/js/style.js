@@ -47,7 +47,7 @@ const extraIcons = document.querySelectorAll(".extra-deluxe i");
 
 
 const white = "#FFFFFF"
-const gold = "#DAA520"
+const gold = "linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)";
 const blue = "#143993"
 
 deluxe.addEventListener("click",  function() {
