@@ -139,24 +139,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionner la section contenant les images
     const container = document.querySelector('.carousel-container-pc');
     
-    // Fonction pour gérer le zoom des images
     const handleZoom = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-
-                // Ajoute la classe zoomed pour zoomer les images
                 container.querySelectorAll('div').forEach(div => {
                     div.classList.add('zoomed');
                 });
-                
-                setTimeout(() => {
-                    container.querySelectorAll('div').forEach(div => {
-                        div.classList.remove('zoomed');
-                    });
-                }, 1200); 
 
                 observer.unobserve(entry.target);
             }
@@ -165,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Créer un observateur pour gérer le zoom
     const observer = new IntersectionObserver(handleZoom, {
-        threshold: 0.5 
+        threshold: 0.7
     });
 
     // Observer la section entière (ou un élément spécifique si nécessaire)

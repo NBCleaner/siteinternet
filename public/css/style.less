@@ -571,7 +571,6 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 40px;
-            // width: 100vw;
             background-color: var(--primary-400);
             color: white;
 
@@ -2136,19 +2135,20 @@ footer {
                     justify-content: center;
 
 
-                    >div {
+                    > div {
                         min-width: 25vw;
                         height: 400px;
-                        background-size: cover;
+                        background-size: 110%; 
                         background-repeat: no-repeat;
                         border-radius: 50px;
                         position: relative;
-                        transition: transform 0.7s ease-out; 
-                        overflow: hidden; 
+                        transition: background-size 0.7s ease-out; 
+                        overflow: hidden;
+
 
 
                         &.zoomed {
-                            transform: scale(1.08); 
+                            background-size: 100%;
                         }
 
 
@@ -2240,6 +2240,7 @@ footer {
                 height: auto;
                 display: block;
                 position: relative;
+                top: 1px;
             }
         }
 
@@ -2575,7 +2576,6 @@ footer {
             .container-prestationsPc {
 
                 .lustragePc {
-                    // background-image: url('../img/lustrage.svg');
                     background-position-y: 50%;
                 }
 

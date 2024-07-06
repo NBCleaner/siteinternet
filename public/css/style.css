@@ -1611,15 +1611,15 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div {
     min-width: 25vw;
     height: 400px;
-    background-size: cover;
+    background-size: 110%;
     background-repeat: no-repeat;
     border-radius: 50px;
     position: relative;
-    transition: transform 0.7s ease-out;
+    transition: background-size 0.7s ease-out;
     overflow: hidden;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div.zoomed {
-    transform: scale(1.08);
+    background-size: 100%;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
     width: 100%;
@@ -1692,6 +1692,7 @@ footer .footer-socials .facebook-icon {
     height: auto;
     display: block;
     position: relative;
+    top: 1px;
   }
   .wrapperAccueil .forfait {
     display: flex;
