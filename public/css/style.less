@@ -208,6 +208,7 @@ h3 {
 .avis {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 
 
     h2 {
@@ -242,15 +243,21 @@ h3 {
         }
 
         .review-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1px;
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 10px;
-            margin: 5px 0;
+            margin: 5px 0 5px 0;
             width: calc(100% - 20px);
             box-sizing: border-box;
             width: 80vw;
             line-height: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
         }
 
         .review-card:hover {
@@ -944,7 +951,7 @@ footer {
                 width: 75vw;
                 align-self: center;
                 border-radius: 20px;
-                background-color: var(--gold);
+                background: linear-gradient(to right, #BF953F, #E0C97D, #B38728, #EAD49F, #AA771C);
                 color: white;
                 border: none;
                 font-family: "Roboto", sans-serif;
@@ -960,6 +967,7 @@ footer {
 
             .btnTableauForfait {
                 display: none;
+                background: none;
             }
         }
 
@@ -1623,7 +1631,7 @@ footer {
         }
 
         #carousel {
-
+            height: 40vh;
             .review-container {
                 height: 40vh;
             }
@@ -2138,17 +2146,30 @@ footer {
                     > div {
                         min-width: 25vw;
                         height: 400px;
-                        background-size: 110%; 
-                        background-repeat: no-repeat;
                         border-radius: 50px;
                         position: relative;
-                        transition: background-size 0.7s ease-out; 
                         overflow: hidden;
 
 
-
-                        &.zoomed {
-                            background-size: 100%;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: inherit;
+                            border-radius: 50px;
+                            transform: scale(1.2); 
+                            transition: transform 1s ease-out;
+                            z-index: 2; 
+                        }
+                
+                        &.zoomed::before {
+                            transform: scale(1); /* Zoom back to 100% */
                         }
 
 
@@ -2161,6 +2182,7 @@ footer {
                             justify-content: center;
                             border-radius: 50px;
                             position: relative;
+                            z-index: 3;
                         }
                     }
 
@@ -2215,14 +2237,35 @@ footer {
                     position: absolute;
                     bottom: 20px;
                     left: 50%;
-                    transform: translateX(-50%);
+                    transform: translate(-50%, -200%); 
                     background: rgba(45, 86, 165, 0.5);
                     padding: 5px 10px;
                     border-radius: 5px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    transition: transform 1s ease;
+                    opacity: 0;
+                    z-index: 3;
 
+                    &.visible {
+                        transform: translate(-50%, 0);
+                        animation: fadeIn 1s ease forwards;
+
+                    }
+
+                }
+
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 0.5;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -2241,6 +2284,7 @@ footer {
                 display: block;
                 position: relative;
                 top: 1px;
+
             }
         }
 

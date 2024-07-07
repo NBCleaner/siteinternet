@@ -106,9 +106,6 @@ extraItems.forEach(function(item) {
 
 // Effet de scroll js sur la page index
 
-
-// Effet sur l'a section article 
-
 // Fonction pour ajouter un observateur d'intersection sur le viewport et ajoute des classe name
 function setupIntersectionObserver(selector, className, options = { threshold: 0.20 }) {
     const elements = document.querySelectorAll(selector);
@@ -132,7 +129,9 @@ function setupIntersectionObserver(selector, className, options = { threshold: 0
 
 document.addEventListener('DOMContentLoaded', function() {
     setupIntersectionObserver('article', 'visible');
-    setupIntersectionObserver('.devisPc', 'visible');  
+    setupIntersectionObserver('.devisPc', 'visible'); 
+    setupIntersectionObserver('.carousel-container-pc h3', 'visible');
+ 
 });
 
 // -------------------------------------

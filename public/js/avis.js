@@ -26,10 +26,10 @@ function displayReviewsCarousel(reviews) {
         reviewCard.classList.add('review-card');
 
         const authorName = document.createElement('p');
-        authorName.textContent = `Auteur : ${review.author_name}`;
+        authorName.textContent = `${review.author_name}`;
 
         const rating = document.createElement('p');
-        rating.textContent = `Note : ${review.rating} étoiles`;
+        // rating.textContent = `Note : ${review.rating} étoiles`;
 
 
 
