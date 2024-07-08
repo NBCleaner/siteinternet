@@ -130,6 +130,10 @@ function setupIntersectionObserver(selector, className, options = { threshold: 0
 document.addEventListener('DOMContentLoaded', function() {
     setupIntersectionObserver('article', 'visible');
     setupIntersectionObserver('.devisPc', 'visible'); 
+    setupIntersectionObserver('.devis h2', 'visible');
+    setupIntersectionObserver('.devis p', 'visible'); 
+    setupIntersectionObserver('.container-prestations div','zoomed' , { threshold: 0.70 });
+    setupIntersectionObserver('.container-prestations h3', 'visible' , { threshold: 0.90 });
     setupIntersectionObserver('.carousel-container-pc h3', 'visible');
     setupIntersectionObserver('.carousel-container-pc div','zoomed' , { threshold: 0.70 });
     setupIntersectionObserver('.forfaitDevis h2', 'visible');

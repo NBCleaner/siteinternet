@@ -130,19 +130,30 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  overflow: hidden;
 }
-.question a {
-  display: block;
-  background-color: transparent;
-  color: #FFF;
-  font-size: 1rem;
-  font-weight: inherit;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
+.question button {
+  height: 5vh;
+  width: 60vw;
   border-radius: 50px;
-  border: 1px solid var(--primary-300);
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0 0.7vw;
+  margin: 0 10vw 7vh 10vw;
+  z-index: 55;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid var(--primary-300);
+  margin: 20px;
+}
+.question button a {
+  color: #FFF;
+}
+.question button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  z-index: 99;
 }
 .question > * {
   position: relative;
@@ -157,6 +168,11 @@ h3 {
   width: 100%;
   height: 100%;
   filter: opacity(0.5);
+  transform: scale(1.2);
+  transition: transform 1s ease-out;
+}
+.question.zoomed::before {
+  transform: scale(1);
 }
 .avis {
   display: flex;
@@ -167,6 +183,11 @@ h3 {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.avis h2.visible {
+  opacity: 1;
 }
 .avis #carousel {
   display: flex;
@@ -233,12 +254,19 @@ h3 {
   align-items: center;
   gap: 45px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+  justify-content: center;
 }
 .partenaire h2 {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 25px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.partenaire h2.visible {
+  opacity: 1;
 }
 .partenaire .container-partenaire {
   width: 80%;
@@ -257,6 +285,7 @@ h3 {
 .partenaire .container-partenaire .ligne2 div img {
   width: 20vw;
   height: 10vh;
+  display: block;
 }
 .partenaire .container-partenaire .ligne1 div:nth-child(2),
 .partenaire .container-partenaire .ligne2 div:nth-child(2) {
@@ -267,6 +296,18 @@ h3 {
 .partenaire .container-partenaire .ligne1 {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  transform: translateX(-80%);
+  transition: transform 1s ease-in-out;
+}
+.partenaire .container-partenaire .ligne1.visible {
+  transform: translateX(0);
+}
+.partenaire .container-partenaire .ligne2 {
+  transform: translateX(80%);
+  transition: transform 1s ease-in-out;
+}
+.partenaire .container-partenaire .ligne2.visible {
+  transform: translateX(0);
 }
 .coordonnees {
   display: flex;
@@ -500,13 +541,39 @@ footer .footer-socials .facebook-icon {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapperAccueil .prestations .container-prestations div {
+  position: relative;
+  width: 100vw;
+  height: 165px;
+  overflow: hidden;
+}
+.wrapperAccueil .prestations .container-prestations div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: inherit;
+  transform: scale(1.2);
+  transition: transform 0.7s ease-out;
+  z-index: 2;
+}
+.wrapperAccueil .prestations .container-prestations div.zoomed::before {
+  transform: scale(1);
 }
 .wrapperAccueil .prestations .container-prestations .lustrage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/lustragebis.png');
   background-position-y: 50%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .lustrage div {
@@ -517,12 +584,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .phare {
   width: 100vw;
   height: 165px;
   background-image: url('../img/phare.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 20%;
 }
@@ -534,12 +602,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .cuir {
   width: 100vw;
   height: 165px;
   background-image: url('../img/cuir.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .cuir div {
@@ -550,12 +619,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .moteur {
   width: 100vw;
   height: 165px;
   background-image: url('../img/moteur.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .moteur div {
@@ -566,12 +636,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .siege {
   width: 100vw;
   height: 165px;
   background-image: url('../img/siege.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .siege div {
@@ -582,12 +653,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .lavage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/lavage.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
 }
@@ -599,13 +671,14 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .nettoyageInt {
   width: 100vw;
   height: 165px;
   background-image: url('../img/nettoyageApres.jpg');
   background-position-y: 30%;
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .nettoyageInt div {
@@ -616,12 +689,13 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .ceramique {
   width: 100vw;
   height: 165px;
   background-image: url('../img/ceramique.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .ceramique div {
@@ -632,13 +706,14 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations .deflocage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/deflocageApres.jpg');
   background-position-y: 30%;
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .wrapperAccueil .prestations .container-prestations .deflocage div {
@@ -649,6 +724,7 @@ footer .footer-socials .facebook-icon {
   align-items: flex-end;
   padding-bottom: 5%;
   justify-content: center;
+  z-index: 99;
 }
 .wrapperAccueil .prestations .container-prestations h3 {
   color: white;
@@ -662,6 +738,25 @@ footer .footer-socials .facebook-icon {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transform: translate(0, -200%);
+  transition: transform 1s ease;
+  opacity: 0;
+  z-index: 3;
+}
+.wrapperAccueil .prestations .container-prestations h3.visible {
+  transform: translate(0, 0);
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .wrapperAccueil .prestationsPc {
   display: none;
@@ -1204,73 +1299,66 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .prestations .container-prestations .lustrage {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .lustrage div {
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .lustrage {
-    width: 100vw;
-    height: 265px;
-  }
-  .wrapperAccueil .prestations .container-prestations .lustrage div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .phare {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .phare div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .cuir {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .cuir div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .moteur {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .moteur div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .siege {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .siege div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .lavage {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .lavage div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .nettoyageInt {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .nettoyageInt div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .ceramique {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .ceramique div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .deflocage {
     width: 100vw;
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations .deflocage div {
-    height: 265px;
+    height: 365px;
   }
   .wrapperAccueil .prestations .container-prestations h3 {
     font-size: 1.8rem;
@@ -1297,9 +1385,13 @@ footer .footer-socials .facebook-icon {
     width: 45vw;
   }
   .question {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
-  .question a {
+  .question button {
+    width: 40vw;
+    height: 6vh;
+  }
+  .question button a {
     font-size: 1.8rem;
   }
   .avis h2 {

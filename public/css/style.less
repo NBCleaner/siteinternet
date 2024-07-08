@@ -164,28 +164,40 @@ h3 {
     align-items: center;
     position: relative;
     margin-bottom: 2rem;
-
     color: #FFF;
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    overflow: hidden;
 
-    a {
-        display: block;
-
-        background-color: transparent;
-
-        color: #FFF;
-        font-size: 1rem;
-        font-weight: inherit;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-
-        padding: 0.5rem 1rem;
-        margin-top: 1rem;
+    button {
+        height: 5vh;
+        width: 60vw;
         border-radius: 50px;
-        border: 1px solid var(--primary-300);
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 0 0.7vw;
+        margin: 0 10vw 7vh 10vw;
+        z-index: 55;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.9);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 2px solid var(--primary-300);
+        margin: 20px;
+
+
+        a{
+            color: #FFF;
+        }
+
+    }
+
+
+    button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        z-index: 99;
     }
 
     &>* {
@@ -203,6 +215,14 @@ h3 {
     width: 100%;
     height: 100%;
     filter: opacity(0.5);
+    transform: scale(1.2);
+    transition: transform 1s ease-out;
+
+
+}
+
+.question.zoomed::before {
+    transform: scale(1);
 }
 
 .avis {
@@ -215,6 +235,12 @@ h3 {
         font-size: 1.2rem;
         font-family: "Roboto", sans-serif;
         text-align: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        &.visible {
+            opacity: 1;
+        }
     }
 
     #carousel {
@@ -295,12 +321,22 @@ h3 {
     align-items: center;
     gap: 45px;
     padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    justify-content: center;
+
+ 
 
     h2 {
         font-size: 1.2rem;
         font-family: "Roboto", sans-serif;
         text-align: center;
-        margin-top: 25px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        &.visible{
+            opacity: 1;
+        }
     }
 
     .container-partenaire {
@@ -317,11 +353,17 @@ h3 {
             gap: 20px;
 
             div {
+
                 img {
                     width: 20vw;
                     height: 10vh;
+                    display: block; 
+
                 }
+
             }
+
+            
 
             div:nth-child(2) {
                 border-left: 1px solid black;
@@ -335,6 +377,21 @@ h3 {
         .ligne1 {
             border-bottom: 1px solid black;
             padding-bottom: 20px;
+            transform: translateX(-80%);
+            transition: transform 1s ease-in-out;
+            
+            &.visible{
+                transform: translateX(0);
+            }
+        }
+
+        .ligne2{
+            transform: translateX(80%);
+            transition: transform 1s ease-in-out;
+
+            &.visible{
+                transform: translateX(0);
+            }
         }
 
 
@@ -486,9 +543,6 @@ footer {
             z-index: 1;
         }
 
-
-
-
         .carousel-indicators {
             position: absolute;
             bottom: 10px;
@@ -562,14 +616,11 @@ footer {
 
         }
 
-
         button:hover {
             transform: scale(1.1);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     }
-
-
 
     article {
         display: none;
@@ -630,10 +681,39 @@ footer {
         }
 
         .container-prestations {
-
             display: flex;
             flex-direction: column;
             gap: 5px;
+            position: relative; 
+            overflow: hidden;
+        
+            div {
+                position: relative; 
+                width: 100vw;
+                height: 165px;
+                overflow: hidden;
+
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: inherit;
+                    transform: scale(1.2);
+                    transition: transform 0.7s ease-out;
+                    z-index: 2;
+                }
+        
+                &.zoomed::before {
+                    transform: scale(1);
+                }
+            }
 
             .lustrage {
 
@@ -641,7 +721,7 @@ footer {
                 height: 165px;
                 background-image: url('../img/lustragebis.png');
                 background-position-y: 50%;
-                background-size: 100%;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -652,6 +732,7 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
                 }
 
 
@@ -662,7 +743,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/phare.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position-y: 20%;
 
@@ -674,6 +755,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -682,7 +765,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/cuir.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -693,6 +776,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -701,7 +786,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/moteur.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -712,6 +797,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -720,7 +807,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/siege.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -731,6 +818,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -739,7 +828,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/lavage.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position-y: 40%;
 
@@ -751,6 +840,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -760,7 +851,7 @@ footer {
                 height: 165px;
                 background-image: url('../img/nettoyageApres.jpg');
                 background-position-y: 30%;
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -771,6 +862,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -779,7 +872,7 @@ footer {
                 width: 100vw;
                 height: 165px;
                 background-image: url('../img/ceramique.png');
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -790,6 +883,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -799,7 +894,7 @@ footer {
                 height: 165px;
                 background-image: url('../img/deflocageApres.jpg');
                 background-position-y: 30%;
-                background-size: 100vw;
+                background-size: cover;
                 background-repeat: no-repeat;
 
                 div {
@@ -810,6 +905,8 @@ footer {
                     align-items: flex-end;
                     padding-bottom: 5%;
                     justify-content: center;
+                    z-index: 99;
+
                 }
             }
 
@@ -825,6 +922,30 @@ footer {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                transform: translate(0, -200%);
+                transition: transform 1s ease;
+                opacity: 0;
+                z-index: 3;
+
+                &.visible {
+                    transform: translate(0, 0);
+                    animation: fadeIn 1s ease forwards;
+
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 0.5;
+                }
+
+                100% {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -1514,104 +1635,99 @@ footer {
         }
 
         .prestations {
-            .container-prestations {
+
+            .container-prestations  {
+
+
+
 
                 .lustrage {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
-                    }
-
-                }
-
-                .lustrage {
-                    width: 100vw;
-                    height: 265px;
-
-                    div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .phare {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
+
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .cuir {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .moteur {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .siege {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .lavage {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .nettoyageInt {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .ceramique {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
 
                 .deflocage {
                     width: 100vw;
-                    height: 265px;
+                    height: 365px;
 
                     div {
-                        height: 265px;
+                        height: 365px;
                     }
 
                 }
@@ -1654,7 +1770,7 @@ footer {
             }
 
             .bouttonAllForfait {
-    
+
                 button {
                     width: 45vw;
                 }
@@ -1667,11 +1783,18 @@ footer {
     // =============================
 
     .question {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
 
-        a {
-            font-size: 1.8rem;
+        button{
+
+        width: 40vw;
+        height: 6vh;
+            a {
+                font-size: 1.8rem;
+            }
         }
+
+
     }
 
     .avis {
