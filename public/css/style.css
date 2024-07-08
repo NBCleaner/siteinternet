@@ -685,11 +685,21 @@ footer .footer-socials .facebook-icon {
   text-align: center;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.wrapperAccueil .forfait .forfaitDevis h2.visible {
+  opacity: 1;
 }
 .wrapperAccueil .forfait .forfaitDevis p {
   text-align: center;
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.wrapperAccueil .forfait .forfaitDevis p.visible {
+  opacity: 1;
 }
 .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe {
   display: none;
@@ -738,6 +748,14 @@ footer .footer-socials .facebook-icon {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  transform: translateY(-30%);
+  transition: transform ease-in 0.7s;
+}
+.wrapperAccueil .forfait .container-forfait .listeforfait1 h4.visible,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 h4.visible,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 h4.visible {
+  transform: translateY(0);
+  animation: fadeIn 1s ease forwards;
 }
 .wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
 .wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
@@ -750,6 +768,8 @@ footer .footer-socials .facebook-icon {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  transform: translateY(-30%);
+  transition: transform ease-in 0.7s;
 }
 .wrapperAccueil .forfait .container-forfait .listeforfait1 ul li i,
 .wrapperAccueil .forfait .container-forfait .listeforfait2 ul li i,
@@ -761,13 +781,30 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .forfait .container-forfait .listeforfait3 ul .extra-deluxe {
   display: none;
 }
+.wrapperAccueil .forfait .container-forfait .listeforfait1 ul.visible,
+.wrapperAccueil .forfait .container-forfait .listeforfait2 ul.visible,
+.wrapperAccueil .forfait .container-forfait .listeforfait3 ul.visible {
+  transform: translateY(0);
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .wrapperAccueil .forfait .bouttonAllForfait {
   display: flex;
   justify-content: center;
 }
 .wrapperAccueil .forfait .bouttonAllForfait button {
   height: 7vh;
-  width: 75vw;
+  width: 60vw;
   align-self: center;
   border-radius: 20px;
   background: linear-gradient(to right, #BF953F, #E0C97D, #B38728, #EAD49F, #AA771C);
@@ -776,10 +813,16 @@ footer .footer-socials .facebook-icon {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .wrapperAccueil .forfait .bouttonAllForfait button a {
   text-decoration: none;
   color: white;
+}
+.wrapperAccueil .forfait .bouttonAllForfait button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
   display: none;
@@ -1250,8 +1293,8 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
     font-size: 1.3rem;
   }
-  .wrapperAccueil .forfait .container-forfait button {
-    font-size: 1.5rem;
+  .wrapperAccueil .forfait .bouttonAllForfait button {
+    width: 45vw;
   }
   .question {
     font-size: 1.8rem;
@@ -1643,7 +1686,6 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div.zoomed::before {
     transform: scale(1);
-    /* Zoom back to 100% */
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
     width: 100%;
@@ -1869,11 +1911,12 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
     display: block;
-    width: 25vw;
+    width: 20vw;
     border-radius: 50px;
     background-color: var(--primary-50);
     border: 1px solid var(--primary-500);
     color: var(--primary-500);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   }
   .wrapperForfaits .navDecoration {
     background-color: var(--primary-500);

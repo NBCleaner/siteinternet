@@ -131,32 +131,18 @@ document.addEventListener('DOMContentLoaded', function() {
     setupIntersectionObserver('article', 'visible');
     setupIntersectionObserver('.devisPc', 'visible'); 
     setupIntersectionObserver('.carousel-container-pc h3', 'visible');
- 
+    setupIntersectionObserver('.carousel-container-pc div','zoomed' , { threshold: 0.70 });
+    setupIntersectionObserver('.forfaitDevis h2', 'visible');
+    setupIntersectionObserver('.forfaitDevis p', 'visible');
+    setupIntersectionObserver('.listeforfait1 ul', 'visible');
+    setupIntersectionObserver('.listeforfait2 ul', 'visible');
+    setupIntersectionObserver('.listeforfait3 ul', 'visible');
+    setupIntersectionObserver('.listeforfait1 h4', 'visible');
+    setupIntersectionObserver('.listeforfait2 h4', 'visible');
+    setupIntersectionObserver('.listeforfait3 h4', 'visible');
+
 });
 
 // -------------------------------------
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.carousel-container-pc');
-    
-    const handleZoom = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                container.querySelectorAll('div').forEach(div => {
-                    div.classList.add('zoomed');
-                });
-
-                observer.unobserve(entry.target);
-            }
-        });
-    };
-
-    // Créer un observateur pour gérer le zoom
-    const observer = new IntersectionObserver(handleZoom, {
-        threshold: 0.7
-    });
-
-    // Observer la section entière (ou un élément spécifique si nécessaire)
-    observer.observe(container);
-});
