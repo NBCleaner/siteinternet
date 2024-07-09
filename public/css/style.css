@@ -126,7 +126,7 @@ h3 {
   position: relative;
   margin-bottom: 2rem;
   color: #FFF;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -146,6 +146,7 @@ h3 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 2px solid var(--primary-300);
   margin: 20px;
+  font-size: 1.1rem;
 }
 .question button a {
   color: #FFF;
@@ -1019,7 +1020,6 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperPrestations h2 {
   text-align: center;
-  color: var(--primary-500);
   padding: 3vw;
 }
 .wrapperPrestations .hero {
@@ -1060,24 +1060,31 @@ footer .footer-socials .facebook-icon {
   color: white;
   font-size: 5vw;
   text-align: center;
+  margin: 0 5vw 0 5vw;
 }
 .wrapperPrestations .traitementCuir {
   background-image: url('../img/traitement-cuir.jpg');
+  background-position-x: 50%;
 }
 .wrapperPrestations .shampoinageSiege {
   background-image: url('../img/siege.png');
+  background-position: 75%;
 }
 .wrapperPrestations .poseCeramique {
   background-image: url('../img/ceramique.png');
+  background-position-x: 25%;
 }
 .wrapperPrestations .optiquePhare {
   background-image: url('../img/optiquePhrareApres.jpg');
+  background-position-x: 50%;
 }
 .wrapperPrestations .nettoyageMoteur {
   background-image: url('../img/lavagemoteurApres.jpg');
+  background-position-x: 50%;
 }
 .wrapperPrestations .nettoyageInterieur {
   background-image: url('../img/nettoyageApres.jpg');
+  background-position-x: 50%;
 }
 .wrapperPrestations .nettoyageExterieur {
   background-image: url('../img/NettoyageExterieurApres.jpeg');
@@ -1093,6 +1100,9 @@ footer .footer-socials .facebook-icon {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+}
+.wrapperPrestations .section1 h2 {
+  color: var(--primary-500);
 }
 .wrapperPrestations .section1 p {
   font-family: "DM Sans", sans-serif;
@@ -1203,6 +1213,7 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperPrestations .section2 h2 {
   padding: 2rem;
+  color: var(--primary-500);
 }
 .wrapperPrestations .section2 ul {
   color: var(--primary-500);
@@ -1218,10 +1229,18 @@ footer .footer-socials .facebook-icon {
   font-weight: 700;
   font-style: normal;
   text-align: center;
-  padding: 2rem;
+  height: 5vh;
+  width: 50vw;
   border-radius: 10vw;
-  margin-bottom: 4vw;
-  margin-top: 2vw;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wrapperPrestations .section2 button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  z-index: 99;
 }
 .wrapperPrestations .section2 a {
   color: white;
@@ -1441,6 +1460,13 @@ footer .footer-socials .facebook-icon {
   .wrapperPrestations .section1 .containerjs {
     flex: 1;
     padding: 1rem;
+  }
+  .wrapperPrestations .section2 button {
+    height: 5vh;
+    width: 28vw;
+    border-radius: 10vw;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -2095,6 +2121,10 @@ footer .footer-socials .facebook-icon {
     text-align: right;
     padding-right: 0.5rem;
   }
+  .wrapperPrestations .section2 button {
+    height: 5vh;
+    width: 20vw;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .wrapperAccueil .hero {
@@ -2199,5 +2229,9 @@ footer .footer-socials .facebook-icon {
     font-style: normal;
     color: white;
     font-size: 7vw;
+  }
+  .wrapperPrestations .section2 button {
+    height: 5vh;
+    width: 15vw;
   }
 }
