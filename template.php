@@ -70,7 +70,7 @@
 
         <!-- AVIS GOOGLE -->
         <section class="avis">
-            <h2><hr>ILS NOUS RECOMMANDENT<hr></h2>
+            <h2>Votre satisfaction, notre mission</h2>
             <div id="carousel">
                 <div class="arrow left-arrow" id="arrow-left">&#10094;</div>
                 <div class="review-container">
@@ -82,7 +82,7 @@
 
         <!-- Partenaires -->
         <section class="partenaire">
-            <h2><hr>ILS NOUS FONT CONFIANCE<hr></h2>
+        <h2>Ils nous font confiance pour leurs Véhicules</h2>
             <div class="container-partenaire">
                 <div class="ligne1">
                     <div><img src="img/peugeot.svg" alt="logo peugeot"></div>

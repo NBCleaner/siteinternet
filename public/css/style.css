@@ -2137,6 +2137,16 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestationsPc .container-prestationsPc h3 {
     font-size: 1.2rem;
   }
+  .wrapperAccueil .question {
+    font-size: 2.8rem;
+  }
+  .wrapperAccueil .question button {
+    width: 28vw;
+    height: 6vh;
+  }
+  .wrapperAccueil .question button a {
+    font-size: 1.8rem;
+  }
   .wrapperAccueil .avis #carousel .review-container {
     height: 50vh;
   }
