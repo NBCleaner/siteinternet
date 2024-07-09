@@ -10,11 +10,11 @@
     </div>
     <div class="heroContent">
         <h1>NB CLEANER Auto</h2>
-        <p>
-            Respectueux de l'environnement et des techniques de lavage
-            éco-responsables. Nous offrons un service de qualité exceptionnelle.
-        </p>
-        <button>CONTACTEZ-NOUS</button>
+            <p>
+                Respectueux de l'environnement et des techniques de lavage
+                éco-responsables. Nous offrons un service de qualité exceptionnelle.
+            </p>
+            <button>CONTACTEZ-NOUS</button>
     </div>
 </section>
 
@@ -37,7 +37,7 @@
             via une cuve par des professionnels.</p>
     </div>
     <div class="video">
-
+        <iframe src="https://www.youtube.com/embed/wWoQ7PFSYlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </article>
 
@@ -111,11 +111,11 @@
     <div class="carousel-container-pc">
         <i class="fa-solid fa-circle-arrow-left carousel-arrow left-arrow" id="left-arrow-top"></i>
         <div class="container-prestationsPc">
-        <div class="lustragePc" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
-            <div>
-                <h3>LUSTRAGE / POLISSAGE</h3>
+            <div class="lustragePc" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
+                <div>
+                    <h3>LUSTRAGE / POLISSAGE</h3>
+                </div>
             </div>
-        </div>
 
             <div class="pharePc" onclick="location.href='optiqueDePhares.php';" style="cursor: pointer;">
                 <div>
@@ -165,7 +165,7 @@
 
 <div class="wave">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 176" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M-495.387 75.5702H-606C-551.711 86.3857 -441.099 125.785 -332.522 125.785C-223.944 125.785 47.4982 97.9738 156.075 64.7547C264.652 31.5356 373.229 -13.2715 481.806 3.72428C590.383 19.9476 698.961 97.9738 807.538 131.193C916.115 165.184 1024.69 153.596 1133.27 125.785C1241.85 97.9738 1350.42 53.9392 1404.71 31.5356L1459 9.13204V176H1404.71C1350.42 176 1241.85 176 1133.27 176C1024.69 176 916.115 176 807.538 176C698.961 176 590.383 176 481.806 176C373.229 176 264.652 176 156.075 176C47.4982 176 -61.0789 176 -169.656 176C-278.233 176 -386.81 176 -441.099 176H-495.387V75.5702Z" fill="#EEF1F9"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M-495.387 75.5702H-606C-551.711 86.3857 -441.099 125.785 -332.522 125.785C-223.944 125.785 47.4982 97.9738 156.075 64.7547C264.652 31.5356 373.229 -13.2715 481.806 3.72428C590.383 19.9476 698.961 97.9738 807.538 131.193C916.115 165.184 1024.69 153.596 1133.27 125.785C1241.85 97.9738 1350.42 53.9392 1404.71 31.5356L1459 9.13204V176H1404.71C1350.42 176 1241.85 176 1133.27 176C1024.69 176 916.115 176 807.538 176C698.961 176 590.383 176 481.806 176C373.229 176 264.652 176 156.075 176C47.4982 176 -61.0789 176 -169.656 176C-278.233 176 -386.81 176 -441.099 176H-495.387V75.5702Z" fill="#EEF1F9" />
     </svg>
 </div>
 
@@ -252,7 +252,7 @@
     </div>
 </section>
 <script src="js/accueil.js"></script>
-<script src="js/carouselHero.js" ></script>
+<script src="js/carouselHero.js"></script>
 
 <?php
 $content = ob_get_clean();

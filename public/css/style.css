@@ -465,7 +465,7 @@ footer .footer-socials .facebook-icon {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
-  padding: 2vh 0.7vw 3vh 0.7vw;
+  padding: 2vh 0.7vw 3vh 0;
   margin: 0 10vw;
   z-index: 55;
   text-align: left;
@@ -490,28 +490,63 @@ footer .footer-socials .facebook-icon {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .wrapperAccueil article {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  max-height: 800px;
 }
 .wrapperAccueil article .histoire {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   background-color: var(--primary-400);
   color: white;
+  opacity: 1;
+  padding-bottom: 20px;
+  margin-top: 1vh;
+  justify-content: center;
 }
 .wrapperAccueil article .histoire h2 {
-  margin: 0% 10%;
-  font-size: 1.2rem;
+  margin: 0 10%;
+  font-size: 1rem;
   text-align: center;
   padding-top: 20px;
   font-family: "Roboto", sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 .wrapperAccueil article .histoire p {
-  margin: 0% 6%;
+  margin: 0 10%;
   font-size: 0.8rem;
   text-align: left;
   font-family: "DM Sans", sans-serif;
-  padding-bottom: 20px;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out;
+}
+.wrapperAccueil article .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* Ratio 16:9 */
+  overflow: hidden;
+}
+.wrapperAccueil article .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.wrapperAccueil article.visible .histoire h2 {
+  opacity: 1;
+}
+.wrapperAccueil article.visible .histoire p {
+  transform: translateX(0);
+}
+.wrapperAccueil article.visible .video {
+  transform: translateX(0);
 }
 .wrapperAccueil .prestations {
   background-color: var(--primary-50);
@@ -1087,7 +1122,9 @@ footer .footer-socials .facebook-icon {
   background-position-x: 50%;
 }
 .wrapperPrestations .nettoyageExterieur {
-  background-image: url('../img/NettoyageExterieurApres.jpeg');
+  background-image: url('../img/nettoyageExt.jpeg');
+  background-position-y: 50%;
+  background-position-x: 20%;
 }
 .wrapperPrestations .lustragePolissage {
   background-image: url('../img/lustragePolissageApres.jpg');
@@ -1099,6 +1136,7 @@ footer .footer-socials .facebook-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
 }
 .wrapperPrestations .section1 h2 {
@@ -1135,12 +1173,15 @@ footer .footer-socials .facebook-icon {
   overflow: hidden;
   border-radius: 1rem;
   --position: 50%;
+  width: 100%;
+  max-width: 350px;
 }
 .wrapperPrestations .section1 .image-container {
   position: relative;
   width: 100%;
   overflow: hidden;
   height: 500px;
+  max-width: 350px;
 }
 .wrapperPrestations .section1 .image-containerCeramique {
   position: relative;
@@ -1315,6 +1356,67 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .heroContent button {
     width: 25vw;
     margin-bottom: 15vh;
+  }
+  .wrapperAccueil article {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .wrapperAccueil article .histoire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--primary-400);
+    color: white;
+    opacity: 1;
+    margin-top: 1vh;
+    width: 50vw;
+  }
+  .wrapperAccueil article .histoire h2 {
+    margin: 0 10%;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .wrapperAccueil article .histoire p {
+    margin: 0 10%;
+    font-size: 0.9rem;
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out;
+  }
+  .wrapperAccueil article .video {
+    position: relative;
+    margin-top: 1vh;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Ratio 16:9 */
+    overflow: hidden;
+    width: 50vw;
+  }
+  .wrapperAccueil article .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .wrapperAccueil article.visible .histoire h2 {
+    opacity: 1;
+  }
+  .wrapperAccueil article.visible .histoire p {
+    transform: translateX(0);
+  }
+  .wrapperAccueil article.visible .video {
+    transform: translateX(0);
+  }
+  .wrapperAccueil .prestations .devis h2 {
+    font-size: 3rem;
   }
   .wrapperAccueil .prestations .container-prestations .lustrage {
     width: 100vw;
@@ -1669,6 +1771,7 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil article {
     display: flex;
+    flex-direction: row;
   }
   .wrapperAccueil article .histoire {
     display: flex;
@@ -1678,10 +1781,12 @@ footer .footer-socials .facebook-icon {
     background-color: var(--primary-400);
     color: white;
     opacity: 1;
+    padding: 20px;
+    max-height: 80vh;
   }
   .wrapperAccueil article .histoire h2 {
-    margin: 0% 10%;
-    font-size: 2rem;
+    margin: 0 10%;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
     font-family: "Roboto", sans-serif;
@@ -1689,22 +1794,29 @@ footer .footer-socials .facebook-icon {
     transition: opacity 1s ease-in-out;
   }
   .wrapperAccueil article .histoire p {
-    margin: 0% 10%;
-    font-size: 1rem;
+    margin: 0 10%;
+    font-size: 1.1rem;
     text-align: left;
     font-family: "DM Sans", sans-serif;
     transform: translateX(-100%);
     transition: transform 1s ease-out;
   }
   .wrapperAccueil article .video {
-    background-image: url('../img/photovideo.png');
-    background-size: 50vw;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
     width: 50vw;
-    height: 500px;
+    position: relative;
+    overflow: hidden;
     transform: translateX(100%);
     transition: transform 1s ease-out;
+    max-height: 80vh;
+  }
+  .wrapperAccueil article .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    max-height: 80vh;
   }
   .wrapperAccueil article.visible .histoire h2 {
     opacity: 1;
@@ -1738,6 +1850,7 @@ footer .footer-socials .facebook-icon {
     font-family: "Roboto", sans-serif;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    font-size: 3rem;
   }
   .wrapperAccueil .prestationsPc .devisPc p {
     font-size: 0.9rem;
@@ -1808,7 +1921,7 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1903,6 +2016,9 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperAccueil .forfait .forfaitDevis {
     height: 30vh;
+  }
+  .wrapperAccueil .forfait .forfaitDevis h2 {
+    font-size: 3rem;
   }
   .wrapperAccueil .forfait .forfaitDevis p {
     padding-bottom: 5vh;
@@ -2158,8 +2274,17 @@ footer .footer-socials .facebook-icon {
     margin-bottom: 20vh;
     font-size: 1.5rem;
   }
+  .wrapperAccueil article .histoire h2 {
+    font-size: 1.8rem;
+  }
   .wrapperAccueil article .histoire p {
-    font-size: 1.28vw;
+    font-size: 1.5rem;
+  }
+  .wrapperAccueil .prestationsPc .devisPc {
+    height: auto;
+  }
+  .wrapperAccueil .prestationsPc .container-prestationsPc {
+    padding-top: 10vh;
   }
   .wrapperAccueil .prestationsPc .container-prestationsPc .lustragePc {
     background-position-y: 50%;
@@ -2233,5 +2358,15 @@ footer .footer-socials .facebook-icon {
   .wrapperPrestations .section2 button {
     height: 5vh;
     width: 15vw;
+  }
+  .wrapperPrestations .question {
+    font-size: 2.8rem;
+  }
+  .wrapperPrestations .question button {
+    width: 28vw;
+    height: 6vh;
+  }
+  .wrapperPrestations .question button a {
+    font-size: 1.8rem;
   }
 }
