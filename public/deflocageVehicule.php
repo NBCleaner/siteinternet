@@ -11,15 +11,7 @@
         <div class="descriptionPrestation">
             <h2>LIBEREZ VOTRE VEHICULE EN UN CLIN D'OEIL </h2>
             <p>
-                Le déflocage de votre véhicule présente plusieurs avantages significatifs. En optant pour le déflocage, 
-                vous vous libérez des contraintes et des coûts associés à la location de votre véhicule.
-                Vous devenez propriétaire, ce qui signifie que vous pouvez personnaliser votre véhicule selon vos besoins, 
-                l'utiliser sans restrictions de kilométrage et maximiser sa valeur à la revente. 
-                Le déflocage offre une liberté financière et opérationnelle, vous permettant de gérer votre 
-                véhicule selon vos propres termes, sans être lié par les termes d'un contrat de location. 
-                En somme, le déflocage vous offre la possibilité de prendre le contrôle de votre mobilité, 
-                de maximiser la valeur de votre investissement et de bénéficier d'une plus grande flexibilité 
-                dans votre utilisation quotidienne de votre véhicule.
+            Défloquer votre véhicule offre plusieurs avantages. Cela améliore l'esthétique en redonnant une apparence propre et professionnelle, ce qui peut augmenter sa valeur lors de la revente. De plus, le déflocage facilite la personnalisation en permettant de changer facilement de design ou de branding. Il protège également la peinture en évitant les résidus adhésifs et les différences de couleur dues à l'exposition au soleil. Opter pour un service de déflocage professionnel garantit un résultat optimal.
             </p>
         
         </div>

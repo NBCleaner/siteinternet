@@ -73,13 +73,17 @@ header nav .dropdownPrestations #dropdownPrestationsButton {
 }
 header nav .dropdownPrestations #dropdownPrestationsContent {
   display: none;
+  transform: translateX(-20%);
 }
 header nav .dropdownPrestations #dropdownPrestationsContent ul {
   list-style: none;
   margin-top: 0.5rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 1rem;
 }
 header nav .dropdownPrestations #dropdownPrestationsContent ul li {
-  font-size: 0.75em;
+  font-size: 1em;
   padding: 0.5em 0;
   text-transform: initial;
 }
@@ -1296,6 +1300,109 @@ footer .footer-socials .facebook-icon {
 .wrapperPrestations .section2 a:active {
   color: white;
 }
+.wrapperContact .navDecoration {
+  display: block;
+  background-color: var(--primary-400);
+  border-bottom-left-radius: 2400px 1000px;
+  border-bottom-right-radius: 2400px 1000px;
+  min-height: 85px;
+}
+.wrapperContact .contactQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding-top: 2vh;
+  gap: 5vh;
+}
+.wrapperContact .contactQuestion h2 {
+  color: var(--primary-500);
+}
+.wrapperContact .contactQuestion .informationContact {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: 0 0% 0 0%;
+}
+.wrapperContact .contactQuestion .informationContact div p {
+  font-size: 1.1rem;
+}
+.wrapperContact .contactQuestion .informationContact div p i {
+  color: #143993;
+  margin-bottom: 7px;
+}
+.wrapperContact .contactQuestion .informationContact div:nth-of-type(1) p i {
+  padding-right: 2px;
+}
+.wrapperContact main {
+  background-color: #fff;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 40px 20px;
+}
+.wrapperContact main .containerContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-300);
+  border-radius: 8px;
+}
+.wrapperContact main .containerContact h1,
+.wrapperContact main .containerContact p {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.wrapperContact main .containerContact p {
+  font-style: italic;
+}
+.wrapperContact main .containerContact .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.wrapperContact main .containerContact .contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.wrapperContact main .containerContact .contact-form input,
+.wrapperContact main .containerContact .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 4px;
+  height: 50px;
+}
+.wrapperContact main .containerContact .contact-form textarea {
+  height: 75px;
+}
+.wrapperContact main .containerContact .contact-form input[type="submit"] {
+  background-color: var(--primary-500);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.wrapperContact main .containerContact .contact-form input[type="submit"]:hover {
+  background-color: #0e2866;
+}
+.wrapperContact main .containerContact .success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapperContact main .containerContact .error-list {
+  color: red;
+  list-style-type: none;
+  padding: 0;
+}
+.wrapperContact main .containerContact .error-list li {
+  margin-bottom: 10px;
+}
 @media only screen and (min-width: 768px) {
   .wrapperAccueil .hero {
     position: relative;
@@ -1569,6 +1676,32 @@ footer .footer-socials .facebook-icon {
     border-radius: 10vw;
     margin-bottom: 4vh;
     margin-top: 2vh;
+  }
+  .wrapperContact .contactQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    padding-top: 5vh;
+  }
+  .wrapperContact .contactQuestion h2 {
+    color: var(--primary-500);
+    font-size: 2.5rem;
+  }
+  .wrapperContact .contactQuestion .informationContact {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .wrapperContact .contactQuestion .informationContact div p {
+    font-size: 1.2rem;
+  }
+  .wrapperContact main .containerContact {
+    width: 80%;
+  }
+  .wrapperContact main .containerContact textarea {
+    height: 75px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -2241,6 +2374,12 @@ footer .footer-socials .facebook-icon {
     height: 5vh;
     width: 20vw;
   }
+  .wrapperContact main .containerContact {
+    width: 65%;
+  }
+  .wrapperContact main .containerContact textarea {
+    height: 75px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .wrapperAccueil .hero {
@@ -2349,11 +2488,15 @@ footer .footer-socials .facebook-icon {
     flex: 1;
     padding: 1rem;
   }
+  .wrapperPrestations .deflocageVehicule {
+    background-image: url('../img/deflocageApres.jpg');
+    background-position-y: 50%;
+  }
   .wrapperPrestations .hero h1 {
     font-weight: 700;
     font-style: normal;
     color: white;
-    font-size: 7vw;
+    font-size: 5vw;
   }
   .wrapperPrestations .section2 button {
     height: 5vh;
@@ -2367,6 +2510,52 @@ footer .footer-socials .facebook-icon {
     height: 6vh;
   }
   .wrapperPrestations .question button a {
+    font-size: 1.8rem;
+  }
+  .wrapperForfaits .question {
+    font-size: 2.8rem;
+  }
+  .wrapperForfaits .question button {
+    width: 28vw;
+    height: 6vh;
+  }
+  .wrapperForfaits .question button a {
+    font-size: 1.8rem;
+  }
+  .wrapperContact .contactQuestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    padding-top: 5vh;
+  }
+  .wrapperContact .contactQuestion h2 {
+    color: var(--primary-500);
+    font-size: 3rem;
+  }
+  .wrapperContact .contactQuestion .informationContact {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .wrapperContact .contactQuestion .informationContact div p {
+    font-size: 1.2rem;
+  }
+  .wrapperContact main .containerContact {
+    width: 50%;
+  }
+  .wrapperContact main .containerContact textarea {
+    height: 100px;
+  }
+  .wrapperContact .question {
+    font-size: 2.8rem;
+  }
+  .wrapperContact .question button {
+    width: 28vw;
+    height: 6vh;
+  }
+  .wrapperContact .question button a {
     font-size: 1.8rem;
   }
 }

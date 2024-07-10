@@ -79,21 +79,21 @@
 
 // // -----------------------------------------------
 
-function initMap() {
-    let service = new google.maps.places.PlacesService(document.createElement('div.map'));
+// function initMap() {
+//     let service = new google.maps.places.PlacesService(document.createElement('div.map'));
 
-    const request = {
-        placeId: "ChIJzbw80qiN3EcRSTM3nMT40Cc",
-        fields: ["reviews"]
-    };
-    service.getDetails(request, (place, status) => {
-        if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
-            displayReviewsCarousel(place.reviews);
-        } else {
-            console.error('Impossible de récupérer les avis pour cette entreprise.');
-        }
-    });
-}
+//     const request = {
+//         placeId: "ChIJzbw80qiN3EcRSTM3nMT40Cc",
+//         fields: ["reviews"]
+//     };
+//     service.getDetails(request, (place, status) => {
+//         if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
+//             displayReviewsCarousel(place.reviews);
+//         } else {
+//             console.error('Impossible de récupérer les avis pour cette entreprise.');
+//         }
+//     });
+// }
 
 // function displayReviewsCarousel(reviews) {
 //     let currentIndex = 0; // Indice de l'avis actuellement affiché

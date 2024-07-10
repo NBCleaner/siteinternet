@@ -25,15 +25,15 @@
         <h2>Votre centre de lavage
             et nettoyage
             sur coudekerque-Branche</h2>
-        <p>Bienvenue chez NB CLEANER, votre partenaire de confiance pour un lavage automobile impeccable à
+        <p>Bienvenue chez NB CLEANER, votre partenaire de confiance pour un lavage automobile de qualité exceptionnelle à
             Coudekerque-Branche !
 
             Nous nous engageons à offrir à nos clients un service de lavage automobile de qualité supérieure,
             combinant expertise technique et souci du détail. Situés au cœur de Coudekerque-Branche, notre équipe
             passionnée est déterminée à redonner à votre véhicule tout son éclat et sa brillance, à chaque visite.
-
+            <br>
             Respectueux de l'environnement et des techniques de lavage
-            éco-responsables. Nous offrons un service de qualité exceptionnelle. Notre eau est récupéré puis traiter
+            éco-responsables, notre eau est récupéré puis traiter
             via une cuve par des professionnels.</p>
     </div>
     <div class="video">

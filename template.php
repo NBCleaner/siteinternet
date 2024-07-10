@@ -16,7 +16,7 @@
 
         <!-- HEADER -->
         <header>
-            <img src="img/logo.svg" alt="Logo de l'entreprise NBCleaner">
+        <img src="img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='index.php';" style="cursor: pointer;">
 
             <div id="burger-icon">
 
@@ -132,7 +132,7 @@
                     <ul><a href="index.php">Accueil</a></ul>
                     <ul><a href="prestations.html">Prestations</a></ul>
                     <ul><a href="forfaits.php">Forfaits</a></ul>
-                    <ul><a href="contact.html">Contact</a></ul>
+                    <ul><a href="contact.php">Contact</a></ul>
                 </ul>
             </div>
             <div>
