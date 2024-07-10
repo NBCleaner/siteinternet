@@ -76,7 +76,7 @@
             if (empty($errors)) {
 
                 // Défini les variables de l'email
-                $to = "a.x.e.l_@hotmail.fr";
+                $to = "delannoy-axel@outlook.fr";
                 $subject = "Message de contact depuis le site web";
                 $body = "Nom: $name\nPrénom: $surname\nEmail: $email\nTéléphone: $phone\n\nMessage:\n$message";
                 $headers = "From: $email\r\n";
