@@ -29,12 +29,13 @@
 
 
         <?php
-        require '../vendor/autoload.php'; // Inclure l'autoloader de Composer
+        require '../vendor/autoload.php'; 
 
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
 
-        $mail = new PHPMailer(true); // Créez une instance de PHPMailer
+        // Je Crée une instance de PHPMailer
+        $mail = new PHPMailer(true); 
 
         $errors = [];
         $name = $surname = $email = $phone = $message = "";
@@ -43,7 +44,7 @@
         // Nettoyage des données pour éviter les failles XSS
         function clean_input($data)
         {
-            return htmlspecialchars(stripslashes(trim($data)));
+            return htmlspecialchars(stripslashes(trim($data)), ENT_QUOTES, 'UTF-8');
         }
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -85,24 +86,26 @@
                 try {
                     // Configuration du serveur SMTP
                     $mail->isSMTP();
-                    $mail->Host       = 'smtp.gmail.com'; // Remplacez par l'hôte SMTP de votre serveur
+                    $mail->Host       = 'smtp.gmail.com'; 
+                    // Oblige l'authentification au serveur smtp pour envoyer des mails pour evitez les spam et + de sécurité 
                     $mail->SMTPAuth   = true;
-                    $mail->Username   = 'riton987654@gmail.com'; // Votre adresse email
-                    $mail->Password   = 'qfvr flob shyb rtsn'; // Votre mot de passe email
-                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Utilisez ENCRYPTION_SMTPS pour SSL
-                    $mail->Port       = 587; // Utilisez 465 pour SSL, 587 pour TLS
+                    // Email et mot de passe de connexion à la boite email qui servira a la conexion smtp et autorisé l'envoie d'email via se compte 
+                    $mail->Username   = 'riton987654@gmail.com'; 
+                    $mail->Password   = 'qfvr flob shyb rtsn'; 
+                    // Protections des données envoyées entre le serveur et le serveur smtp
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+                    $mail->Port       = 587;
+                    $mail->CharSet    = 'UTF-8';
 
-                    // Définir l'expéditeur et le destinataire
+                    // Configuration de l'adresse email émettrice et de celle destinataire
                     $mail->setFrom('riton987654@gmail.com', 'Axel');
                     $mail->addAddress('delannoy-axel@outlook.fr', 'Delannoy');
 
-                    // Contenu de l'email
                     $mail->isHTML(true);
                     $mail->Subject = 'Message de contact depuis le site web';
                     $mail->Body    = "Nom: $name<br>Prénom: $surname<br>Email: $email<br>Téléphone: $phone<br><br>Message:<br>$message";
                     $mail->AltBody = "Nom: $name\nPrénom: $surname\nEmail: $email\nTéléphone: $phone\n\nMessage:\n$message";
 
-                    // Envoyer l'email
                     $mail->send();
                     $successMessage = "<p class =\"success-message\">Merci pour votre message !</p>";
                     $formSubmitted = true;
@@ -141,20 +144,6 @@
         </form>
 
     </div>
-
-    <?php
-
-
-
-    if (!empty($errors)) {
-        echo '<ul>';
-        foreach ($errors as $error) {
-            echo "<li>$error</li>";
-        }
-        echo '</ul>';
-    }
-    ?>
-
 </main>
 
 <?php
