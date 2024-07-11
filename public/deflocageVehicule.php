@@ -60,5 +60,5 @@
 $content = ob_get_clean();
 $title = "Deflocage Vehicule";
 $wrapperName = "wrapperPrestations";
-require "../template.php";
+require "./template.php";
 ?>

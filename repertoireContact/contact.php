@@ -29,6 +29,13 @@
 
 
         <?php
+        require '../vendor/autoload.php'; // Inclure l'autoloader de Composer
+
+        use PHPMailer\PHPMailer\PHPMailer;
+        use PHPMailer\PHPMailer\Exception;
+
+        $mail = new PHPMailer(true); // Créez une instance de PHPMailer
+
         $errors = [];
         $name = $surname = $email = $phone = $message = "";
         $formSubmitted = false;
@@ -75,23 +82,35 @@
 
             if (empty($errors)) {
 
-                // Défini les variables de l'email
-                $to = "delannoy-axel@outlook.fr";
-                $subject = "Message de contact depuis le site web";
-                $body = "Nom: $name\nPrénom: $surname\nEmail: $email\nTéléphone: $phone\n\nMessage:\n$message";
-                $headers = "From: $email\r\n";
-                $headers .= "Reply-To: $email\r\n";
-                $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+                try {
+                    // Configuration du serveur SMTP
+                    $mail->isSMTP();
+                    $mail->Host       = 'smtp.gmail.com'; // Remplacez par l'hôte SMTP de votre serveur
+                    $mail->SMTPAuth   = true;
+                    $mail->Username   = 'riton987654@gmail.com'; // Votre adresse email
+                    $mail->Password   = 'qfvr flob shyb rtsn'; // Votre mot de passe email
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Utilisez ENCRYPTION_SMTPS pour SSL
+                    $mail->Port       = 587; // Utilisez 465 pour SSL, 587 pour TLS
 
-                // Envoi de l'email
-                if (mail($to, $subject, $body, $headers)) {
-                    echo "<p>Merci pour votre message !</p>";
+                    // Définir l'expéditeur et le destinataire
+                    $mail->setFrom('riton987654@gmail.com', 'Axel');
+                    $mail->addAddress('delannoy-axel@outlook.fr', 'Delannoy');
+
+                    // Contenu de l'email
+                    $mail->isHTML(true);
+                    $mail->Subject = 'Message de contact depuis le site web';
+                    $mail->Body    = "Nom: $name<br>Prénom: $surname<br>Email: $email<br>Téléphone: $phone<br><br>Message:<br>$message";
+                    $mail->AltBody = "Nom: $name\nPrénom: $surname\nEmail: $email\nTéléphone: $phone\n\nMessage:\n$message";
+
+                    // Envoyer l'email
+                    $mail->send();
+                    $successMessage = "<p class =\"success-message\">Merci pour votre message !</p>";
                     $formSubmitted = true;
 
                     // Réinitialisation des champs après succès
                     $name = $surname = $email = $phone = $message = "";
-                } else {
-                    $errors[] = "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.";
+                } catch (Exception $e) {
+                    $errors[] = "<p class =\"error-list\">Une erreur est survenue lors de l'envoi de votre message. Erreur : {$mail->ErrorInfo}</p>";
                 }
             }
         }
@@ -104,11 +123,29 @@
             <input type="tel" name="phone" value="<?php echo $formSubmitted ? '' : $phone; ?>" placeholder="Téléphone" required><br>
             <textarea name="message" placeholder="Votre message" required><?php echo $formSubmitted ? '' : $message; ?></textarea><br>
             <input type="submit" value="Envoyer">
+
+            <?php if (!empty($successMessage)) {
+                echo $successMessage;
+            } 
+            
+            if (!empty($errors)) {
+                echo '<ul>';
+                foreach ($errors as $error) {
+                    echo "<li>$error</li>";
+                }
+                echo '</ul>';
+            }
+
+            ?>
+            
         </form>
 
     </div>
 
     <?php
+
+
+
     if (!empty($errors)) {
         echo '<ul>';
         foreach ($errors as $error) {
@@ -124,5 +161,5 @@
 $content = ob_get_clean();
 $wrapperName = "wrapperContact";
 $title = "Contact";
-require "../template.php";
+require "../public/template.php";
 ?>

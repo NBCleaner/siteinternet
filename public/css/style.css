@@ -489,6 +489,10 @@ footer .footer-socials .facebook-icon {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.wrapperAccueil .heroContent button a {
+  color: white;
+  text-decoration: none;
+}
 .wrapperAccueil .heroContent button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1342,6 +1346,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   align-items: center;
   padding: 0 20px 40px 20px;
+  margin: 10vh 0;
 }
 .wrapperContact main .containerContact {
   display: flex;
@@ -1360,6 +1365,7 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperContact main .containerContact p {
   font-style: italic;
+  padding-bottom: 20px;
 }
 .wrapperContact main .containerContact .contact-form {
   display: flex;
@@ -1391,9 +1397,10 @@ footer .footer-socials .facebook-icon {
   background-color: #0e2866;
 }
 .wrapperContact main .containerContact .success-message {
-  color: green;
+  color: #21f121;
   font-weight: bold;
   text-align: center;
+  font-size: 1.2rem;
 }
 .wrapperContact main .containerContact .error-list {
   color: red;

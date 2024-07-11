@@ -1,0 +1,17 @@
+{
+    "name": "axel/nbcleaner",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axel\\Nbcleaner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DelannoyAxel",
+            "email": "delannoy.axel2@gmail.com"
+        }
+    ]
+}

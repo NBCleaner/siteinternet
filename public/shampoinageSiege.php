@@ -64,5 +64,5 @@
 $content = ob_get_clean();
 $title = "Shampoinage des sièges";
 $wrapperName = "wrapperPrestations";
-require "../template.php";
+require "./template.php";
 ?>

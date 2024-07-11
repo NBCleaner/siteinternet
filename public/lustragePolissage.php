@@ -65,5 +65,5 @@
 $content = ob_get_clean();
 $title = "Lustrage Polissage du véhicule";
 $wrapperName = "wrapperPrestations";
-require "../template.php";
+require "./template.php";
 ?>

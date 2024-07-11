@@ -14,7 +14,9 @@
                 Respectueux de l'environnement et des techniques de lavage
                 éco-responsables. Nous offrons un service de qualité exceptionnelle.
             </p>
-            <button>CONTACTEZ-NOUS</button>
+            <button>
+                <a href="../repertoireContact/contact.php">Contactez-nous !</a>
+            </button>
     </div>
 </section>
 
@@ -258,5 +260,5 @@
 $content = ob_get_clean();
 $title = "Accueil";
 $wrapperName = "wrapperAccueil";
-require "../template.php";
+require "./template.php";
 ?>
