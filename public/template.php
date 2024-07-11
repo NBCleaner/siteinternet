@@ -136,7 +136,7 @@
             </div>
             <div>
                 <p>Copyright 2024 | Tous droits réservés</p>
-                <a href="#">Mentions légales</a> - <a href="#">Plan du site</a>
+                <a href="../public/mentions_legal.php">Mentions légales</a> - <a href="#">conditions general de vente</a>
             </div>
             <div class="footer-socials">
                 <a href="https://www.facebook.com/Nb.cleanerauto/">
