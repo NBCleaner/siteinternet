@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <title><?= $title ?></title>
 </head>
 
@@ -16,7 +17,7 @@
 
         <!-- HEADER -->
         <header>
-        <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='index.php';" style="cursor: pointer;">
+            <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../public/index.php';" style="cursor: pointer;">
 
             <div id="burger-icon">
 
@@ -29,15 +30,16 @@
                             <button id="dropdownPrestationsButton">Prestations</button>
                             <div id="dropdownPrestationsContent" class="dropdownContent">
                                 <ul>
-                                    <li><a href="../public/traitementCuir.php">Traitement du cuir</a></li>
-                                    <li><a href="../public/deflocageVehicule.php">Déflocage</a></li>
-                                    <li><a href="../public/lustragePolissage.php">Lustrage / Polissage</a></li>
                                     <li><a href="../public/nettoyageExterieur.php">Nettoyage Extérieur</a></li>
                                     <li><a href="../public/nettoyageInterieur.php">Nettoyage Intérieur</a></li>
+                                    <li><a href="../public/traitementCuir.php">Traitement du cuir</a></li>
+                                    <li><a href="../public/lustragePolissage.php">Lustrage / Polissage</a></li>
                                     <li><a href="../public/nettoyageMoteur.php">Nettoyage Moteur</a></li>
-                                    <li><a href="../public/optiqueDePhares.php">Optique</a></li>
+                                    <li><a href="../public/optiqueDePhares.php">Optiques de phare</a></li>
                                     <li><a href="../public/poseCeramique.php">Pose Céramique</a></li>
                                     <li><a href="../public/shampoinageSiege.php">Shampouinage des sièges</a></li>
+                                    <li><a href="../public/deflocageVehicule.php">Déflocage</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -82,7 +84,7 @@
 
         <!-- Partenaires -->
         <section class="partenaire">
-        <h2>Ils nous font confiance pour leurs Véhicules</h2>
+            <h2>Ils nous font confiance pour leurs Véhicules</h2>
             <div class="container-partenaire">
                 <div class="ligne1">
                     <div><img src="../public/img/peugeot.svg" alt="logo peugeot"></div>
@@ -136,7 +138,7 @@
             </div>
             <div>
                 <p>Copyright 2024 | Tous droits réservés</p>
-                <a href="../public/mentions_legal.php">Mentions légales</a> - <a href="#">conditions general de vente</a>
+                <a href="../public/mentions_legal.php">Mentions légales</a> - <a href="../public/privacity_policy.php">Politique de confidentialité</a>
             </div>
             <div class="footer-socials">
                 <a href="https://www.facebook.com/Nb.cleanerauto/">

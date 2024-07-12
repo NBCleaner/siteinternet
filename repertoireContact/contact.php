@@ -29,13 +29,13 @@
 
 
         <?php
-        require '../vendor/autoload.php'; 
+        require '../vendor/autoload.php';
 
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\Exception;
 
         // Je Crée une instance de PHPMailer
-        $mail = new PHPMailer(true); 
+        $mail = new PHPMailer(true);
 
         $errors = [];
         $name = $surname = $email = $phone = $message = "";
@@ -86,14 +86,14 @@
                 try {
                     // Configuration du serveur SMTP
                     $mail->isSMTP();
-                    $mail->Host       = 'smtp.gmail.com'; 
+                    $mail->Host       = 'smtp.gmail.com';
                     // Oblige l'authentification au serveur smtp pour envoyer des mails pour evitez les spam et + de sécurité 
                     $mail->SMTPAuth   = true;
                     // Email et mot de passe de connexion à la boite email qui servira a la conexion smtp et autorisé l'envoie d'email via se compte 
-                    $mail->Username   = 'riton987654@gmail.com'; 
-                    $mail->Password   = 'qfvr flob shyb rtsn'; 
+                    $mail->Username   = 'riton987654@gmail.com';
+                    $mail->Password   = 'qfvr flob shyb rtsn';
                     // Protections des données envoyées entre le serveur et le serveur smtp
-                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port       = 587;
                     $mail->CharSet    = 'UTF-8';
 
@@ -125,12 +125,16 @@
             <input type="email" name="email" value="<?php echo $formSubmitted ? '' : $email; ?>" placeholder="Email" required><br>
             <input type="tel" name="phone" value="<?php echo $formSubmitted ? '' : $phone; ?>" placeholder="Téléphone" required><br>
             <textarea name="message" placeholder="Votre message" required><?php echo $formSubmitted ? '' : $message; ?></textarea><br>
+            <div>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">J'accepte la collecte et le traitement de mes données personnelles conformément à la <a href="../public/privacity_policy.php">politique de confidentialité</a>. </label>
+            </div>
             <input type="submit" value="Envoyer">
 
             <?php if (!empty($successMessage)) {
                 echo $successMessage;
-            } 
-            
+            }
+
             if (!empty($errors)) {
                 echo '<ul>';
                 foreach ($errors as $error) {
@@ -140,7 +144,7 @@
             }
 
             ?>
-            
+
         </form>
 
     </div>

@@ -36,10 +36,11 @@
             <br>
             Respectueux de l'environnement et des techniques de lavage
             éco-responsables, notre eau est récupéré puis traiter
-            via une cuve par des professionnels.</p>
+            via une cuve par des professionnels.
+        </p>
     </div>
     <div class="video">
-        <iframe src="https://www.youtube.com/embed/wWoQ7PFSYlk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/1Imrw2kagXI?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </article>
 
@@ -53,6 +54,16 @@
         </p>
     </div>
     <div class="container-prestations">
+        <div class="lavage" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
+            <div>
+                <H3>NETTOYAGE EXTÉRIEUR</H3>
+            </div>
+        </div>
+        <div class="nettoyageInt" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
+            <div>
+                <H3>NETTOYAGE INTÉRIEUR</H3>
+            </div>
+        </div>
         <div class="lustrage" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
             <div>
                 <H3>LUSTRAGE / POLISSAGE</H3>
@@ -76,16 +87,6 @@
         <div class="siege" onclick="location.href='shampoinageSiege.php';" style="cursor: pointer;">
             <div>
                 <H3>SHAMPOINGAGE SIÈGE</H3>
-            </div>
-        </div>
-        <div class="lavage" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
-            <div>
-                <H3>NETTOYAGE EXTÉRIEUR</H3>
-            </div>
-        </div>
-        <div class="nettoyageInt" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
-            <div>
-                <H3>NETTOYAGE INTÉRIEUR</H3>
             </div>
         </div>
         <div class="ceramique" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">
@@ -113,6 +114,16 @@
     <div class="carousel-container-pc">
         <i class="fa-solid fa-circle-arrow-left carousel-arrow left-arrow" id="left-arrow-top"></i>
         <div class="container-prestationsPc">
+            <div class="lavagePc" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
+                <div>
+                    <H3>NETTOYAGE EXTÉRIEUR</H3>
+                </div>
+            </div>
+            <div class="nettoyageIntPc" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
+                <div>
+                    <H3>NÉTTOYAGE INTÉRIEUR</H3>
+                </div>
+            </div>
             <div class="lustragePc" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
                 <div>
                     <h3>LUSTRAGE / POLISSAGE</h3>
@@ -139,16 +150,6 @@
             <div class="siegePc" onclick="location.href='shampoinageSiege.php';" style="cursor: pointer;">
                 <div>
                     <H3>SHAMPOINGAGE SIÈGE</H3>
-                </div>
-            </div>
-            <div class="lavagePc" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
-                <div>
-                    <H3>NETTOYAGE EXTÉRIEUR</H3>
-                </div>
-            </div>
-            <div class="nettoyageIntPc" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
-                <div>
-                    <H3>NÉTTOYAGE INTÉRIEUR</H3>
                 </div>
             </div>
             <div class="ceramiquePc" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">

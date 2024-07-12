@@ -73,7 +73,6 @@ header nav .dropdownPrestations #dropdownPrestationsButton {
 }
 header nav .dropdownPrestations #dropdownPrestationsContent {
   display: none;
-  transform: translateX(-20%);
 }
 header nav .dropdownPrestations #dropdownPrestationsContent ul {
   list-style: none;
@@ -118,7 +117,7 @@ header .socials {
 h1,
 h2,
 h3 {
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
 }
 .question {
@@ -135,6 +134,7 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   overflow: hidden;
+  font-family: "Cinzel", serif;
 }
 .question button {
   height: 5vh;
@@ -186,10 +186,10 @@ h3 {
 }
 .avis h2 {
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  margin: 0 5%;
 }
 .avis h2.visible {
   opacity: 1;
@@ -262,13 +262,14 @@ h3 {
   padding-top: 20px;
   overflow: hidden;
   justify-content: center;
+  height: 40vh;
 }
 .partenaire h2 {
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  margin: 0 5%;
 }
 .partenaire h2.visible {
   opacity: 1;
@@ -336,7 +337,6 @@ h3 {
   padding: 1rem 2rem;
 }
 .coordonnees .infos h3 {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 800;
   letter-spacing: 0.025rem;
   margin-bottom: 2rem;
@@ -456,7 +456,6 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperAccueil .heroContent h1 {
   color: white;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
   margin: 0 10vw;
@@ -519,7 +518,6 @@ footer .footer-socials .facebook-icon {
   font-size: 1rem;
   text-align: center;
   padding-top: 20px;
-  font-family: "Roboto", sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -573,7 +571,6 @@ footer .footer-socials .facebook-icon {
   color: var(--primary-500);
   text-align: center;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
 }
 .wrapperAccueil .prestations .devis p {
   text-align: center;
@@ -774,7 +771,6 @@ footer .footer-socials .facebook-icon {
   color: white;
   font-size: 1rem;
   -webkit-text-stroke: 0.5px var(--primary-500);
-  font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background: rgba(45, 86, 165, 0.5);
   padding: 5px 10px;
@@ -786,6 +782,7 @@ footer .footer-socials .facebook-icon {
   transition: transform 1s ease;
   opacity: 0;
   z-index: 3;
+  font-family: "Roboto", sans-serif;
 }
 .wrapperAccueil .prestations .container-prestations h3.visible {
   transform: translate(0, 0);
@@ -823,7 +820,6 @@ footer .footer-socials .facebook-icon {
   color: var(--primary-400);
   text-align: center;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -836,6 +832,7 @@ footer .footer-socials .facebook-icon {
   font-family: "DM Sans", sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  font-style: italic;
 }
 .wrapperAccueil .forfait .forfaitDevis p.visible {
   opacity: 1;
@@ -864,7 +861,6 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
   color: white;
   font-size: 1rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .wrapperAccueil .forfait .container-forfait .listeforfait1,
@@ -885,7 +881,6 @@ footer .footer-socials .facebook-icon {
   color: var(--primary-400);
   padding-top: 12px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   transform: translateY(-30%);
   transition: transform ease-in 0.7s;
@@ -949,7 +944,6 @@ footer .footer-socials .facebook-icon {
   background: linear-gradient(to right, #BF953F, #E0C97D, #B38728, #EAD49F, #AA771C);
   color: white;
   border: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
@@ -958,6 +952,9 @@ footer .footer-socials .facebook-icon {
 .wrapperAccueil .forfait .bouttonAllForfait button a {
   text-decoration: none;
   color: white;
+}
+.wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe a {
+  font-family: "Cinzel", serif;
 }
 .wrapperAccueil .forfait .bouttonAllForfait button:hover {
   transform: scale(1.1);
@@ -986,7 +983,7 @@ footer .footer-socials .facebook-icon {
 .wrapperForfaits h2,
 .wrapperForfaits h3,
 .wrapperForfaits .forfaits-title {
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
 }
 .wrapperForfaits h1 {
@@ -995,6 +992,9 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperForfaits main {
   padding: 3.125rem 1.25rem;
+}
+.wrapperForfaits main p {
+  font-style: italic;
 }
 .wrapperForfaits main .forfaits-smartphoneView {
   display: flex;
@@ -1274,7 +1274,7 @@ footer .footer-socials .facebook-icon {
 .wrapperPrestations .section2 button {
   background-color: var(--primary-500);
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cinzel", serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -1304,6 +1304,61 @@ footer .footer-socials .facebook-icon {
 .wrapperPrestations .section2 a:active {
   color: white;
 }
+.wrapperPrestations .prestations {
+  background-color: var(--primary-50);
+  display: flex;
+  flex-direction: column;
+}
+.wrapperPrestations .prestations .devis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  gap: 5px;
+}
+.wrapperPrestations .prestations .devis h2 {
+  color: var(--primary-500);
+  text-align: center;
+  font-size: 2rem;
+}
+.wrapperPrestations .prestations .devis p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+}
+.wrapperPrestations .prestations .container-prestations {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapperPrestations .prestations .container-prestations div {
+  position: relative;
+  width: 100vw;
+  height: 165px;
+  overflow: hidden;
+}
+.wrapperPrestations .prestations .container-prestations div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: inherit;
+  transform: scale(1.2);
+  transition: transform 0.7s ease-out;
+  z-index: 2;
+}
+.wrapperPrestations .prestations .container-prestations div.zoomed::before {
+  transform: scale(1);
+}
 .wrapperContact .navDecoration {
   display: block;
   background-color: var(--primary-400);
@@ -1316,9 +1371,8 @@ footer .footer-socials .facebook-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh;
-  padding-top: 2vh;
-  gap: 5vh;
+  padding-top: 4vh;
+  gap: 4vh;
 }
 .wrapperContact .contactQuestion h2 {
   color: var(--primary-500);
@@ -1327,7 +1381,6 @@ footer .footer-socials .facebook-icon {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  margin: 0 0% 0 0%;
 }
 .wrapperContact .contactQuestion .informationContact div p {
   font-size: 1.1rem;
@@ -1341,19 +1394,18 @@ footer .footer-socials .facebook-icon {
 }
 .wrapperContact main {
   background-color: #fff;
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px 40px 20px;
-  margin: 10vh 0;
+  margin: 5vh 0;
 }
 .wrapperContact main .containerContact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0 0 0;
   background-color: var(--primary-300);
   border-radius: 8px;
 }
@@ -1396,6 +1448,21 @@ footer .footer-socials .facebook-icon {
 .wrapperContact main .containerContact .contact-form input[type="submit"]:hover {
   background-color: #0e2866;
 }
+.wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+  color: var(--primary-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  padding-bottom: 3vh;
+}
+.wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+  width: 60px;
+  height: 60px;
+}
+.wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+  font-size: 0.8rem;
+}
 .wrapperContact main .containerContact .success-message {
   color: #21f121;
   font-weight: bold;
@@ -1410,26 +1477,29 @@ footer .footer-socials .facebook-icon {
 .wrapperContact main .containerContact .error-list li {
   margin-bottom: 10px;
 }
-.wrapperCgu .navDecoration {
+.wrapperCgu .navDecoration,
+.wrapperPrivacityPolicy .navDecoration {
   display: block;
   background-color: var(--primary-400);
   border-bottom-left-radius: 2400px 1000px;
   border-bottom-right-radius: 2400px 1000px;
   min-height: 85px;
 }
-.wrapperCgu h1 {
+.wrapperCgu h1,
+.wrapperPrivacityPolicy h1 {
   text-align: center;
   padding-top: 5vh;
   color: var(--primary-500);
-  font-family: "Roboto", sans-serif;
 }
-.wrapperCgu main {
+.wrapperCgu main,
+.wrapperPrivacityPolicy main {
   display: flex;
   flex-direction: column;
   gap: 2vh;
   margin: 5vh 5%;
 }
-.wrapperCgu main p {
+.wrapperCgu main p,
+.wrapperPrivacityPolicy main p {
   font-family: "DM Sans", sans-serif;
   font-size: 0.75rem;
 }
@@ -1514,7 +1584,6 @@ footer .footer-socials .facebook-icon {
     font-size: 1rem;
     text-align: center;
     padding-top: 20px;
-    font-family: "Roboto", sans-serif;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -1626,7 +1695,6 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
     color: white;
     font-size: 1.8rem;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
   .wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
@@ -1642,8 +1710,12 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .forfait .bouttonAllForfait button {
     width: 45vw;
   }
+  .wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
   .question {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .question button {
     width: 40vw;
@@ -1654,6 +1726,7 @@ footer .footer-socials .facebook-icon {
   }
   .avis h2 {
     margin-top: 0;
+    font-size: 2rem;
   }
   .avis #carousel {
     height: 40vh;
@@ -1674,6 +1747,10 @@ footer .footer-socials .facebook-icon {
   }
   .partenaire {
     border-bottom: 10px solid white;
+    height: 60vh;
+  }
+  .partenaire h2 {
+    font-size: 2rem;
   }
   .partenaire .container-partenaire .ligne1 div img,
   .partenaire .container-partenaire .ligne2 div img {
@@ -1685,6 +1762,9 @@ footer .footer-socials .facebook-icon {
   }
   .coordonnees .carte {
     margin-left: 2%;
+  }
+  .coordonnees .infos h3 {
+    font-size: 1.4rem;
   }
   .wrapperPrestations .section1 {
     flex-direction: row;
@@ -1707,13 +1787,41 @@ footer .footer-socials .facebook-icon {
     margin-bottom: 4vh;
     margin-top: 2vh;
   }
+  .wrapperPrestations .avis h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .avis #carousel {
+    height: 40vh;
+  }
+  .wrapperPrestations .avis #carousel .review-container {
+    height: 40vh;
+  }
+  .wrapperPrestations .avis #carousel .review-card {
+    width: 50%;
+  }
+  .wrapperPrestations .avis #carousel .left-arrow {
+    left: 125px;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .avis #carousel .right-arrow {
+    right: 125px;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .partenaire {
+    border-bottom: 10px solid white;
+    height: 60vh;
+  }
+  .wrapperPrestations .partenaire h2 {
+    font-size: 2rem;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne1 div img,
+  .wrapperPrestations .partenaire .container-partenaire .ligne2 div img {
+    width: 17vw;
+    height: 13vh;
+  }
   .wrapperContact .contactQuestion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 25vh;
-    padding-top: 5vh;
+    gap: 7vh;
   }
   .wrapperContact .contactQuestion h2 {
     color: var(--primary-500);
@@ -1722,20 +1830,71 @@ footer .footer-socials .facebook-icon {
   .wrapperContact .contactQuestion .informationContact {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    justify-content: space-between;
+    padding-right: 5%;
   }
   .wrapperContact .contactQuestion .informationContact div p {
     font-size: 1.2rem;
   }
+  .wrapperContact main {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    margin: 5vh 0;
+  }
   .wrapperContact main .containerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-300);
+    border-radius: 8px;
     width: 80%;
   }
-  .wrapperContact main .containerContact textarea {
-    height: 75px;
+  .wrapperContact main .containerContact .contact-form textarea {
+    height: 100px;
   }
-  .wrapperCgu main p {
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+    gap: 3vw;
+    padding-bottom: 3vh;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+    width: 50px;
+    height: 50px;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+    font-size: 1rem;
+  }
+  .wrapperContact .question {
+    font-size: 2.8rem;
+  }
+  .wrapperContact .question button {
+    width: 40vw;
+    height: 6vh;
+  }
+  .wrapperContact .question button a {
+    font-size: 1.8rem;
+  }
+  .wrapperCgu main p,
+  .wrapperPrivacityPolicy main p {
     font-family: "DM Sans", sans-serif;
     font-size: 0.9rem;
+  }
+  .wrapperCgu .question,
+  .wrapperPrivacityPolicy .question {
+    font-size: 2.8rem;
+  }
+  .wrapperCgu .question button,
+  .wrapperPrivacityPolicy .question button {
+    width: 40vw;
+    height: 6vh;
+  }
+  .wrapperCgu .question button a,
+  .wrapperPrivacityPolicy .question button a {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1778,6 +1937,7 @@ footer .footer-socials .facebook-icon {
     position: absolute;
     background-color: var(--primary-500);
     margin-top: 1rem;
+    transform: translateX(-20%);
   }
   header nav .dropdownPrestations #dropdownPrestationsContent ul {
     margin-top: 0;
@@ -1851,6 +2011,10 @@ footer .footer-socials .facebook-icon {
   .avis #carousel .right-arrow {
     right: 20%;
     font-size: 2rem;
+  }
+  .partenaire {
+    height: 40vh;
+    gap: 30%;
   }
   .partenaire h2 {
     font-size: 2rem;
@@ -1956,7 +2120,6 @@ footer .footer-socials .facebook-icon {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
-    font-family: "Roboto", sans-serif;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -2014,7 +2177,6 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .prestationsPc .devisPc p {
     color: var(--primary-500);
     text-align: center;
-    font-family: "Roboto", sans-serif;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     font-size: 3rem;
@@ -2133,7 +2295,6 @@ footer .footer-socials .facebook-icon {
     color: white;
     font-size: 0.85rem;
     -webkit-text-stroke: 0.5px var(--primary-500);
-    font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 20px;
@@ -2148,6 +2309,7 @@ footer .footer-socials .facebook-icon {
     transition: transform 1s ease;
     opacity: 0;
     z-index: 3;
+    font-family: "Roboto", sans-serif;
   }
   .wrapperAccueil .prestationsPc .carousel-container-pc h3.visible {
     transform: translate(-50%, 0);
@@ -2265,7 +2427,8 @@ footer .footer-socials .facebook-icon {
   .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait3 h3,
   .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait3 h3,
   .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait3 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1,
   .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1,
@@ -2330,7 +2493,7 @@ footer .footer-socials .facebook-icon {
     align-items: center;
     background-color: var(--primary-500);
     color: #FFF;
-    font-family: 'Roboto';
+    font-family: "Cinzel", serif;
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
@@ -2408,15 +2571,144 @@ footer .footer-socials .facebook-icon {
     height: 5vh;
     width: 20vw;
   }
+  .wrapperPrestations .avis h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .avis #carousel .review-container {
+    height: 40vh;
+  }
+  .wrapperPrestations .avis #carousel .review-card {
+    width: 50%;
+  }
+  .wrapperPrestations .avis #carousel .left-arrow {
+    left: 20%;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .avis #carousel .right-arrow {
+    right: 20%;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .partenaire {
+    width: 100%;
+    background-color: var(--primary-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    justify-content: center;
+    height: 40vh;
+  }
+  .wrapperPrestations .partenaire h2 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .wrapperPrestations .partenaire .container-partenaire {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne1,
+  .wrapperPrestations .partenaire .container-partenaire .ligne2 {
+    display: flex;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne1 div img,
+  .wrapperPrestations .partenaire .container-partenaire .ligne2 div img {
+    width: 100%;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne1 div:nth-child(2),
+  .wrapperPrestations .partenaire .container-partenaire .ligne2 div:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    padding: 0px 20px;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne1 {
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  .wrapperPrestations .partenaire .container-partenaire .ligne2 > div:nth-child(2) img {
+    width: 13vw;
+  }
+  .wrapperContact .contactQuestion {
+    gap: 7vh;
+  }
+  .wrapperContact .contactQuestion h2 {
+    color: var(--primary-500);
+    font-size: 2.5rem;
+  }
+  .wrapperContact .contactQuestion .informationContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+    gap: 10vw;
+  }
+  .wrapperContact .contactQuestion .informationContact div p {
+    font-size: 1.2rem;
+  }
+  .wrapperContact main {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    margin: 5vh 0;
+  }
   .wrapperContact main .containerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-300);
+    border-radius: 8px;
     width: 65%;
   }
-  .wrapperContact main .containerContact textarea {
-    height: 75px;
+  .wrapperContact main .containerContact .contact-form textarea {
+    height: 150px;
   }
-  .wrapperCgu main p {
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+    gap: 1.5vw;
+    padding-bottom: 3vh;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+    font-size: 1rem;
+  }
+  .wrapperContact .question {
+    min-height: 680px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .wrapperContact .question a {
+    font-size: 2.5rem;
+    padding: 1rem 5rem;
+  }
+  .wrapperCgu main p,
+  .wrapperPrivacityPolicy main p {
     font-family: "DM Sans", sans-serif;
     font-size: 1rem;
+  }
+  .wrapperCgu .question,
+  .wrapperPrivacityPolicy .question {
+    min-height: 680px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .wrapperCgu .question a,
+  .wrapperPrivacityPolicy .question a {
+    font-size: 2.5rem;
+    padding: 1rem 5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -2550,6 +2842,20 @@ footer .footer-socials .facebook-icon {
   .wrapperPrestations .question button a {
     font-size: 1.8rem;
   }
+  .wrapperPrestations .avis #carousel .review-container {
+    height: 50vh;
+  }
+  .wrapperPrestations .avis #carousel .review-card {
+    width: 35vw;
+  }
+  .wrapperPrestations .avis #carousel .left-arrow {
+    left: 28%;
+    font-size: 2rem;
+  }
+  .wrapperPrestations .avis #carousel .right-arrow {
+    right: 28%;
+    font-size: 2rem;
+  }
   .wrapperForfaits .question {
     font-size: 2.8rem;
   }
@@ -2559,6 +2865,20 @@ footer .footer-socials .facebook-icon {
   }
   .wrapperForfaits .question button a {
     font-size: 1.8rem;
+  }
+  .wrapperForfaits .avis #carousel .review-container {
+    height: 50vh;
+  }
+  .wrapperForfaits .avis #carousel .review-card {
+    width: 35vw;
+  }
+  .wrapperForfaits .avis #carousel .left-arrow {
+    left: 28%;
+    font-size: 2rem;
+  }
+  .wrapperForfaits .avis #carousel .right-arrow {
+    right: 28%;
+    font-size: 2rem;
   }
   .wrapperContact .contactQuestion {
     display: flex;
@@ -2575,7 +2895,6 @@ footer .footer-socials .facebook-icon {
   .wrapperContact .contactQuestion .informationContact {
     display: flex;
     flex-direction: row;
-    gap: 100px;
   }
   .wrapperContact .contactQuestion .informationContact div p {
     font-size: 1.2rem;
@@ -2583,8 +2902,20 @@ footer .footer-socials .facebook-icon {
   .wrapperContact main .containerContact {
     width: 50%;
   }
-  .wrapperContact main .containerContact textarea {
-    height: 100px;
+  .wrapperContact main .containerContact .contact-form textarea {
+    height: 150px;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+    gap: 1vw;
+    padding-bottom: 3vh;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+  }
+  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+    font-size: 1rem;
   }
   .wrapperContact .question {
     font-size: 2.8rem;
@@ -2596,7 +2927,8 @@ footer .footer-socials .facebook-icon {
   .wrapperContact .question button a {
     font-size: 1.8rem;
   }
-  .wrapperCgu main p {
+  .wrapperCgu main p,
+  .wrapperPrivacityPolicy main p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
   }
