@@ -1458,9 +1458,9 @@ footer .footer-socials .facebook-icon {
   gap: 5vw;
   padding-bottom: 3vh;
 }
-.wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
-  width: 60px;
-  height: 60px;
+.wrapperContact main .containerContact .contact-form div:nth-of-type(1) input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
   font-size: 0.8rem;
