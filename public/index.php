@@ -14,7 +14,7 @@
                 Respectueux de l'environnement et des techniques de lavage
                 éco-responsables. Nous offrons un service de qualité exceptionnelle.
             </p>
-            <button>
+            <button  onclick="location.href='../repertoireContact/contact.php';">
                 <a href="../repertoireContact/contact.php">Contactez-nous !</a>
             </button>
     </div>

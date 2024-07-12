@@ -193,8 +193,6 @@ h3 {
         margin: 20px;
         font-size: 1.1rem;
 
-
-
         a {
             color: #FFF;
         }
@@ -617,10 +615,12 @@ footer {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
 
             a {
                 color: white;
                 text-decoration: none;
+
             }
 
         }
@@ -636,6 +636,7 @@ footer {
         flex-direction: column;
         gap: 1vh;
         max-height: 800px;
+        overflow: hidden;
 
         .histoire {
             display: flex;
@@ -1178,9 +1179,9 @@ footer {
                 }
             }
 
-            .btnForfaitDeluxe{
-                    
-                a{
+            .btnForfaitDeluxe {
+
+                a {
                     font-family: "Cinzel", serif;
 
                 }
@@ -1238,12 +1239,12 @@ footer {
         color: var(--primary-500)
     }
 
-   
+
 
     main {
         padding: 3.125rem 1.25rem;
 
-        p{
+        p {
             font-style: italic;
         }
 
@@ -2194,7 +2195,7 @@ footer {
                     width: 45vw;
                 }
 
-                .btnForfaitDeluxe{
+                .btnForfaitDeluxe {
                     font-size: 1.1rem;
                     font-weight: 600;
                 }
@@ -2258,7 +2259,7 @@ footer {
         border-bottom: 10px solid white;
         height: 60vh;
 
-        h2{
+        h2 {
             font-size: 2rem;
 
         }
@@ -2286,9 +2287,9 @@ footer {
             margin-left: 2%;
         }
 
-        .infos{
+        .infos {
 
-            h3{
+            h3 {
                 font-size: 1.4rem;
             }
         }
@@ -2338,48 +2339,48 @@ footer {
                 margin-top: 0;
                 font-size: 2rem;
             }
-    
+
             #carousel {
                 height: 40vh;
-    
+
                 .review-container {
                     height: 40vh;
                 }
-    
+
                 .review-card {
                     width: 50%;
                 }
-    
+
                 .left-arrow {
                     left: 125px;
                     font-size: 2rem;
-    
+
                 }
-    
+
                 .right-arrow {
                     right: 125px;
                     font-size: 2rem;
                 }
-    
+
             }
         }
-    
+
         .partenaire {
             border-bottom: 10px solid white;
             height: 60vh;
-    
-            h2{
+
+            h2 {
                 font-size: 2rem;
-    
+
             }
-    
+
             .container-partenaire {
-    
+
                 .ligne1,
                 .ligne2 {
-    
+
                     div {
-    
+
                         img {
                             width: 17vw;
                             height: 13vh;
@@ -2458,18 +2459,18 @@ footer {
 
         .question {
             font-size: 2.8rem;
-    
+
             button {
-    
+
                 width: 40vw;
                 height: 6vh;
-    
+
                 a {
                     font-size: 1.8rem;
                 }
             }
-    
-    
+
+
         }
     }
 
@@ -2487,18 +2488,18 @@ footer {
 
         .question {
             font-size: 2.8rem;
-    
+
             button {
-    
+
                 width: 40vw;
                 height: 6vh;
-    
+
                 a {
                     font-size: 1.8rem;
                 }
             }
-    
-    
+
+
         }
     }
 }
@@ -2511,17 +2512,14 @@ footer {
 
     // HEADER
     header {
-        // background-color: var(--primary-500);
         background-color: transparent;
         padding: 1rem 5rem;
-
-
-
+        display: flex;
         justify-content: space-between;
-
-
+        align-items: center;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+    
 
         #burger-icon {
             display: none;
@@ -2533,15 +2531,11 @@ footer {
             position: static;
             justify-content: center;
             align-items: center;
-
             width: auto;
             height: auto;
             padding-right: 0;
-
             font-size: 1.1rem;
-
             overflow: initial;
-
 
             .dropdownPrestations {
 
@@ -2605,20 +2599,34 @@ footer {
                         border-bottom: none;
                     }
 
-                    a {
+                    &>a,
+                    button#dropdownPrestationsButton {
+                        position: relative;
                         color: #FFF;
+                        text-decoration: none;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 4px;
+                            bottom: -4px;
+                            left: 0;
+                            background-color: var(--primary-400);
+                            transition: width 0.3s ease;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                        }
                     }
 
                     &:hover {
-                        border-bottom: 4px solid var(--primary-400);
-                        margin-top: -4px;
                         transform: scale(1.1);
                     }
                 }
-
             }
         }
-
 
         .socials {
             display: flex;
@@ -2675,6 +2683,7 @@ footer {
 
         }
     }
+
 
     .partenaire {
 
@@ -3402,33 +3411,33 @@ footer {
             h2 {
                 margin-top: 0;
                 font-size: 2rem;
-    
+
             }
-    
+
             #carousel {
-    
+
                 .review-container {
                     height: 40vh;
                 }
-    
+
                 .review-card {
                     width: 50%;
                 }
-    
+
                 .left-arrow {
                     left: 20%;
                     font-size: 2rem;
-    
+
                 }
-    
+
                 .right-arrow {
                     right: 20%;
                     font-size: 2rem;
                 }
-    
+
             }
         }
-    
+
         .partenaire {
             width: 100%;
             background-color: var(--primary-50);
@@ -3441,14 +3450,14 @@ footer {
             overflow: hidden;
             justify-content: center;
             height: 40vh;
-        
-    
+
+
             h2 {
                 font-size: 2rem;
                 padding: 0;
-    
+
             }
-    
+
             .container-partenaire {
                 width: 80%;
                 display: flex;
@@ -3456,33 +3465,33 @@ footer {
                 align-items: center;
                 flex-direction: row;
                 gap: 20px;
-    
+
                 .ligne1,
                 .ligne2 {
                     display: flex;
-    
+
                     div {
-    
+
                         img {
                             width: 100%;
-    
+
                         }
                     }
-    
+
                     div:nth-child(2) {
                         border-left: none;
                         border-right: none;
                         padding: 0px 20px;
-    
+
                     }
-    
+
                 }
-    
+
                 .ligne1 {
                     padding-bottom: 0px;
                     border-bottom: none;
                 }
-    
+
                 .ligne2 {
                     >div:nth-child(2) {
                         img {
@@ -3490,7 +3499,7 @@ footer {
                         }
                     }
                 }
-    
+
             }
         }
     }
@@ -3567,8 +3576,8 @@ footer {
             min-height: 680px;
             font-size: 2.5rem;
             margin-bottom: 2rem;
-    
-    
+
+
             a {
                 font-size: 2.5rem;
                 padding: 1rem 5rem;
@@ -3593,8 +3602,8 @@ footer {
             min-height: 680px;
             font-size: 2.5rem;
             margin-bottom: 2rem;
-    
-    
+
+
             a {
                 font-size: 2.5rem;
                 padding: 1rem 5rem;

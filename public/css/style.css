@@ -487,6 +487,7 @@ footer .footer-socials .facebook-icon {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 .wrapperAccueil .heroContent button a {
   color: white;
@@ -501,6 +502,7 @@ footer .footer-socials .facebook-icon {
   flex-direction: column;
   gap: 1vh;
   max-height: 800px;
+  overflow: hidden;
 }
 .wrapperAccueil article .histoire {
   display: flex;
@@ -1901,7 +1903,9 @@ footer .footer-socials .facebook-icon {
   header {
     background-color: transparent;
     padding: 1rem 5rem;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -1969,12 +1973,28 @@ footer .footer-socials .facebook-icon {
   header nav > ul > li:not(:last-of-type) {
     border-bottom: none;
   }
-  header nav > ul > li a {
+  header nav > ul > li > a,
+  header nav > ul > li button#dropdownPrestationsButton {
+    position: relative;
     color: #FFF;
+    text-decoration: none;
+  }
+  header nav > ul > li > a::after,
+  header nav > ul > li button#dropdownPrestationsButton::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-400);
+    transition: width 0.3s ease;
+  }
+  header nav > ul > li > a:hover::after,
+  header nav > ul > li button#dropdownPrestationsButton:hover::after {
+    width: 100%;
   }
   header nav > ul > li:hover {
-    border-bottom: 4px solid var(--primary-400);
-    margin-top: -4px;
     transform: scale(1.1);
   }
   header .socials {

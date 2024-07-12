@@ -1,3 +1,6 @@
+
+// --------------
+
 // Fonction pour ajouter un observateur d'intersection sur le viewport et ajoute des classe name
 function setupIntersectionObserver(selector, className, options = { threshold: 0.20 }) {
     const elements = document.querySelectorAll(selector);
@@ -26,11 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setupIntersectionObserver('.partenaire h2','visible');
     setupIntersectionObserver('.ligne1', 'visible');
     setupIntersectionObserver('.ligne2', 'visible');
-
-
-
-
 });
 // --------------
+
+
 
 

@@ -16,7 +16,7 @@
     <div class="<?= $wrapperName ?>">
 
         <!-- HEADER -->
-        <header>
+        <header id="scrollNav">
             <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../public/index.php';" style="cursor: pointer;">
 
             <div id="burger-icon">
