@@ -64,5 +64,5 @@
 $content = ob_get_clean();
 $title = "Nettoyage exterieur";
 $wrapperName = "wrapperPrestations";
-require "./template.php";
+require "../public/template.php";
 ?>

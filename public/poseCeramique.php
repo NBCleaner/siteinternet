@@ -60,5 +60,5 @@
 $content = ob_get_clean();
 $title = "Traitement du cuir";
 $wrapperName = "wrapperPrestations";
-require "./template.php";
+require "../public/template.php";
 ?>

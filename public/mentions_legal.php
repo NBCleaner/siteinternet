@@ -96,5 +96,5 @@ ob_start();
 $content = ob_get_clean();
 $title = "Mentions légal";
 $wrapperName = "wrapperCgu";
-require "template.php";
+require "../public/template.php";
 ?>

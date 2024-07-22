@@ -372,7 +372,7 @@ footer .footer-socials .snapchat-icon .fa-circle {
 footer .footer-socials .facebook-icon {
   color: #3b5998;
 }
-.wrapperAccueil .hero {
+.hero {
   position: relative;
   width: 100%;
   height: 55vh;
@@ -383,7 +383,7 @@ footer .footer-socials .facebook-icon {
   text-align: center;
   color: white;
 }
-.wrapperAccueil .hero .carouselHero {
+.hero .carouselHero {
   position: absolute;
   top: 0;
   left: 0;
@@ -392,7 +392,7 @@ footer .footer-socials .facebook-icon {
   background-size: cover;
   background-position: center;
 }
-.wrapperAccueil .hero .carouselHero .slide {
+.hero .carouselHero .slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -403,20 +403,20 @@ footer .footer-socials .facebook-icon {
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
 }
-.wrapperAccueil .hero .carouselHero .slide1 {
+.hero .carouselHero .slide1 {
   background-image: url('../img/hero6small.png');
   background-position-x: 60%;
 }
-.wrapperAccueil .hero .carouselHero .slide2 {
+.hero .carouselHero .slide2 {
   background-image: url('../img/hero2bisbis.png');
 }
-.wrapperAccueil .hero .carouselHero .slide3 {
+.hero .carouselHero .slide3 {
   background-image: url('../img/hero9small.png');
 }
-.wrapperAccueil .hero .carouselHero .active {
+.hero .carouselHero .active {
   opacity: 1;
 }
-.wrapperAccueil .hero::before {
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -426,7 +426,7 @@ footer .footer-socials .facebook-icon {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-.wrapperAccueil .hero .carousel-indicators {
+.hero .carousel-indicators {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -435,7 +435,7 @@ footer .footer-socials .facebook-icon {
   gap: 10px;
   z-index: 56;
 }
-.wrapperAccueil .hero .carousel-indicators .indicator {
+.hero .carousel-indicators .indicator {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -443,18 +443,18 @@ footer .footer-socials .facebook-icon {
   cursor: pointer;
   opacity: 0.5;
 }
-.wrapperAccueil .hero .carousel-indicators .indicator.active {
+.hero .carousel-indicators .indicator.active {
   background-color: var(--primary-400);
   opacity: 1;
 }
-.wrapperAccueil .heroContent {
+.heroContent {
   height: 55vh;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   z-index: 55;
 }
-.wrapperAccueil .heroContent h1 {
+.heroContent h1 {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
@@ -463,7 +463,7 @@ footer .footer-socials .facebook-icon {
   text-align: left;
   text-shadow: 2px 2px 4px rgba(41, 26, 26, 0.9);
 }
-.wrapperAccueil .heroContent p {
+.heroContent p {
   color: white;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
@@ -474,7 +474,7 @@ footer .footer-socials .facebook-icon {
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
-.wrapperAccueil .heroContent button {
+.heroContent button {
   height: 5vh;
   width: 50vw;
   border-radius: 50px;
@@ -489,22 +489,22 @@ footer .footer-socials .facebook-icon {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
-.wrapperAccueil .heroContent button a {
+.heroContent button a {
   color: white;
   text-decoration: none;
 }
-.wrapperAccueil .heroContent button:hover {
+.heroContent button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.wrapperAccueil article {
+article {
   display: flex;
   flex-direction: column;
   gap: 1vh;
   max-height: 800px;
   overflow: hidden;
 }
-.wrapperAccueil article .histoire {
+article .histoire {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -515,7 +515,7 @@ footer .footer-socials .facebook-icon {
   margin-top: 1vh;
   justify-content: center;
 }
-.wrapperAccueil article .histoire h2 {
+article .histoire h2 {
   margin: 0 10%;
   font-size: 1rem;
   text-align: center;
@@ -523,7 +523,7 @@ footer .footer-socials .facebook-icon {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-.wrapperAccueil article .histoire p {
+article .histoire p {
   margin: 0 10%;
   font-size: 0.8rem;
   text-align: left;
@@ -531,7 +531,7 @@ footer .footer-socials .facebook-icon {
   transform: translateX(-100%);
   transition: transform 1s ease-out;
 }
-.wrapperAccueil article .video {
+article .video {
   position: relative;
   width: 100%;
   height: 0;
@@ -539,7 +539,7 @@ footer .footer-socials .facebook-icon {
   /* Ratio 16:9 */
   overflow: hidden;
 }
-.wrapperAccueil article .video iframe {
+article .video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -547,21 +547,21 @@ footer .footer-socials .facebook-icon {
   height: 100%;
   border: 0;
 }
-.wrapperAccueil article.visible .histoire h2 {
+article.visible .histoire h2 {
   opacity: 1;
 }
-.wrapperAccueil article.visible .histoire p {
+article.visible .histoire p {
   transform: translateX(0);
 }
-.wrapperAccueil article.visible .video {
+article.visible .video {
   transform: translateX(0);
 }
-.wrapperAccueil .prestations {
+.prestations {
   background-color: var(--primary-50);
   display: flex;
   flex-direction: column;
 }
-.wrapperAccueil .prestations .devis {
+.prestations .devis {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -569,31 +569,31 @@ footer .footer-socials .facebook-icon {
   height: 20vh;
   gap: 5px;
 }
-.wrapperAccueil .prestations .devis h2 {
+.prestations .devis h2 {
   color: var(--primary-500);
   text-align: center;
   font-size: 2rem;
 }
-.wrapperAccueil .prestations .devis p {
+.prestations .devis p {
   text-align: center;
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
   font-style: italic;
 }
-.wrapperAccueil .prestations .container-prestations {
+.prestations .container-prestations {
   display: flex;
   flex-direction: column;
   gap: 5px;
   position: relative;
   overflow: hidden;
 }
-.wrapperAccueil .prestations .container-prestations div {
+.prestations .container-prestations div {
   position: relative;
   width: 100vw;
   height: 165px;
   overflow: hidden;
 }
-.wrapperAccueil .prestations .container-prestations div::before {
+.prestations .container-prestations div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -608,10 +608,10 @@ footer .footer-socials .facebook-icon {
   transition: transform 0.7s ease-out;
   z-index: 2;
 }
-.wrapperAccueil .prestations .container-prestations div.zoomed::before {
+.prestations .container-prestations div.zoomed::before {
   transform: scale(1);
 }
-.wrapperAccueil .prestations .container-prestations .lustrage {
+.prestations .container-prestations .lustrage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/lustragebis.png');
@@ -619,7 +619,7 @@ footer .footer-socials .facebook-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .lustrage div {
+.prestations .container-prestations .lustrage div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -629,7 +629,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .phare {
+.prestations .container-prestations .phare {
   width: 100vw;
   height: 165px;
   background-image: url('../img/phare.png');
@@ -637,7 +637,7 @@ footer .footer-socials .facebook-icon {
   background-repeat: no-repeat;
   background-position-y: 20%;
 }
-.wrapperAccueil .prestations .container-prestations .phare div {
+.prestations .container-prestations .phare div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -647,14 +647,14 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .cuir {
+.prestations .container-prestations .cuir {
   width: 100vw;
   height: 165px;
   background-image: url('../img/cuir.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .cuir div {
+.prestations .container-prestations .cuir div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -664,14 +664,14 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .moteur {
+.prestations .container-prestations .moteur {
   width: 100vw;
   height: 165px;
   background-image: url('../img/moteur.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .moteur div {
+.prestations .container-prestations .moteur div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -681,14 +681,14 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .siege {
+.prestations .container-prestations .siege {
   width: 100vw;
   height: 165px;
   background-image: url('../img/siege.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .siege div {
+.prestations .container-prestations .siege div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -698,7 +698,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .lavage {
+.prestations .container-prestations .lavage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/lavage.png');
@@ -706,7 +706,7 @@ footer .footer-socials .facebook-icon {
   background-repeat: no-repeat;
   background-position-y: 40%;
 }
-.wrapperAccueil .prestations .container-prestations .lavage div {
+.prestations .container-prestations .lavage div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -716,7 +716,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .nettoyageInt {
+.prestations .container-prestations .nettoyageInt {
   width: 100vw;
   height: 165px;
   background-image: url('../img/nettoyageApres.jpg');
@@ -724,7 +724,7 @@ footer .footer-socials .facebook-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .nettoyageInt div {
+.prestations .container-prestations .nettoyageInt div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -734,14 +734,14 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .ceramique {
+.prestations .container-prestations .ceramique {
   width: 100vw;
   height: 165px;
   background-image: url('../img/ceramique.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .ceramique div {
+.prestations .container-prestations .ceramique div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -751,7 +751,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations .deflocage {
+.prestations .container-prestations .deflocage {
   width: 100vw;
   height: 165px;
   background-image: url('../img/deflocageApres.jpg');
@@ -759,7 +759,7 @@ footer .footer-socials .facebook-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrapperAccueil .prestations .container-prestations .deflocage div {
+.prestations .container-prestations .deflocage div {
   width: 100vw;
   height: 165px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -769,7 +769,7 @@ footer .footer-socials .facebook-icon {
   justify-content: center;
   z-index: 99;
 }
-.wrapperAccueil .prestations .container-prestations h3 {
+.prestations .container-prestations h3 {
   color: white;
   font-size: 1rem;
   -webkit-text-stroke: 0.5px var(--primary-500);
@@ -786,7 +786,7 @@ footer .footer-socials .facebook-icon {
   z-index: 3;
   font-family: "Roboto", sans-serif;
 }
-.wrapperAccueil .prestations .container-prestations h3.visible {
+.prestations .container-prestations h3.visible {
   transform: translate(0, 0);
   animation: fadeIn 1s ease forwards;
 }
@@ -801,16 +801,16 @@ footer .footer-socials .facebook-icon {
     opacity: 1;
   }
 }
-.wrapperAccueil .prestationsPc {
+.prestationsPc {
   display: none;
 }
-.wrapperAccueil .wave {
+.wave {
   display: none;
 }
-.wrapperAccueil .forfait {
+.forfait {
   background-color: var(--primary-50);
 }
-.wrapperAccueil .forfait .forfaitDevis {
+.forfait .forfaitDevis {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -818,17 +818,17 @@ footer .footer-socials .facebook-icon {
   height: 20vh;
   gap: 3px;
 }
-.wrapperAccueil .forfait .forfaitDevis h2 {
+.forfait .forfaitDevis h2 {
   color: var(--primary-400);
   text-align: center;
   font-size: 2rem;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-.wrapperAccueil .forfait .forfaitDevis h2.visible {
+.forfait .forfaitDevis h2.visible {
   opacity: 1;
 }
-.wrapperAccueil .forfait .forfaitDevis p {
+.forfait .forfaitDevis p {
   text-align: center;
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
@@ -836,20 +836,20 @@ footer .footer-socials .facebook-icon {
   transition: opacity 1s ease-in-out;
   font-style: italic;
 }
-.wrapperAccueil .forfait .forfaitDevis p.visible {
+.forfait .forfaitDevis p.visible {
   opacity: 1;
 }
-.wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe {
+.forfait .forfaitDevis .btn-express-deluxe {
   display: none;
 }
-.wrapperAccueil .forfait .container-forfait {
+.forfait .container-forfait {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.wrapperAccueil .forfait .container-forfait .forfait1,
-.wrapperAccueil .forfait .container-forfait .forfait2,
-.wrapperAccueil .forfait .container-forfait .forfait3 {
+.forfait .container-forfait .forfait1,
+.forfait .container-forfait .forfait2,
+.forfait .container-forfait .forfait3 {
   width: 80vw;
   height: 10vh;
   background-color: var(--primary-400);
@@ -858,16 +858,16 @@ footer .footer-socials .facebook-icon {
   align-items: center;
   border-radius: 20px 20px 0px 0px;
 }
-.wrapperAccueil .forfait .container-forfait .forfait1 h3,
-.wrapperAccueil .forfait .container-forfait .forfait2 h3,
-.wrapperAccueil .forfait .container-forfait .forfait3 h3 {
+.forfait .container-forfait .forfait1 h3,
+.forfait .container-forfait .forfait2 h3,
+.forfait .container-forfait .forfait3 h3 {
   color: white;
   font-size: 1rem;
   font-weight: 500;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1,
-.wrapperAccueil .forfait .container-forfait .listeforfait2,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 {
+.forfait .container-forfait .listeforfait1,
+.forfait .container-forfait .listeforfait2,
+.forfait .container-forfait .listeforfait3 {
   background-color: white;
   width: 80vw;
   border: solid 1px var(--primary-400);
@@ -877,9 +877,9 @@ footer .footer-socials .facebook-icon {
   border-radius: 0px 0px 20px 20px;
   margin-bottom: 40px;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
+.forfait .container-forfait .listeforfait1 h4,
+.forfait .container-forfait .listeforfait2 h4,
+.forfait .container-forfait .listeforfait3 h4 {
   color: var(--primary-400);
   padding-top: 12px;
   text-align: center;
@@ -887,15 +887,15 @@ footer .footer-socials .facebook-icon {
   transform: translateY(-30%);
   transition: transform ease-in 0.7s;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 h4.visible,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 h4.visible,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 h4.visible {
+.forfait .container-forfait .listeforfait1 h4.visible,
+.forfait .container-forfait .listeforfait2 h4.visible,
+.forfait .container-forfait .listeforfait3 h4.visible {
   transform: translateY(0);
   animation: fadeIn 1s ease forwards;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
+.forfait .container-forfait .listeforfait1 ul,
+.forfait .container-forfait .listeforfait2 ul,
+.forfait .container-forfait .listeforfait3 ul {
   padding-bottom: 12px;
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
@@ -907,19 +907,19 @@ footer .footer-socials .facebook-icon {
   transform: translateY(-30%);
   transition: transform ease-in 0.7s;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 ul li i,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 ul li i,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 ul li i {
+.forfait .container-forfait .listeforfait1 ul li i,
+.forfait .container-forfait .listeforfait2 ul li i,
+.forfait .container-forfait .listeforfait3 ul li i {
   color: var(--primary-400);
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 ul .extra-deluxe,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 ul .extra-deluxe,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 ul .extra-deluxe {
+.forfait .container-forfait .listeforfait1 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait2 ul .extra-deluxe,
+.forfait .container-forfait .listeforfait3 ul .extra-deluxe {
   display: none;
 }
-.wrapperAccueil .forfait .container-forfait .listeforfait1 ul.visible,
-.wrapperAccueil .forfait .container-forfait .listeforfait2 ul.visible,
-.wrapperAccueil .forfait .container-forfait .listeforfait3 ul.visible {
+.forfait .container-forfait .listeforfait1 ul.visible,
+.forfait .container-forfait .listeforfait2 ul.visible,
+.forfait .container-forfait .listeforfait3 ul.visible {
   transform: translateY(0);
   animation: fadeIn 1s ease forwards;
 }
@@ -934,11 +934,11 @@ footer .footer-socials .facebook-icon {
     opacity: 1;
   }
 }
-.wrapperAccueil .forfait .bouttonAllForfait {
+.forfait .bouttonAllForfait {
   display: flex;
   justify-content: center;
 }
-.wrapperAccueil .forfait .bouttonAllForfait button {
+.forfait .bouttonAllForfait button {
   height: 7vh;
   width: 60vw;
   align-self: center;
@@ -951,18 +951,18 @@ footer .footer-socials .facebook-icon {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.wrapperAccueil .forfait .bouttonAllForfait button a {
+.forfait .bouttonAllForfait button a {
   text-decoration: none;
   color: white;
 }
-.wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe a {
+.forfait .bouttonAllForfait .btnForfaitDeluxe a {
   font-family: "Cinzel", serif;
 }
-.wrapperAccueil .forfait .bouttonAllForfait button:hover {
+.forfait .bouttonAllForfait button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
+.forfait .bouttonAllForfait .btnTableauForfait {
   display: none;
   background: none;
 }
@@ -1506,7 +1506,7 @@ footer .footer-socials .facebook-icon {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .wrapperAccueil .hero {
+  .hero {
     position: relative;
     width: 100%;
     height: 55vh;
@@ -1517,7 +1517,7 @@ footer .footer-socials .facebook-icon {
     text-align: center;
     color: white;
   }
-  .wrapperAccueil .hero .carouselHero {
+  .hero .carouselHero {
     position: absolute;
     top: 0;
     left: 0;
@@ -1526,7 +1526,7 @@ footer .footer-socials .facebook-icon {
     background-size: cover;
     background-position: center;
   }
-  .wrapperAccueil .hero .carouselHero .slide {
+  .hero .carouselHero .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -1537,41 +1537,41 @@ footer .footer-socials .facebook-icon {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
   }
-  .wrapperAccueil .hero .carouselHero .slide1 {
+  .hero .carouselHero .slide1 {
     background-image: url('../img/hero6.jpeg');
     background-position-y: 80%;
   }
-  .wrapperAccueil .hero .carouselHero .slide2 {
+  .hero .carouselHero .slide2 {
     background-image: url('../img/hero2bis.jpeg');
   }
-  .wrapperAccueil .hero .carouselHero .slide3 {
+  .hero .carouselHero .slide3 {
     background-image: url('../img/hero9.jpeg');
     background-position-y: 65%;
   }
-  .wrapperAccueil .hero .carouselHero .active {
+  .hero .carouselHero .active {
     opacity: 1;
   }
-  .wrapperAccueil .heroContent {
+  .heroContent {
     height: 75vh;
   }
-  .wrapperAccueil .heroContent h1 {
+  .heroContent h1 {
     font-size: 2rem;
     margin: 0 15vw 0 10vw;
   }
-  .wrapperAccueil .heroContent p {
+  .heroContent p {
     font-size: 1.3rem;
     margin: 0 20vw 0 10vw;
   }
-  .wrapperAccueil .heroContent button {
+  .heroContent button {
     width: 25vw;
     margin-bottom: 15vh;
   }
-  .wrapperAccueil article {
+  article {
     display: flex;
     flex-direction: row;
     gap: 0;
   }
-  .wrapperAccueil article .histoire {
+  article .histoire {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1581,7 +1581,7 @@ footer .footer-socials .facebook-icon {
     margin-top: 1vh;
     width: 50vw;
   }
-  .wrapperAccueil article .histoire h2 {
+  article .histoire h2 {
     margin: 0 10%;
     font-size: 1rem;
     text-align: center;
@@ -1589,7 +1589,7 @@ footer .footer-socials .facebook-icon {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  .wrapperAccueil article .histoire p {
+  article .histoire p {
     margin: 0 10%;
     font-size: 0.9rem;
     text-align: left;
@@ -1597,7 +1597,7 @@ footer .footer-socials .facebook-icon {
     transform: translateX(-100%);
     transition: transform 1s ease-out;
   }
-  .wrapperAccueil article .video {
+  article .video {
     position: relative;
     margin-top: 1vh;
     height: 0;
@@ -1606,7 +1606,7 @@ footer .footer-socials .facebook-icon {
     overflow: hidden;
     width: 50vw;
   }
-  .wrapperAccueil article .video iframe {
+  article .video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -1614,105 +1614,105 @@ footer .footer-socials .facebook-icon {
     height: 100%;
     border: 0;
   }
-  .wrapperAccueil article.visible .histoire h2 {
+  article.visible .histoire h2 {
     opacity: 1;
   }
-  .wrapperAccueil article.visible .histoire p {
+  article.visible .histoire p {
     transform: translateX(0);
   }
-  .wrapperAccueil article.visible .video {
+  article.visible .video {
     transform: translateX(0);
   }
-  .wrapperAccueil .prestations .devis h2 {
+  .prestations .devis h2 {
     font-size: 3rem;
   }
-  .wrapperAccueil .prestations .container-prestations .lustrage {
+  .prestations .container-prestations .lustrage {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .lustrage div {
+  .prestations .container-prestations .lustrage div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .phare {
+  .prestations .container-prestations .phare {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .phare div {
+  .prestations .container-prestations .phare div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .cuir {
+  .prestations .container-prestations .cuir {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .cuir div {
+  .prestations .container-prestations .cuir div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .moteur {
+  .prestations .container-prestations .moteur {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .moteur div {
+  .prestations .container-prestations .moteur div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .siege {
+  .prestations .container-prestations .siege {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .siege div {
+  .prestations .container-prestations .siege div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .lavage {
+  .prestations .container-prestations .lavage {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .lavage div {
+  .prestations .container-prestations .lavage div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .nettoyageInt {
+  .prestations .container-prestations .nettoyageInt {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .nettoyageInt div {
+  .prestations .container-prestations .nettoyageInt div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .ceramique {
+  .prestations .container-prestations .ceramique {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .ceramique div {
+  .prestations .container-prestations .ceramique div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .deflocage {
+  .prestations .container-prestations .deflocage {
     width: 100vw;
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations .deflocage div {
+  .prestations .container-prestations .deflocage div {
     height: 365px;
   }
-  .wrapperAccueil .prestations .container-prestations h3 {
+  .prestations .container-prestations h3 {
     font-size: 1.8rem;
   }
-  .wrapperAccueil .forfait .container-forfait .forfait1 h3,
-  .wrapperAccueil .forfait .container-forfait .forfait2 h3,
-  .wrapperAccueil .forfait .container-forfait .forfait3 h3 {
+  .forfait .container-forfait .forfait1 h3,
+  .forfait .container-forfait .forfait2 h3,
+  .forfait .container-forfait .forfait3 h3 {
     color: white;
     font-size: 1.8rem;
     font-weight: 500;
   }
-  .wrapperAccueil .forfait .container-forfait .listeforfait1 h4,
-  .wrapperAccueil .forfait .container-forfait .listeforfait2 h4,
-  .wrapperAccueil .forfait .container-forfait .listeforfait3 h4 {
+  .forfait .container-forfait .listeforfait1 h4,
+  .forfait .container-forfait .listeforfait2 h4,
+  .forfait .container-forfait .listeforfait3 h4 {
     font-size: 1.5rem;
   }
-  .wrapperAccueil .forfait .container-forfait .listeforfait1 ul,
-  .wrapperAccueil .forfait .container-forfait .listeforfait2 ul,
-  .wrapperAccueil .forfait .container-forfait .listeforfait3 ul {
+  .forfait .container-forfait .listeforfait1 ul,
+  .forfait .container-forfait .listeforfait2 ul,
+  .forfait .container-forfait .listeforfait3 ul {
     font-size: 1.3rem;
   }
-  .wrapperAccueil .forfait .bouttonAllForfait button {
+  .forfait .bouttonAllForfait button {
     width: 45vw;
   }
-  .wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe {
+  .forfait .bouttonAllForfait .btnForfaitDeluxe {
     font-size: 1.1rem;
     font-weight: 600;
   }
@@ -2089,42 +2089,42 @@ footer .footer-socials .facebook-icon {
   footer .footer-nav ul a {
     color: #000;
   }
-  .wrapperAccueil .hero {
+  .hero {
     height: 85vh;
   }
-  .wrapperAccueil .hero .slide1 {
+  .hero .slide1 {
     background-image: url('../img/hero6.jpeg');
     background-position-y: 80%;
   }
-  .wrapperAccueil .hero .slide2 {
+  .hero .slide2 {
     background-image: url('../img/hero2.jpeg');
     background-position-y: 50%;
   }
-  .wrapperAccueil .hero .slide3 {
+  .hero .slide3 {
     background-image: url('../img/hero9.jpeg');
     background-position-y: 65%;
   }
-  .wrapperAccueil .heroContent {
+  .heroContent {
     height: 85vh;
   }
-  .wrapperAccueil .heroContent h1 {
+  .heroContent h1 {
     font-size: 2.3rem;
     margin: 0 15vw 0 10vw;
   }
-  .wrapperAccueil .heroContent p {
+  .heroContent p {
     font-size: 1.5rem;
     margin: 0 20vw 0 10vw;
   }
-  .wrapperAccueil .heroContent button {
+  .heroContent button {
     width: 25vw;
     margin-bottom: 10vh;
     font-size: 1.1rem;
   }
-  .wrapperAccueil article {
+  article {
     display: flex;
     flex-direction: row;
   }
-  .wrapperAccueil article .histoire {
+  article .histoire {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -2135,7 +2135,7 @@ footer .footer-socials .facebook-icon {
     padding: 20px;
     max-height: 80vh;
   }
-  .wrapperAccueil article .histoire h2 {
+  article .histoire h2 {
     margin: 0 10%;
     font-size: 1.5rem;
     text-align: center;
@@ -2143,7 +2143,7 @@ footer .footer-socials .facebook-icon {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  .wrapperAccueil article .histoire p {
+  article .histoire p {
     margin: 0 10%;
     font-size: 1.1rem;
     text-align: left;
@@ -2151,7 +2151,7 @@ footer .footer-socials .facebook-icon {
     transform: translateX(-100%);
     transition: transform 1s ease-out;
   }
-  .wrapperAccueil article .video {
+  article .video {
     width: 50vw;
     position: relative;
     overflow: hidden;
@@ -2159,7 +2159,7 @@ footer .footer-socials .facebook-icon {
     transition: transform 1s ease-out;
     max-height: 80vh;
   }
-  .wrapperAccueil article .video iframe {
+  article .video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -2168,24 +2168,24 @@ footer .footer-socials .facebook-icon {
     border: 0;
     max-height: 80vh;
   }
-  .wrapperAccueil article.visible .histoire h2 {
+  article.visible .histoire h2 {
     opacity: 1;
   }
-  .wrapperAccueil article.visible .histoire p {
+  article.visible .histoire p {
     transform: translateX(0);
   }
-  .wrapperAccueil article.visible .video {
+  article.visible .video {
     transform: translateX(0);
   }
-  .wrapperAccueil .prestations {
+  .prestations {
     display: none;
   }
-  .wrapperAccueil .prestationsPc {
+  .prestationsPc {
     background-color: white;
     display: flex;
     flex-direction: column;
   }
-  .wrapperAccueil .prestationsPc .devisPc {
+  .prestationsPc .devisPc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2193,31 +2193,31 @@ footer .footer-socials .facebook-icon {
     height: 20vh;
     gap: 5px;
   }
-  .wrapperAccueil .prestationsPc .devisPc h2,
-  .wrapperAccueil .prestationsPc .devisPc p {
+  .prestationsPc .devisPc h2,
+  .prestationsPc .devisPc p {
     color: var(--primary-500);
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     font-size: 3rem;
   }
-  .wrapperAccueil .prestationsPc .devisPc p {
+  .prestationsPc .devisPc p {
     font-size: 0.9rem;
     font-family: "DM Sans", sans-serif;
     color: #000;
     font-style: italic;
   }
-  .wrapperAccueil .prestationsPc .devisPc.visible h2,
-  .wrapperAccueil .prestationsPc .devisPc.visible p {
+  .prestationsPc .devisPc.visible h2,
+  .prestationsPc .devisPc.visible p {
     opacity: 1;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc {
+  .prestationsPc .carousel-container-pc {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow {
+  .prestationsPc .carousel-container-pc .carousel-arrow {
     cursor: pointer;
     font-size: 2rem;
     color: #333;
@@ -2226,29 +2226,29 @@ footer .footer-socials .facebook-icon {
     transform: translateY(-50%);
     z-index: 10;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow.left-arrow {
+  .prestationsPc .carousel-container-pc .carousel-arrow.left-arrow {
     color: var(--primary-500);
     left: 30px;
     display: none;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .carousel-arrow.right-arrow {
+  .prestationsPc .carousel-container-pc .carousel-arrow.right-arrow {
     color: var(--primary-500);
     right: 30px;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc {
     display: flex;
     gap: 50px;
     overflow: hidden;
     justify-content: center;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div {
+  .prestationsPc .carousel-container-pc .container-prestationsPc > div {
     min-width: 25vw;
     height: 400px;
     border-radius: 50px;
     position: relative;
     overflow: hidden;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div::before {
+  .prestationsPc .carousel-container-pc .container-prestationsPc > div::before {
     content: "";
     position: absolute;
     top: 0;
@@ -2264,10 +2264,10 @@ footer .footer-socials .facebook-icon {
     transition: transform 1s ease-out;
     z-index: 2;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div.zoomed::before {
+  .prestationsPc .carousel-container-pc .container-prestationsPc > div.zoomed::before {
     transform: scale(1);
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
+  .prestationsPc .carousel-container-pc .container-prestationsPc > div > div {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -2278,40 +2278,40 @@ footer .footer-socials .facebook-icon {
     position: relative;
     z-index: 3;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lustragePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .lustragePc {
     background-image: url('../img/lustrage.jpeg');
     background-position-x: 60%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .pharePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .pharePc {
     background-image: url('../img/phare-pc.png');
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .cuirPc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .cuirPc {
     background-image: url('../img/cuir-pc.png');
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .moteurPc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .moteurPc {
     background-image: url('../img/moteur-pc.png');
     background-position-x: 40%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .siegePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .siegePc {
     background-image: url('../img/siege-pc.png');
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .lavagePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .lavagePc {
     background-image: url('../img/lavage-pc.png');
     background-position-y: 80%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .nettoyageIntPc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .nettoyageIntPc {
     background-image: url('../img/nettoyageApres.jpg');
     background-position-x: 30%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .ceramiquePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .ceramiquePc {
     background-image: url('../img/ceramique-pc.png');
     background-position-x: 30%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc .container-prestationsPc .deflocagePc {
+  .prestationsPc .carousel-container-pc .container-prestationsPc .deflocagePc {
     background-image: url('../img/deflocageApres.jpg');
     background-position-x: 30%;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc h3 {
+  .prestationsPc .carousel-container-pc h3 {
     color: white;
     font-size: 0.85rem;
     -webkit-text-stroke: 0.5px var(--primary-500);
@@ -2331,7 +2331,7 @@ footer .footer-socials .facebook-icon {
     z-index: 3;
     font-family: "Roboto", sans-serif;
   }
-  .wrapperAccueil .prestationsPc .carousel-container-pc h3.visible {
+  .prestationsPc .carousel-container-pc h3.visible {
     transform: translate(-50%, 0);
     animation: fadeIn 1s ease forwards;
   }
@@ -2346,37 +2346,37 @@ footer .footer-socials .facebook-icon {
       opacity: 1;
     }
   }
-  .wrapperAccueil .wave {
+  .wave {
     width: 100%;
     display: block;
     overflow: hidden;
     margin-top: 100px;
   }
-  .wrapperAccueil .wave svg {
+  .wave svg {
     width: 100%;
     height: auto;
     display: block;
     position: relative;
     top: 1px;
   }
-  .wrapperAccueil .forfait {
+  .forfait {
     display: flex;
     flex-direction: column;
   }
-  .wrapperAccueil .forfait .forfaitDevis {
+  .forfait .forfaitDevis {
     height: 30vh;
   }
-  .wrapperAccueil .forfait .forfaitDevis h2 {
+  .forfait .forfaitDevis h2 {
     font-size: 3rem;
   }
-  .wrapperAccueil .forfait .forfaitDevis p {
+  .forfait .forfaitDevis p {
     padding-bottom: 5vh;
   }
-  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe {
+  .forfait .forfaitDevis .btn-express-deluxe {
     display: flex;
     position: relative;
   }
-  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div {
+  .forfait .forfaitDevis .btn-express-deluxe div {
     border-radius: 50px;
     width: 20vw;
     height: 5vh;
@@ -2389,111 +2389,111 @@ footer .footer-socials .facebook-icon {
     font-size: 1.2rem;
     cursor: pointer;
   }
-  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div:nth-child(1) {
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(1) {
     background-color: var(--primary-500);
     color: white;
     z-index: 2;
     margin-right: -50px;
   }
-  .wrapperAccueil .forfait .forfaitDevis .btn-express-deluxe div:nth-child(2) {
+  .forfait .forfaitDevis .btn-express-deluxe div:nth-child(2) {
     background-color: white;
     color: var(--primary-500);
   }
-  .wrapperAccueil .forfait .container-forfait {
+  .forfait .container-forfait {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 {
+  .forfait .container-forfait .globalForfait1,
+  .forfait .container-forfait .globalForfait2,
+  .forfait .container-forfait .globalForfait3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 25vw;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait1 {
+  .forfait .container-forfait .globalForfait1.globalForfait1,
+  .forfait .container-forfait .globalForfait2.globalForfait1,
+  .forfait .container-forfait .globalForfait3.globalForfait1 {
     order: 2;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait2 {
+  .forfait .container-forfait .globalForfait1.globalForfait2,
+  .forfait .container-forfait .globalForfait2.globalForfait2,
+  .forfait .container-forfait .globalForfait3.globalForfait2 {
     order: 1;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1.globalForfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2.globalForfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3.globalForfait3 {
+  .forfait .container-forfait .globalForfait1.globalForfait3,
+  .forfait .container-forfait .globalForfait2.globalForfait3,
+  .forfait .container-forfait .globalForfait3.globalForfait3 {
     order: 3;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait3 {
+  .forfait .container-forfait .globalForfait1 .forfait1,
+  .forfait .container-forfait .globalForfait2 .forfait1,
+  .forfait .container-forfait .globalForfait3 .forfait1,
+  .forfait .container-forfait .globalForfait1 .forfait2,
+  .forfait .container-forfait .globalForfait2 .forfait2,
+  .forfait .container-forfait .globalForfait3 .forfait2,
+  .forfait .container-forfait .globalForfait1 .forfait3,
+  .forfait .container-forfait .globalForfait2 .forfait3,
+  .forfait .container-forfait .globalForfait3 .forfait3 {
     width: 25vw;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait1 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait1 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait1 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait2 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait2 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait2 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .forfait3 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .forfait3 h3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .forfait3 h3 {
+  .forfait .container-forfait .globalForfait1 .forfait1 h3,
+  .forfait .container-forfait .globalForfait2 .forfait1 h3,
+  .forfait .container-forfait .globalForfait3 .forfait1 h3,
+  .forfait .container-forfait .globalForfait1 .forfait2 h3,
+  .forfait .container-forfait .globalForfait2 .forfait2 h3,
+  .forfait .container-forfait .globalForfait3 .forfait2 h3,
+  .forfait .container-forfait .globalForfait1 .forfait3 h3,
+  .forfait .container-forfait .globalForfait2 .forfait3 h3,
+  .forfait .container-forfait .globalForfait3 .forfait3 h3 {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 {
+  .forfait .container-forfait .globalForfait1 .listeforfait1,
+  .forfait .container-forfait .globalForfait2 .listeforfait1,
+  .forfait .container-forfait .globalForfait3 .listeforfait1,
+  .forfait .container-forfait .globalForfait1 .listeforfait2,
+  .forfait .container-forfait .globalForfait2 .listeforfait2,
+  .forfait .container-forfait .globalForfait3 .listeforfait2,
+  .forfait .container-forfait .globalForfait1 .listeforfait3,
+  .forfait .container-forfait .globalForfait2 .listeforfait3,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 {
     width: 25vw;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3 h4,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 h4 {
+  .forfait .container-forfait .globalForfait1 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 h4,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 h4,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 h4 {
     font-size: 1.2rem;
   }
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait1 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait1 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait1 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait2 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait2 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait2 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait1 .listeforfait3 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
-  .wrapperAccueil .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
+  .forfait .container-forfait .globalForfait1 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait1 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait2 ul,
+  .forfait .container-forfait .globalForfait1 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait2 .listeforfait3 ul,
+  .forfait .container-forfait .globalForfait3 .listeforfait3 ul {
     font-size: 1.1rem;
   }
-  .wrapperAccueil .forfait .bouttonAllForfait {
+  .forfait .bouttonAllForfait {
     cursor: pointer;
   }
-  .wrapperAccueil .forfait .bouttonAllForfait button a {
+  .forfait .bouttonAllForfait button a {
     text-decoration: none;
     color: var(--primary-500);
   }
-  .wrapperAccueil .forfait .bouttonAllForfait .btnForfaitDeluxe {
+  .forfait .bouttonAllForfait .btnForfaitDeluxe {
     display: none;
   }
-  .wrapperAccueil .forfait .bouttonAllForfait .btnTableauForfait {
+  .forfait .bouttonAllForfait .btnTableauForfait {
     display: block;
     width: 20vw;
     border-radius: 50px;
@@ -2732,76 +2732,76 @@ footer .footer-socials .facebook-icon {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .wrapperAccueil .hero {
+  .hero {
     height: 100vh;
   }
-  .wrapperAccueil .hero .slide1 {
+  .hero .slide1 {
     background-image: url('../img/hero6.jpeg');
     background-position-y: 80%;
   }
-  .wrapperAccueil .hero .slide2 {
+  .hero .slide2 {
     background-image: url('../img/hero2.jpeg');
     background-position-y: 100%;
   }
-  .wrapperAccueil .hero .slide3 {
+  .hero .slide3 {
     background-image: url('../img/hero9.jpeg');
     background-position-y: 65%;
   }
-  .wrapperAccueil .heroContent {
+  .heroContent {
     height: 100vh;
     background-position-y: 10%;
   }
-  .wrapperAccueil .heroContent h1 {
+  .heroContent h1 {
     font-size: 3rem;
   }
-  .wrapperAccueil .heroContent p {
+  .heroContent p {
     font-size: 2rem;
     margin: 0 30vw 0 10vw;
   }
-  .wrapperAccueil .heroContent button {
+  .heroContent button {
     width: 20vw;
     margin-bottom: 20vh;
     font-size: 1.5rem;
   }
-  .wrapperAccueil article .histoire h2 {
+  article .histoire h2 {
     font-size: 1.8rem;
   }
-  .wrapperAccueil article .histoire p {
+  article .histoire p {
     font-size: 1.5rem;
   }
-  .wrapperAccueil .prestationsPc .devisPc {
+  .prestationsPc .devisPc {
     height: auto;
   }
-  .wrapperAccueil .prestationsPc .container-prestationsPc {
+  .prestationsPc .container-prestationsPc {
     padding-top: 10vh;
   }
-  .wrapperAccueil .prestationsPc .container-prestationsPc .lustragePc {
+  .prestationsPc .container-prestationsPc .lustragePc {
     background-position-y: 50%;
   }
-  .wrapperAccueil .prestationsPc .container-prestationsPc h3 {
+  .prestationsPc .container-prestationsPc h3 {
     font-size: 1.2rem;
   }
-  .wrapperAccueil .question {
+  .question {
     font-size: 2.8rem;
   }
-  .wrapperAccueil .question button {
+  .question button {
     width: 28vw;
     height: 6vh;
   }
-  .wrapperAccueil .question button a {
+  .question button a {
     font-size: 1.8rem;
   }
-  .wrapperAccueil .avis #carousel .review-container {
+  .avis #carousel .review-container {
     height: 50vh;
   }
-  .wrapperAccueil .avis #carousel .review-card {
+  .avis #carousel .review-card {
     width: 35vw;
   }
-  .wrapperAccueil .avis #carousel .left-arrow {
+  .avis #carousel .left-arrow {
     left: 28%;
     font-size: 2rem;
   }
-  .wrapperAccueil .avis #carousel .right-arrow {
+  .avis #carousel .right-arrow {
     right: 28%;
     font-size: 2rem;
   }

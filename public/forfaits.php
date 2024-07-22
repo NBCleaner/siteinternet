@@ -234,5 +234,5 @@
 $content = ob_get_clean();
 $title = "Forfaits";
 $wrapperName = "wrapperForfaits";
-require "./template.php";
+require "../public/template.php";
 ?>

@@ -47,5 +47,5 @@ ob_start();
 $content = ob_get_clean();
 $title = "Politique de Confidentialité";
 $wrapperName = "wrapperPrivacityPolicy";
-require "template.php";
+require "../public/template.php";
 ?>
