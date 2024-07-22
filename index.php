@@ -10,14 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
-    <link rel="icon" href="/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-32x32.png">
-    <link rel="icon" sizes="192x192" href="/favicon-32x32.png">
+    <link rel="icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="./favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon-32x32.png">
+    <link rel="icon" sizes="192x192" href="./favicon-32x32.png">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="mask-icon" href="/favicon-32x32.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="./favicon-32x32.png">
 </head>
 
 <body>

@@ -1361,14 +1361,14 @@ article.visible .video {
 .wrapperPrestations .prestations .container-prestations div.zoomed::before {
   transform: scale(1);
 }
-.wrapperContact .navDecoration {
+.navDecoration {
   display: block;
   background-color: var(--primary-400);
   border-bottom-left-radius: 2400px 1000px;
   border-bottom-right-radius: 2400px 1000px;
   min-height: 85px;
 }
-.wrapperContact .contactQuestion {
+.contactQuestion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1376,25 +1376,25 @@ article.visible .video {
   padding-top: 4vh;
   gap: 4vh;
 }
-.wrapperContact .contactQuestion h2 {
+.contactQuestion h2 {
   color: var(--primary-500);
 }
-.wrapperContact .contactQuestion .informationContact {
+.contactQuestion .informationContact {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-.wrapperContact .contactQuestion .informationContact div p {
+.contactQuestion .informationContact div p {
   font-size: 1.1rem;
 }
-.wrapperContact .contactQuestion .informationContact div p i {
+.contactQuestion .informationContact div p i {
   color: #143993;
   margin-bottom: 7px;
 }
-.wrapperContact .contactQuestion .informationContact div:nth-of-type(1) p i {
+.contactQuestion .informationContact div:nth-of-type(1) p i {
   padding-right: 2px;
 }
-.wrapperContact main {
+.globalContainerForm {
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -1402,7 +1402,7 @@ article.visible .video {
   padding: 0 20px 40px 20px;
   margin: 5vh 0;
 }
-.wrapperContact main .containerContact {
+.globalContainerForm .containerContact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1411,46 +1411,46 @@ article.visible .video {
   background-color: var(--primary-300);
   border-radius: 8px;
 }
-.wrapperContact main .containerContact h1,
-.wrapperContact main .containerContact p {
+.globalContainerForm .containerContact h1,
+.globalContainerForm .containerContact p {
   text-align: center;
   margin: 0;
   padding: 5px;
 }
-.wrapperContact main .containerContact p {
+.globalContainerForm .containerContact p {
   font-style: italic;
   padding-bottom: 20px;
 }
-.wrapperContact main .containerContact .contact-form {
+.globalContainerForm .containerContact .contact-form {
   display: flex;
   flex-direction: column;
   width: 95%;
 }
-.wrapperContact main .containerContact .contact-form label {
+.globalContainerForm .containerContact .contact-form label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-.wrapperContact main .containerContact .contact-form input,
-.wrapperContact main .containerContact .contact-form textarea {
+.globalContainerForm .containerContact .contact-form input,
+.globalContainerForm .containerContact .contact-form textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid pink;
   border-radius: 4px;
   height: 50px;
 }
-.wrapperContact main .containerContact .contact-form textarea {
+.globalContainerForm .containerContact .contact-form textarea {
   height: 75px;
 }
-.wrapperContact main .containerContact .contact-form input[type="submit"] {
+.globalContainerForm .containerContact .contact-form input[type="submit"] {
   background-color: var(--primary-500);
   color: #fff;
   border: none;
   cursor: pointer;
 }
-.wrapperContact main .containerContact .contact-form input[type="submit"]:hover {
+.globalContainerForm .containerContact .contact-form input[type="submit"]:hover {
   background-color: #0e2866;
 }
-.wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+.globalContainerForm .containerContact .contact-form div:nth-of-type(1) {
   color: var(--primary-50);
   display: flex;
   justify-content: center;
@@ -1458,25 +1458,25 @@ article.visible .video {
   gap: 5vw;
   padding-bottom: 3vh;
 }
-.wrapperContact main .containerContact .contact-form div:nth-of-type(1) input[type="checkbox"] {
+.globalContainerForm .containerContact .contact-form div:nth-of-type(1) input[type="checkbox"] {
   width: 1.5rem;
   height: 1.5rem;
 }
-.wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+.globalContainerForm .containerContact .contact-form div:nth-of-type(1) label {
   font-size: 0.8rem;
 }
-.wrapperContact main .containerContact .success-message {
+.globalContainerForm .containerContact .success-message {
   color: #21f121;
   font-weight: bold;
   text-align: center;
   font-size: 1.2rem;
 }
-.wrapperContact main .containerContact .error-list {
+.globalContainerForm .containerContact .error-list {
   color: red;
   list-style-type: none;
   padding: 0;
 }
-.wrapperContact main .containerContact .error-list li {
+.globalContainerForm .containerContact .error-list li {
   margin-bottom: 10px;
 }
 .wrapperCgu .navDecoration,
@@ -1822,23 +1822,23 @@ article.visible .video {
     width: 17vw;
     height: 13vh;
   }
-  .wrapperContact .contactQuestion {
+  .contactQuestion {
     gap: 7vh;
   }
-  .wrapperContact .contactQuestion h2 {
+  .contactQuestion h2 {
     color: var(--primary-500);
     font-size: 2.5rem;
   }
-  .wrapperContact .contactQuestion .informationContact {
+  .contactQuestion .informationContact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 5%;
   }
-  .wrapperContact .contactQuestion .informationContact div p {
+  .contactQuestion .informationContact div p {
     font-size: 1.2rem;
   }
-  .wrapperContact main {
+  .globalContainerForm {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -1846,7 +1846,7 @@ article.visible .video {
     padding: 0 20px 40px 20px;
     margin: 5vh 0;
   }
-  .wrapperContact main .containerContact {
+  .globalContainerForm .containerContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1856,28 +1856,28 @@ article.visible .video {
     border-radius: 8px;
     width: 80%;
   }
-  .wrapperContact main .containerContact .contact-form textarea {
+  .globalContainerForm .containerContact .contact-form textarea {
     height: 100px;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) {
     gap: 3vw;
     padding-bottom: 3vh;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) input {
     width: 50px;
     height: 50px;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) label {
     font-size: 1rem;
   }
-  .wrapperContact .question {
+  .question {
     font-size: 2.8rem;
   }
-  .wrapperContact .question button {
+  .question button {
     width: 40vw;
     height: 6vh;
   }
-  .wrapperContact .question button a {
+  .question button a {
     font-size: 1.8rem;
   }
   .wrapperCgu main p,
@@ -2655,24 +2655,24 @@ article.visible .video {
   .wrapperPrestations .partenaire .container-partenaire .ligne2 > div:nth-child(2) img {
     width: 13vw;
   }
-  .wrapperContact .contactQuestion {
+  .contactQuestion {
     gap: 7vh;
   }
-  .wrapperContact .contactQuestion h2 {
+  .contactQuestion h2 {
     color: var(--primary-500);
     font-size: 2.5rem;
   }
-  .wrapperContact .contactQuestion .informationContact {
+  .contactQuestion .informationContact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 5%;
     gap: 10vw;
   }
-  .wrapperContact .contactQuestion .informationContact div p {
+  .contactQuestion .informationContact div p {
     font-size: 1.2rem;
   }
-  .wrapperContact main {
+  .globalContainerForm {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -2680,7 +2680,7 @@ article.visible .video {
     padding: 0 20px 40px 20px;
     margin: 5vh 0;
   }
-  .wrapperContact main .containerContact {
+  .globalContainerForm .containerContact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2690,27 +2690,27 @@ article.visible .video {
     border-radius: 8px;
     width: 65%;
   }
-  .wrapperContact main .containerContact .contact-form textarea {
+  .globalContainerForm .containerContact .contact-form textarea {
     height: 150px;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) {
     gap: 1.5vw;
     padding-bottom: 3vh;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) input {
     width: 40px;
     height: 40px;
     margin-bottom: 0;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) label {
     font-size: 1rem;
   }
-  .wrapperContact .question {
+  .question {
     min-height: 680px;
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
-  .wrapperContact .question a {
+  .question a {
     font-size: 2.5rem;
     padding: 1rem 5rem;
   }
@@ -2900,7 +2900,7 @@ article.visible .video {
     right: 28%;
     font-size: 2rem;
   }
-  .wrapperContact .contactQuestion {
+  .contactQuestion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2908,43 +2908,43 @@ article.visible .video {
     height: 25vh;
     padding-top: 5vh;
   }
-  .wrapperContact .contactQuestion h2 {
+  .contactQuestion h2 {
     color: var(--primary-500);
     font-size: 3rem;
   }
-  .wrapperContact .contactQuestion .informationContact {
+  .contactQuestion .informationContact {
     display: flex;
     flex-direction: row;
   }
-  .wrapperContact .contactQuestion .informationContact div p {
+  .contactQuestion .informationContact div p {
     font-size: 1.2rem;
   }
-  .wrapperContact main .containerContact {
+  .globalContainerForm .containerContact {
     width: 50%;
   }
-  .wrapperContact main .containerContact .contact-form textarea {
+  .globalContainerForm .containerContact .contact-form textarea {
     height: 150px;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) {
     gap: 1vw;
     padding-bottom: 3vh;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) input {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) input {
     width: 30px;
     height: 30px;
     margin-bottom: 0;
   }
-  .wrapperContact main .containerContact .contact-form div:nth-of-type(1) label {
+  .globalContainerForm .containerContact .contact-form div:nth-of-type(1) label {
     font-size: 1rem;
   }
-  .wrapperContact .question {
+  .question {
     font-size: 2.8rem;
   }
-  .wrapperContact .question button {
+  .question button {
     width: 28vw;
     height: 6vh;
   }
-  .wrapperContact .question button a {
+  .question button a {
     font-size: 1.8rem;
   }
   .wrapperCgu main p,

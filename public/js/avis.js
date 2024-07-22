@@ -1,6 +1,5 @@
 // carrousel avis
 
-
 function initMap() {
     let service = new google.maps.places.PlacesService(document.createElement('div.map'));
 
@@ -10,7 +9,8 @@ function initMap() {
     };
     service.getDetails(request, (place, status) => {
         if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
-            displayReviewsCarousel(place.reviews);
+            const fiveStarReviews = place.reviews.filter(review => review.rating === 5);
+            displayReviewsCarousel(fiveStarReviews);
         } else {
             console.error('Impossible de récupérer les avis pour cette entreprise.');
         }
