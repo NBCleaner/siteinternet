@@ -14,8 +14,8 @@
                 Respectueux de l'environnement et des techniques de lavage
                 éco-responsables. Nous offrons un service de qualité exceptionnelle.
             </p>
-            <button onclick="location.href='../repertoireContact/contact.php';">
-                <a href="../repertoireContact/contact.php">Contactez-nous !</a>
+            <button onclick="location.href='repertoireContact/contact.php';">
+                <a href="repertoireContact/contact.php">Contactez-nous !</a>
             </button>
     </div>
 </section>
@@ -47,7 +47,7 @@
         </p>
     </div>
     <div class="container-prestations">
-        <div class="lavage" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
+        <div class="lavage" onclick="location.href='../public/nettoyageExterieur.php';" style="cursor: pointer;">
             <div>
                 <H3>NETTOYAGE EXTÉRIEUR</H3>
             </div>
@@ -107,50 +107,50 @@
     <div class="carousel-container-pc">
         <i class="fa-solid fa-circle-arrow-left carousel-arrow left-arrow" id="left-arrow-top"></i>
         <div class="container-prestationsPc">
-            <div class="lavagePc" onclick="location.href='nettoyageExterieur.php';" style="cursor: pointer;">
+            <div class="lavagePc" onclick="location.href='./public/nettoyageExterieur.php';" style="cursor: pointer;">
                 <div>
                     <H3>NETTOYAGE EXTÉRIEUR</H3>
                 </div>
             </div>
-            <div class="nettoyageIntPc" onclick="location.href='nettoyageInterieur.php';" style="cursor: pointer;">
+            <div class="nettoyageIntPc" onclick="location.href='./public/nettoyageInterieur.php';" style="cursor: pointer;">
                 <div>
                     <H3>NÉTTOYAGE INTÉRIEUR</H3>
                 </div>
             </div>
-            <div class="lustragePc" onclick="location.href='lustragePolissage.php';" style="cursor: pointer;">
+            <div class="lustragePc" onclick="location.href='./public/lustragePolissage.php';" style="cursor: pointer;">
                 <div>
                     <h3>LUSTRAGE / POLISSAGE</h3>
                 </div>
             </div>
 
-            <div class="pharePc" onclick="location.href='optiqueDePhares.php';" style="cursor: pointer;">
+            <div class="pharePc" onclick="location.href='./public/optiqueDePhares.php';" style="cursor: pointer;">
                 <div>
                     <H3>RÉNOVATION OPTIQUE DE PHARE</H3>
                     <a href=""></a>
                 </div>
             </div>
-            <div class="cuirPc" onclick="location.href='traitementCuir.php';" style="cursor: pointer;">
+            <div class="cuirPc" onclick="location.href='./public/traitementCuir.php';" style="cursor: pointer;">
                 <div>
                     <H3>TRAITEMENT CUIR</H3>
                     <a href=""></a>
                 </div>
             </div>
-            <div class="moteurPc" onclick="location.href='nettoyageMoteur.php';" style="cursor: pointer;">
+            <div class="moteurPc" onclick="location.href='./public/nettoyageMoteur.php';" style="cursor: pointer;">
                 <div>
                     <H3>LAVAGE MOTEUR</H3>
                 </div>
             </div>
-            <div class="siegePc" onclick="location.href='shampoinageSiege.php';" style="cursor: pointer;">
+            <div class="siegePc" onclick="location.href='./public/shampoinageSiege.php';" style="cursor: pointer;">
                 <div>
                     <H3>SHAMPOINGAGE SIÈGE</H3>
                 </div>
             </div>
-            <div class="ceramiquePc" onclick="location.href='poseCeramique.php';" style="cursor: pointer;">
+            <div class="ceramiquePc" onclick="location.href='./public/poseCeramique.php';" style="cursor: pointer;">
                 <div>
                     <H3>POSE CÉRAMIQUE</H3>
                 </div>
             </div>
-            <div class="deflocagePc" onclick="location.href='deflocageVehicule.php';" style="cursor: pointer;">
+            <div class="deflocagePc" onclick="location.href='./public/deflocageVehicule.php';" style="cursor: pointer;">
                 <div>
                     <H3>DÉFLOCAGE</H3>
                 </div>
@@ -240,19 +240,19 @@
     </div>
     <div class="bouttonAllForfait">
         <button class="btnForfaitDeluxe">
-            <a href="forfaits.php">VOIR LES FORFAITS DELUXE</a>
+            <a href="./public/forfaits.php">VOIR LES FORFAITS DELUXE</a>
         </button>
         <button class="btnTableauForfait">
-            <a href="forfaits.php">VOIR TOUS LES FORFAITS</a>
+            <a href="./public/forfaits.php">VOIR TOUS LES FORFAITS</a>
         </button>
     </div>
 </section>
-<script src="js/accueil.js"></script>
-<script src="js/carouselHero.js"></script>
+<script src="./public/js/accueil.js"></script>
+<script src="./public/js/carouselHero.js"></script>
 
 <?php
 $content = ob_get_clean();
 $title = "Accueil";
 $wrapperName = "wrapperAccueil";
-require "./template.php";
+require "./public/template.php";
 ?>

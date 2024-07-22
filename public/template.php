@@ -9,7 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-32x32.png">
+    <link rel="icon" sizes="192x192" href="/favicon-32x32.png">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="mask-icon" href="/favicon-32x32.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title><?= $title ?></title>
+
 </head>
 
 <body>
@@ -17,14 +28,14 @@
 
         <!-- HEADER -->
         <header id="scrollNav">
-            <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../public/index.php';" style="cursor: pointer;">
+            <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../index.php';" style="cursor: pointer;">
 
             <div id="burger-icon">
 
             </div>
             <nav>
                 <ul>
-                    <li><a href="../public/index.php">Accueil</a></li>
+                    <li><a href="../index.php">Accueil</a></li>
                     <li>
                         <div class="dropdownPrestations">
                             <button id="dropdownPrestationsButton">Prestations</button>
@@ -52,7 +63,7 @@
             <div class="socials">
                 <!-- Mettre les liens vers les réseaux de NBCleaner -->
                 <a href="https://www.facebook.com/Nb.cleanerauto/"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+                <a href="https://www.snapchat.com/add/nbcleaner_auto"><i class="fa-brands fa-square-snapchat"></i></a>
             </div>
         </header>
 
@@ -131,7 +142,7 @@
         <footer>
             <div class="footer-nav">
                 <ul>
-                    <ul><a href="../public/index.php">Accueil</a></ul>
+                    <ul><a href="../index.php">Accueil</a></ul>
                     <ul><a href="../public/forfaits.php">Forfaits</a></ul>
                     <ul><a href="../repertoireContact/contact.php">Contact</a></ul>
                 </ul>
@@ -148,8 +159,7 @@
                     </span>
                 </a>
 
-                <!-- TODO: A demander à Nabil -->
-                <a href="">
+                <a href="https://www.snapchat.com/add/nbcleaner_auto">
                     <span class="fa-stack snapchat-icon">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-brands fa-snapchat fa-stack-1x"></i>

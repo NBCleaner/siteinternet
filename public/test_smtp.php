@@ -1,6 +1,6 @@
 <?php
-$host = 'smtp.ionos.fr'; // Remplacez par votre hôte SMTP
-$port = 465; // Remplacez par le port SMTP approprié (465 ou 587)
+$host = 'smtp.ionos.fr'; 
+$port = 465; 
 
 $connection = @fsockopen($host, $port, $errno, $errstr, 10);
 
