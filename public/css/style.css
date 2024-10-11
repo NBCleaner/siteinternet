@@ -701,7 +701,7 @@ article.visible .video {
 .prestations .container-prestations .lavage {
   width: 100vw;
   height: 165px;
-  background-image: url('../img/lavage.png');
+  background-image: url('../img/lavageBmw.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -754,9 +754,9 @@ article.visible .video {
 .prestations .container-prestations .deflocage {
   width: 100vw;
   height: 165px;
-  background-image: url('../img/deflocageApres.jpg');
-  background-position-y: 30%;
+  background-image: url('../img/test2.png');
   background-size: cover;
+  background-position-y: 8%;
   background-repeat: no-repeat;
 }
 .prestations .container-prestations .deflocage div {
@@ -1128,19 +1128,21 @@ article.visible .video {
   background-position-x: 50%;
 }
 .wrapperPrestations .nettoyageInterieur {
-  background-image: url('../img/nettoyageApres.jpg');
+  background-image: url('../img/netoyageIntFacade.jpeg');
   background-position-x: 50%;
+  background-position-y: 1%;
 }
 .wrapperPrestations .nettoyageExterieur {
   background-image: url('../img/nettoyageExt.jpeg');
-  background-position-y: 50%;
-  background-position-x: 20%;
+  background-position-y: 20%;
 }
 .wrapperPrestations .lustragePolissage {
-  background-image: url('../img/lustragePolissageApres.jpg');
+  background-image: url('../img/lustageAprs.png');
+  background-position-x: 50%;
+  background-position-y: 90%;
 }
 .wrapperPrestations .deflocageVehicule {
-  background-image: url('../img/deflocageApres.jpg');
+  background-image: url('../img/flocageAprs.jpeg');
 }
 .wrapperPrestations .section1 {
   display: flex;
@@ -2296,7 +2298,7 @@ article.visible .video {
     background-image: url('../img/siege-pc.png');
   }
   .prestationsPc .carousel-container-pc .container-prestationsPc .lavagePc {
-    background-image: url('../img/lavage-pc.png');
+    background-image: url('../img/lavageBmw.jpg');
     background-position-y: 80%;
   }
   .prestationsPc .carousel-container-pc .container-prestationsPc .nettoyageIntPc {
@@ -2308,7 +2310,7 @@ article.visible .video {
     background-position-x: 30%;
   }
   .prestationsPc .carousel-container-pc .container-prestationsPc .deflocagePc {
-    background-image: url('../img/deflocageApres.jpg');
+    background-image: url('../img/flocagAvt.jpeg');
     background-position-x: 30%;
   }
   .prestationsPc .carousel-container-pc h3 {
@@ -2839,8 +2841,16 @@ article.visible .video {
     padding: 1rem;
   }
   .wrapperPrestations .deflocageVehicule {
-    background-image: url('../img/deflocageApres.jpg');
+    background-image: url('../img/flocageAprs.jpeg');
     background-position-y: 50%;
+  }
+  .wrapperPrestations .nettoyageInterieur {
+    background-position-y: 30%;
+  }
+  .wrapperPrestations .lustragePolissage {
+    background-image: url('../img/lustageAprs.png');
+    background-position-x: 50%;
+    background-position-y: 60%;
   }
   .wrapperPrestations .hero h1 {
     font-weight: 700;

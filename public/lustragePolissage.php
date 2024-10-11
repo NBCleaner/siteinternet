@@ -24,8 +24,8 @@
         </div>
         <div class="containerjs">
             <div class="image-container">
-                <img class="image-before slider-image" src="img/lustragePolisageAvant.jpg" alt="Rendu avant travail">
-                <img class="image-after slider-image" src="img/lustragePolissageApres.jpg" alt="Rendu après travail">
+                <img class="image-before slider-image" src="img/lustageAvt.png" alt="Rendu avant travail">
+                <img class="image-after slider-image" src="img/lustageAprs.png" alt="Rendu après travail">
             </div>
             <div class="slider-line"></div>
             <div class="slider-button" aria-hidden="true">

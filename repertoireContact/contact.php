@@ -1,4 +1,9 @@
+<!-- <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?> -->
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -96,17 +101,31 @@
             <?php
             require '../vendor/autoload.php';
 
+
+
             use PHPMailer\PHPMailer\PHPMailer;
             use PHPMailer\PHPMailer\Exception;
 
-            // Je Crée une instance de PHPMailer
-            $mail = new PHPMailer(true);
+            $envFilePath = __DIR__ . '/../.env';
 
+            if (file_exists($envFilePath)) {
+                $lines = file($envFilePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                foreach ($lines as $line) {
+                    if (strpos(trim($line), '#') === 0) {
+                        continue;
+                    }
+                    list($key, $value) = explode('=', $line, 2);
+                    putenv(sprintf('%s=%s', trim($key), trim($value)));
+                }
+            } else {
+                die('Le fichier .env est manquant.');
+            }
+
+            $mail = new PHPMailer(true);
             $errors = [];
             $name = $surname = $email = $phone = $message = "";
             $formSubmitted = false;
 
-            // Nettoyage des données pour éviter les failles XSS
             function clean_input($data)
             {
                 return htmlspecialchars(stripslashes(trim($data)), ENT_QUOTES, 'UTF-8');
@@ -149,20 +168,15 @@
                 if (empty($errors)) {
 
                     try {
-                        // Configuration du serveur SMTP
                         $mail->isSMTP();
-                        $mail->Host       = 'smtp.gmail.com';
-                        // Oblige l'authentification au serveur smtp pour envoyer des mails pour evitez les spam et + de sécurité 
+                        $mail->Host       = getenv('SMTP_HOST');
                         $mail->SMTPAuth   = true;
-                        // Email et mot de passe de connexion à la boite email qui servira a la conexion smtp et autorisé l'envoie d'email via se compte 
-                        $mail->Username   = 'riton987654@gmail.com';
-                        $mail->Password   = 'qfvr flob shyb rtsn';
-                        // Protections des données envoyées entre le serveur et le serveur smtp
-                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                        $mail->Port       = 587;
+                        $mail->Username   = getenv('SMTP_USERNAME');
+                        $mail->Password   = getenv('SMTP_PASSWORD');
+                        $mail->SMTPSecure = getenv('SMTP_ENCRYPTION');
+                        $mail->Port       = getenv('SMTP_PORT');
                         $mail->CharSet    = 'UTF-8';
 
-                        // Configuration de l'adresse email émettrice et de celle destinataire
                         $mail->setFrom('riton987654@gmail.com', 'Axel');
                         $mail->addAddress('delannoy-axel@outlook.fr', 'Delannoy');
 
@@ -175,7 +189,6 @@
                         $successMessage = "<p class =\"success-message\">Merci pour votre message !</p>";
                         $formSubmitted = true;
 
-                        // Réinitialisation des champs après succès
                         $name = $surname = $email = $phone = $message = "";
                     } catch (Exception $e) {
                         $errors[] = "<p class =\"error-list\">Une erreur est survenue lors de l'envoi de votre message. Erreur : {$mail->ErrorInfo}</p>";
