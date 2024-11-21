@@ -23,28 +23,28 @@
 
     <!-- HEADER -->
     <header id="scrollNav">
-        <img src="../siteinternet/public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../siteinternet/index.php';" style="cursor: pointer;">
+        <img src="./public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='./index.php';" style="cursor: pointer;">
 
         <div id="burger-icon">
 
         </div>
         <nav>
             <ul>
-                <li><a href="../siteinternet/index.php">Accueil</a></li>
+                <li><a href="./index.php">Accueil</a></li>
                 <li>
                     <div class="dropdownPrestations">
                         <button id="dropdownPrestationsButton">Prestations</button>
                         <div id="dropdownPrestationsContent" class="dropdownContent">
                             <ul>
-                                <li><a href="../siteinternet/public/nettoyageExterieur.php">Nettoyage Extérieur</a></li>
-                                <li><a href="../siteinternet/public/nettoyageInterieur.php">Nettoyage Intérieur</a></li>
-                                <li><a href="../siteinternet/public/traitementCuir.php">Traitement du cuir</a></li>
-                                <li><a href="../siteinternet/public/lustragePolissage.php">Lustrage / Polissage</a></li>
-                                <li><a href="../siteinternet/public/nettoyageMoteur.php">Nettoyage Moteur</a></li>
-                                <li><a href="../siteinternet/public/optiqueDePhares.php">Optiques de phare</a></li>
-                                <li><a href="../siteinternet/public/poseCeramique.php">Pose Céramique</a></li>
-                                <li><a href="../siteinternet/public/shampoinageSiege.php">Shampouinage des sièges</a></li>
-                                <li><a href="../siteinternet/public/deflocageVehicule.php">Déflocage</a></li>
+                                <li><a href="./public/nettoyageExterieur.php">Nettoyage Extérieur</a></li>
+                                <li><a href="./public/nettoyageInterieur.php">Nettoyage Intérieur</a></li>
+                                <li><a href="./public/traitementCuir.php">Traitement du cuir</a></li>
+                                <li><a href="./public/lustragePolissage.php">Lustrage / Polissage</a></li>
+                                <li><a href="./public/nettoyageMoteur.php">Nettoyage Moteur</a></li>
+                                <li><a href="./public/optiqueDePhares.php">Optiques de phare</a></li>
+                                <li><a href="./public/poseCeramique.php">Pose Céramique</a></li>
+                                <li><a href="./public/shampoinageSiege.php">Shampouinage des sièges</a></li>
+                                <li><a href="./public/deflocageVehicule.php">Déflocage</a></li>
 
                             </ul>
                         </div>
@@ -338,14 +338,14 @@
         <h2>Ils nous font confiance pour leurs Véhicules</h2>
         <div class="container-partenaire">
             <div class="ligne1">
-                <div><img src="../siteinternet/public/img/peugeot.svg" alt="logo peugeot"></div>
-                <div><img src="../siteinternet/public/img/mercedes.svg" alt="logo mercedes"></div>
-                <div><img src="../siteinternet/public/img/ds.svg" alt="logo dsautomobiles"></div>
+                <div><img src="./public/img/peugeot.svg" alt="logo peugeot"></div>
+                <div><img src="./public/img/mercedes.svg" alt="logo mercedes"></div>
+                <div><img src="./public/img/ds.svg" alt="logo dsautomobiles"></div>
             </div>
             <div class="ligne2">
-                <div><img src="../siteinternet/public/img/citroen.svg" alt="logo citroen"></div>
-                <div><img src="../siteinternet/public/img/toyota.svg" alt="logo toyota"></div>
-                <div><img class="arcelor" src="../siteinternet/public/img/arcelor mital.png" alt="logo arcelor mital"></div>
+                <div><img src="./public/img/citroen.svg" alt="logo citroen"></div>
+                <div><img src="./public/img/toyota.svg" alt="logo toyota"></div>
+                <div><img class="arcelor" src="./public/img/arcelor mital.png" alt="logo arcelor mital"></div>
             </div>
         </div>
     </section>
@@ -382,14 +382,14 @@
     <footer>
         <div class="footer-nav">
             <ul>
-                <ul><a href="../siteinternet/index.php">Accueil</a></ul>
-                <ul><a href="../siteinternet/public/forfaits.php">Forfaits</a></ul>
-                <ul><a href="../siteinternet/repertoireContact/contact.php">Contact</a></ul>
+                <ul><a href="./index.php">Accueil</a></ul>
+                <ul><a href="./public/forfaits.php">Forfaits</a></ul>
+                <ul><a href="./repertoireContact/contact.php">Contact</a></ul>
             </ul>
         </div>
         <div>
             <p>Copyright 2024 | Tous droits réservés</p>
-            <a href="../siteinternet/public/mentions_legal.php">Mentions légales</a> - <a href="../siteinternet/public/privacity_policy.php">Politique de confidentialité</a>
+            <a href="./public/mentions_legal.php">Mentions légales</a> - <a href="./public/privacity_policy.php">Politique de confidentialité</a>
         </div>
         <div class="footer-socials">
             <a href="https://www.facebook.com/Nb.cleanerauto/">
@@ -415,10 +415,10 @@
     <script src="./public/js/accueil.js"></script>
     <script src="./public/js/carouselHero.js"></script>
     <script src="https://kit.fontawesome.com/e33af3981e.js" crossorigin="anonymous"></script>
-    <script src="../siteinternet/public/js/template.js"></script>
-    <script src="../siteinternet/public/js/style.js"></script>
-    <script src="../siteinternet/public/js/avis.js"></script>
-    <script src="../siteinternet/public/js/burgerMenu.js"></script>
+    <script src="./public/js/template.js"></script>
+    <script src="./public/js/style.js"></script>
+    <script src="./public/js/avis.js"></script>
+    <script src="./public/js/burgerMenu.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxHxsvlYwRxbUO8Kz3D2lF1QmaLz5M04Q&loading=async&libraries=places&callback=initMap"></script>
 </body>
 

@@ -28,7 +28,7 @@
 
         <!-- HEADER -->
         <header id="scrollNav">
-            <img src="./img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../index.php';" style="cursor: pointer;">
+            <img src="../public/img/logo.svg" alt="Logo de l'entreprise NBCleaner" onclick="window.location.href='../index.php';" style="cursor: pointer;">
 
             <div id="burger-icon">
 
@@ -61,7 +61,6 @@
             </nav>
 
             <div class="socials">
-                <!-- Mettre les liens vers les réseaux de NBCleaner -->
                 <a href="https://www.facebook.com/Nb.cleanerauto/"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://www.snapchat.com/add/nbcleaner_auto"><i class="fa-brands fa-square-snapchat"></i></a>
             </div>
